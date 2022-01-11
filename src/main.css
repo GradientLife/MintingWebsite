@@ -1,0 +1,229 @@
+
+
+.Primary{
+    font-family: 'Roboto Slab', serif;
+}
+
+.mainHeader {
+    background-image: linear-gradient(rgba(255, 159, 28, .9),rgba(251, 139, 36, .9));
+    color: white;
+    position: sticky;
+    top: 0px;
+    z-Index: 1;
+    font-family: 'Poppins', sans-serif;
+}
+.mainHeaderLabel {
+    font-weight: 900;
+    text-align: center;
+    width: 7vw;
+    padding: .5vw;
+    position: absolute;
+}
+
+.TitleHeader {
+    font-weight: 900;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 6vw;
+    color: rgb(251, 86, 7);
+    padding: 1vw;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: 'Poppins', sans-serif;
+}
+.BoldText {
+    font-weight: 900;
+}
+
+.SmallerText {
+    font-weight: 900;
+    text-align: left;
+    font-size: 1.2vw;
+    color: white;
+    padding: 1vw;
+    font-family: 'Roboto Slab', serif;
+    font-weight: lighter;
+}
+
+.SectionOneColor{
+    background-image: linear-gradient(rgb(255, 159, 28),rgb(255, 191, 105));
+}
+.SectionTwoColor{
+    background-image: linear-gradient(rgb(255, 191, 105),rgb(255, 159, 28));
+}
+.SectionThreeColor{
+    background-image: url('./images/Rainbow.png');
+    box-shadow: 0px 25px 50px rgba(24,  22 ,33, .7) inset,0px -25px 50px rgba(24,  22 ,33, .7) inset;
+    background-size: cover;
+}
+.SectionFourColor{
+    background-image: linear-gradient(rgb(255, 191, 105),rgb(255, 159, 28));
+}
+.SectionFiveColor{
+    background-image: linear-gradient(rgb(255, 191, 105),rgb(255, 159, 28));
+    background-size: cover;
+}
+.SectionSixColor{
+    background-image: url('./images/Rainbow.png');
+    box-shadow: 0px 25px 50px rgba(24,  22 ,33, .7) inset,0px -25px 50px rgba(24,  22 ,33, .7) inset;
+    background-size: cover;
+}
+.Panel1
+{
+    background-size: cover;
+    background-image: url('./images/Rainbow.png');
+    background-color: black;
+    box-shadow: 0px -25px 50px rgba(24,  22 ,33, .8) inset;
+}
+
+.GradientBorderWrap
+{
+    position: relative;
+    background: linear-gradient(rgb(0, 48, 73), rgb(13, 27, 42));
+    padding: .3vw;
+    margin: 1vw;
+    border-radius: 2vw;
+}
+
+.Section2
+{
+background-color: rgb(214, 63, 63);
+min-height: 100vh;
+}
+
+.Section3
+{
+background-color: rgb(211, 214, 63);
+min-height: 100vh;
+}
+
+.FlexBoxes
+{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+.FlexBoxStart
+{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:left
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-box {
+    position: relative;
+    width: 15vw;
+    height: 26vw;
+    box-shadow: 0px 0px 10px rgba(24,  22 ,33,.5);
+    border-radius: 1vw;
+    text-align: center;
+    margin: .5vw;
+}
+
+.FadeContent{
+    opacity: 0;
+    position: absolute;
+    background-color: rgba(38, 37, 37, .9);
+    color: rgb(251, 86, 7);
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.2s;
+    border-radius: 1vw;
+}
+.FadeTrigger{
+    position: absolute;
+    background-image: linear-gradient(rgb(255, 191, 105) 40%,rgb(255, 159, 28));
+    color: rgb(251, 86, 7);
+    width: 100%;
+    height: 100%;
+    border-radius: 1vw;
+}
+.flip-box:hover .FadeContent{
+    opacity: 1;
+}
+
+
+.RoadmapDes
+{
+    margin: 1% 10% 1% 10%;
+    font-size: 1.2vw;
+    font-weight: lighter;
+    background-color: rgba(38, 37, 37, .9);
+    box-shadow: 0px 0px 1px rgba(24,  22 ,33,.5);
+    border-radius: 1vw;
+}
+
+.RoadMapHover
+{
+}
+
+.RoadMapImageLeft
+{
+    pointer-events: none;
+    height: 20vw;
+    position: absolute;
+    left: 4vw;
+    opacity: .2;
+    transition: opacity 0.3s ease-in-out, transform .5s ease-in-out;
+    transform: translateY(-5vw);
+}
+.RoadMapImageRight
+{
+    pointer-events: none;
+    height: 20vw;
+    position: absolute;
+    right: 4vw;
+    opacity: .2;
+    transition: opacity 0.3s ease-in-out, transform .5s ease-in-out;
+    transform: scaleX(-1) translateY(-5vw);
+}
+
+.RoadMapHover:hover .RoadMapImageLeft{
+    transform: rotate(-25deg) translateY(-5vw);
+    opacity: 1;
+}
+
+.RoadMapHover:hover .RoadMapImageRight{
+    transform: rotate(25deg) scaleX(-1) translateY(-5vw);
+    opacity: 1;
+}
+
+.NormalButton {
+    transition: background-color 0.4s;
+    font-size: 1vw;
+    padding: .5vw 1vw;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 1px 1px 1px #000000;
+    background-color:rgb(255, 191, 105);
+    color: white;
+    border-style: none;
+    border-radius: .5vw;
+    box-shadow: 0px 0px 10px rgba(24,  22 ,33,.5);
+}
+
+.NormalButton:hover {
+    background-color: rgb(251, 86, 7);
+    color: white;
+    border-style: none;
+    cursor: pointer;
+}
+
+.DisabledButton {
+    transition: background-color 0.4s;
+    font-size: 1vw;
+    padding: .5vw 1vw;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 1px 1px 1px #000000;
+    background-color:rgb(32, 39, 59);
+    color: white;
+    border-style: none;
+    border-radius: .5vw;
+    box-shadow: 0px 0px 10px rgba(24,  22 ,33,.5);
+    cursor: not-allowed;
+}
