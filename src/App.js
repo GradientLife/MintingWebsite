@@ -152,7 +152,7 @@ function App() {
         </div >
 
         <div className="SectionTwoColor" style={{ overflow: "auto" }}>
-          <div id='Roadmap' className="TitleHeader" style={{ padding: "5vw 0vw 0vw 0vw" }}> Lore</div>
+          <div id='Lore' className="TitleHeader" style={{ padding: "5vw 0vw 0vw 0vw" }}> Lore</div>
           <div style={{ color: 'white' }} className="TitleHeader">(Coming in 4 days)</div>
           <div style={{ margin: "5vw 55vw 0vw 3vw", width: '25vw' }}>
 
