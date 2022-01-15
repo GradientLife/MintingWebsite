@@ -125,8 +125,7 @@ function App() {
 
           <div style={{ position: 'absolute', right: '0px' }}>
             <a href="https://twitter.com/GradientLifeNFT" target="_blank"> <button className="NormalButton" type="button">Twitter</button></a>
-            <a href="https://discord.gg/6jwUPvsfKW" target="_blank"> <button className="NormalButton" type="button">Discord</button></a>
-            <a href="" target="_blank"> <button className="NormalButton" type="button">Opensea</button></a>
+            <a href="https://discord.gg/7pR9PY9V7q" target="_blank"> <button className="NormalButton" type="button">Discord</button></a>
           </div>
         </div>
         <div id='Mint' style={{ marginTop: '-120px' }} className="SectionOneColor">
@@ -145,26 +144,293 @@ function App() {
             </div>
 
             <div style={{ padding: '1vw' }}></div>
-            <a href="https://discord.gg/6jwUPvsfKW" target="_blank" style={{ display: "block", textAlign: 'center' }}><img src={DiscordWhitelistBanner} style={{ width: "30vw" }}></img></a>
+            <a href="https://discord.gg/7pR9PY9V7q" target="_blank" style={{ display: "block", textAlign: 'center' }}><img src={DiscordWhitelistBanner} style={{ width: "30vw" }}></img></a>
             <div style={{ padding: '1vw' }}></div>
           </div>
 
         </div >
 
         <div className="SectionTwoColor" style={{ overflow: "auto" }}>
-          <div id='Lore' className="TitleHeader" style={{ padding: "5vw 0vw 0vw 0vw" }}> Lore</div>
-          <div style={{ color: 'white' }} className="TitleHeader">(Coming in 4 days)</div>
           <div style={{ margin: "5vw 55vw 0vw 3vw", width: '25vw' }}>
+            <div id='Lore' className="SmallerText" style={{ fontFamily: 'Poppins, sans-serif', whiteSpace: 'nowrap', color: 'rgb(251, 86, 7)', fontSize: '4vw', margin: '5vw 0vw 0vw 5vw', textShadow: '2px 2px 4px #000000' }}> the <span style={{ color: "white", fontSize: "10vw" }}>Lore</span> of Gradient Life</div>
+
+            <div style={{ display: 'flex', justifyContent: 'flex-end', margin: "0vw 3vw 5vw 27vw", position: 'absolute' }}>
+
+              <div className="FlexBoxes" style={{
+
+                boxShadow: "0px 0px 1vw rgba(24, 22 ,33,.5) inset", backgroundColor: 'rgb(255, 191, 105)', width: "65vw", height: "30vw", borderRadius: "1vw"
+
+              }}>
+
+                <div className="flip-box">
+
+                  < div className="FadeInner">
+
+                    <div className="FadeTrigger" style={{ overflow: 'hidden' }}>
+
+                      <img src={WeatherGif} style={{ width: "100%" }}></img>
+
+                      <div className="BoldText" style={{ margin: "5%", fontSize: '1.5vw' }}>Weather</div>
+
+                      <div className="SmallerText" style={{ fontSize: '1vw', margin: '0.5vw', backgroundColor: 'rgba(38, 37, 37, .9)', borderRadius: '1vw', boxShadow: "0px 0px 1vw rgba(24, 22 ,33,.5)" }}>The “Weathers” of each “Gradie” are the background of where they are currently in at the time.</div>
+
+                    </div>
+
+                    <div className="FadeContent">
+
+                      <div className="BoldText" style={{ margin: "5%", fontSize: '1.5vw' }}>Rarity</div>
+
+                      <div className="SmallerText" style={{ padding: "2%", fontSize: '.8vw' }}>Tier 3: Raining(12.38%), Cloudy(12.5%), Sunny(12.64%), Night(11.24%), Snowy(10.1%), Windy(10.55%).</div>
+
+                      <div className="SmallerText" style={{ padding: "2%", fontSize: '.8vw' }}>Tier 2: Thunder Storm(6.68%), Foggy(5.66%), Icy(4.87%), Tornado(4.3%), Sandstorm(4.52%), Hailing(4.07%).</div>
+
+                      <div className="SmallerText" style={{ padding: "2%", fontSize: '.8vw' }}>Tier 1: Rainbow(0.55%).</div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div className="flip-box">
+
+                  <div className="FadeInner">
+
+                    <div className="FadeTrigger" style={{ overflow: 'hidden' }}>
+
+                      <img src={PersonalityGif} style={{ width: "100%" }}></img>
+
+                      <div className="BoldText" style={{ margin: "5%", fontSize: '1.5vw' }}>Personality</div>
+
+                      <div className="SmallerText" style={{ fontSize: '1vw', margin: '0.5vw', backgroundColor: 'rgba(38, 37, 37, .9)', borderRadius: '1vw', boxShadow: "0px 0px 1vw rgba(24, 22 ,33,.5)" }}>All “Gradie” has their own unique “Personality” which represents their character.</div>
+
+                    </div>
+
+                    <div className="FadeContent">
+
+                      <div className="BoldText" style={{ margin: "5%", fontSize: '1.5vw' }}>Rarity</div>
+
+                      <div className="SmallerText" style={{ padding: "2%", fontSize: '.8vw' }}>Tier 3: Brave(4.74%), Caring(4.90%), Cautious(5.74%), Disorganized(7.24%), Fool(4.07%), Ego(4.55%), Pervert(3.49%), Slow(3.15%), Serious(3.24%), Stingy(6.91%), Wimpy(7.41%), Kind(5.74%), Tricky(4.82%), Flowery(6.41%), Playful(4.90%), Creative(3.82%).</div>
+
+                      <div className="SmallerText" style={{ padding: "2%", fontSize: '.8vw' }}>Tier 2: Adventurous(2.74%), Decisive(2.15%), Elegant(1.32%), Fabulous(1.65%), Generous(1.57%), Imposter(1.32%), Loyal(2.23%), Mysterious(1.98%), Peaceful(1.82%).</div>
+
+                      <div className="SmallerText" style={{ padding: "2%", fontSize: '.8vw' }}>Tier 1: Achiever(0.98%), Clever(0.82%), Dominant(0.48%).</div>
+
+                      <div className="SmallerText" style={{ padding: "2%", fontSize: '.8vw' }}>*After Fully Minted, Golden will be reveal during the Golden Gradie Day*</div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div className="flip-box">
+
+                  <div className="FadeInner">
+
+                    <div className="FadeTrigger" style={{ overflow: 'hidden' }}>
+
+                      <img src={DesireGif} style={{ width: "100%" }}></img>
+
+                      <div className="BoldText" style={{ margin: "5%", fontSize: '1.5vw' }}>Desire</div>
+
+                      <div className="SmallerText" style={{ fontSize: '1vw', margin: '0.5vw', backgroundColor: 'rgba(38, 37, 37, .9)', borderRadius: '1vw', boxShadow: "0px 0px 1vw rgba(24, 22 ,33,.5)" }}>The “Desires” of each “Gradie” consist of a unique body tattoo and items that represents their true desire.</div>
+
+                    </div>
+
+                    <div className="FadeContent">
+
+                      <div className="BoldText" style={{ margin: "5%", fontSize: '1.5vw' }}>Rarity</div>
+
+                      <div className="SmallerText" style={{ padding: "2%", fontSize: '.8vw' }}>Tier 2: Achievement(5.07%), Alcohol(2.71%), Beauty(3.45%), Belonging(5.80%), Creating(3.89%), Drugs(2.42%), Equality(5.36%), Eternity(0.94%), Fame(6.54%), Food(5.58%), Freedom(4.85%), Gamble(2.86%), Happiness(6.78%), Health(4.41%), Intimacy(1.02%), Knowledge(5.43%), Love(5.88%), Perfection(2.12%), Power(6.10%), Satisfaction(6.39%), Strength(6.32%), Tranquil(3.59%), Truth(3.37%).</div>
+
+                      <div className="SmallerText" style={{ padding: "2%", fontSize: '.8vw' }}>Tier 1: Nothing(0.50%), NFT(0.65%).</div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div className="flip-box">
+
+                  <div className="FadeInner">
+
+                    <div className="FadeTrigger" style={{ overflow: 'hidden' }}>
+
+                      <img src={EmotionGif} style={{ width: "100%" }}></img>
+                      <div className="BoldText" style={{ margin: "5%", fontSize: '1.5vw' }}>Emotion</div>
+                      <div className="SmallerText" style={{ fontSize: '1vw', margin: '0.5vw', backgroundColor: 'rgba(38, 37, 37, .9)', borderRadius: '1vw', boxShadow: "0px 0px 1vw rgba(24, 22 ,33,.5)" }}>The “Emotions” of each “Gradie” are an icon that represents their emotion.</div>
+
+                    </div>
+
+                    <div className="FadeContent">
+
+                      <div className="BoldText" style={{ margin: "5%", fontSize: '1.5vw' }}>Rarity</div>
+                      <div className="SmallerText" style={{ padding: "2%", fontSize: '.8vw' }}>Tier 3: Joy(18.08%), Sad(18.28%), Annoy(18.48%).</div>
+                      <div className="SmallerText" style={{ padding: "2%", fontSize: '.8vw' }}>Tier 2: Fear(14.77%), Surprise(11.60%), Interest(10.44%).</div>
+                      <div className="SmallerText" style={{ padding: "2%", fontSize: '.8vw' }}>Tier 1: Angry(4.79%), Trust(3.12%), NoEmotion(0.51%).</div>
+
+                      <div className="SmallerText" style={{ padding: "2%", fontSize: '.8vw' }}>Each emotion has 3 levels, from mildest to strongest, it represents the state of emotion of your Gradie.</div>
+                      <div className="SmallerText" style={{ padding: "2%", fontSize: '.8vw' }}>Drop Rates: Level 1 Mild (60%), Level Moderate (25%), Level 3 Strong (15%)</div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div >
+
+            <div style={{ backgroundColor: 'rgba(38, 37, 37, .9)', borderRadius: '1vw', padding: '.5vw', boxShadow: "0px 0px 1vw rgba(24, 22 ,33,.5)" }}>
+
+              <div className="SmallerText" style={{ fontSize: "1.2vw", fontWeight: 'lighter' }}>
+                In the year of 2040, the never-ending cumulative stress,
+                a disastrous epidemic outbreak spread across the world,
+                and it caused millions of people formed into a peculiar aspect,
+                their faces turned into a creature of their true personality,
+                their body can't contain the overwhelming emotions and it oozes out of their head which can be seen with bare eyes.
+              </div>
+
+              <div className="SmallerText" style={{ fontSize: "1.2vw", fontWeight: 'lighter' }}>
+                in order to ease the pain of the condition, Gradie needs to release their emotions to something that brings them joy,
+                such as gambling with others, chatting, exploring dungeons and so on, the said condition are known as Gradient Life.
+
+              </div>
+
+            </div>
 
           </div>
-
+          <div style={{ height: '5vw' }}></div>
         </div >
 
 
         <div className="SectionThreeColor" style={{ overflow: "auto" }}>
           <div id='Roadmap' className="TitleHeader" style={{ padding: "5vw 0vw 0vw 0vw" }}> Roadmap</div>
-          <div style={{ color: 'white' }} className="TitleHeader">(Coming in 2 days)</div>
           <div style={{ margin: "5vw 10vw 5vw 10vw" }}>
+            <div className="FlexBoxes" style={{
+
+              boxShadow: "0px 0px 1vw rgba(24, 22 ,33,.5) inset", backgroundImage: 'linear-gradient(rgb(255, 191, 105), rgb(255, 159, 28))', borderRadius: "5px"
+
+            }}>
+
+              <div className='RoadMapHover' style={{ margin: '1vw', backgroundImage: 'linear-gradient(rgb(255, 191, 105),rgb(255, 159, 28))', boxShadow: "0px 0px 1vw rgba(24, 22 ,33,.5)", width: '100%' }}>
+
+                <img src={Airdrop} className='RoadMapImageLeft'></img>
+
+                <img src={Airdrop} className='RoadMapImageRight'></img>
+
+                <div className="BoldText" style={{ margin: "2%", fontSize: '2vw', color: 'rgb(251, 86, 7)', textAlign: 'center' }}>Free Airdrop (25%)</div>
+
+                <div className="SmallerText RoadmapDes">
+
+                  When 25% of the Gradies sell out, 25 lucky holders will be airdropped one free Gradie each.
+
+                </div>
+
+              </div>
+
+              <div className='RoadMapHover' style={{ margin: '1vw', backgroundImage: 'linear-gradient(rgb(255, 191, 105),rgb(255, 159, 28))', boxShadow: "0px 0px 1vw rgba(24, 22 ,33,.5)", width: '100%' }}>
+
+                <img src={Ticket} className='RoadMapImageLeft'></img>
+
+                <img src={Ticket} className='RoadMapImageRight'></img>
+
+                <div className="BoldText" style={{ margin: "2%", fontSize: '2vw', color: 'rgb(251, 86, 7)', textAlign: 'center' }}>Exclusive Raffle (50%)</div>
+
+                <div className="SmallerText RoadmapDes">
+
+                  When 50% of the Gradies sell out, we’ll be doing a community exclusive raffle to win some Ethereum!
+
+                </div>
+
+              </div>
+
+              <div className='RoadMapHover' style={{ margin: '1vw', backgroundImage: 'linear-gradient(rgb(255, 191, 105),rgb(255, 159, 28))', boxShadow: "0px 0px 1vw rgba(24, 22 ,33,.5)", width: '100%' }}>
+
+                <img src={SandBox} className='RoadMapImageLeft'></img>
+
+                <img src={SandBox} className='RoadMapImageRight'></img>
+
+                <div className="BoldText" style={{ margin: "2%", fontSize: '2vw', color: 'rgb(251, 86, 7)', textAlign: 'center' }}>Sandbox Land Acquisition (60%)</div>
+
+                <div className="SmallerText RoadmapDes">
+
+                  When 60% of the Gradies sell out, we’ll be acquiring Sandbox land for our community, will be hosting events in Sandbox with our community!
+
+                </div>
+
+              </div>
+
+              <div className='RoadMapHover' style={{ margin: '1vw', backgroundImage: 'linear-gradient(rgb(255, 191, 105),rgb(255, 159, 28))', boxShadow: "0px 0px 1vw rgba(24, 22 ,33,.5)", width: '100%' }}>
+
+                <img src={Shirt} className='RoadMapImageLeft'></img>
+
+                <img src={Shirt} className='RoadMapImageRight'></img>
+
+                <div className="BoldText" style={{ margin: "2%", fontSize: '2vw', color: 'rgb(251, 86, 7)', textAlign: 'center' }}>Merchandise Giveaway (75%)</div>
+
+                <div className="SmallerText RoadmapDes">
+
+                  When 75% of the Gradies sell out, we'll be sending 500 members exclusive merchandises out, including custom T-Shirt with your Unique Gradient Life NFT, your wallet address QR and some other surprises!
+
+                </div>
+
+              </div>
+
+              <div className='RoadMapHover' style={{ margin: '1vw', backgroundImage: 'linear-gradient(rgb(255, 191, 105),rgb(255, 159, 28))', boxShadow: "0px 0px 1vw rgba(24, 22 ,33,.5)", width: '100%' }}>
+
+                <img src={MegaPrize} className='RoadMapImageLeft'></img>
+
+                <img src={MegaPrize} className='RoadMapImageRight'></img>
+
+                <div className="BoldText" style={{ margin: "2%", fontSize: '2vw', color: 'rgb(251, 86, 7)', textAlign: 'center' }}>Exclusive Mega Raffle (100%)</div>
+
+                <div className="SmallerText RoadmapDes">
+
+                  When 100% of the Gradies sell out, we’ll be doing a community exclusive lucky draw with 300,000 USD in prize.
+
+                </div>
+
+              </div>
+
+              <div style={{ margin: '1vw', backgroundImage: 'linear-gradient(rgb(255, 191, 105),rgb(255, 159, 28))', boxShadow: "0px 0px 1vw rgba(24, 22 ,33,.5)", width: '100%' }}>
+
+                <div className="BoldText" style={{ margin: "2%", fontSize: '2vw', color: 'rgb(251, 86, 7)', textAlign: 'center' }}>Future Updates</div>
+
+                <div>
+
+                  <div className="SmallerText RoadmapDes RoadMapHover">
+
+                    Rarity Tools - We will list The Gradies on Rarity Tools.
+
+                  </div>
+
+                  <div className="SmallerText RoadmapDes RoadMapHover">
+
+                    Gradient DAO establishment - To benefit our community for long term.
+
+                  </div>
+
+                  <div className="SmallerText RoadmapDes">
+
+                    Game Development - Official Gradient Life Roadmap to be announced on early 2022.
+
+                  </div>
+
+                  <div className="SmallerText RoadmapDes">
+
+                    Loading...
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
 
           </div>
         </div>
@@ -343,7 +609,7 @@ function App() {
                   <div className="SlimText" style={{ margin: "1vw" }}>
                     <div>Design - Art - Project Management - Marketing</div>
 
-                    <a href="https://twitter.com/TextGuyYT" className='BoldText'>twitter</a>
+                    <a href="https://twitter.com/OpenSystem777" className='BoldText'>twitter</a>
                   </div>
                 </div>
               </div>
