@@ -1,5 +1,5 @@
 import { useEthers, useContractCall, useContractFunction } from "@usedapp/core";
-import CoolCatABI from '../CoolCatABI.json';
+import ContractABI from '../ContractABI.json';
 import { utils, ethers } from 'ethers';
 import { Contract } from '@ethersproject/contracts'
 import React, { useState } from 'react';
@@ -10,17 +10,17 @@ import UnrevealImage from '../images/Premint-Official-TransparentBackground.png'
 import RevealImage from '../images/PersonalityRevealGif.gif';
 import GoldenImage from '../images/All-Personality-Gold-Unreveal.gif';
 
-const coolcatInterface = new ethers.utils.Interface(CoolCatABI);
-const coolcatAddress = '0x235bB261718BcD06C0BB21C6F2542d62CF032eB0';
-const coolcatContract = new Contract(coolcatAddress, coolcatInterface);
+const contractInterface = new ethers.utils.Interface(ContractABI);
+const contractAddress = '0x235bB261718BcD06C0BB21C6F2542d62CF032eB0';
+const contractContract = new Contract(contractAddress, contractInterface);
 
-console.log("ContractAddress = ", coolcatAddress);
-console.log("ABI = ", coolcatInterface);
+console.log("ContractAddress = ", contractAddress);
+console.log("ABI = ", contractInterface);
 function GetSupply() {
 
     const [count] = useContractCall({
-        abi: coolcatInterface,
-        address: coolcatAddress,
+        abi: contractInterface,
+        address: contractAddress,
         method: "totalSupply",
         args: [],
     }) ?? [];
@@ -30,8 +30,8 @@ function GetSupply() {
 
 function GetPrice() {
     const [price] = useContractCall({
-        abi: coolcatInterface,
-        address: coolcatAddress,
+        abi: contractInterface,
+        address: contractAddress,
         method: "generalCost",
         args: [],
     }) ?? [];
@@ -42,15 +42,15 @@ function GetPrice() {
 function GetMaxMintAmount() {
     const { account } = useEthers()
     const [mintedAmount] = useContractCall({
-        abi: coolcatInterface,
-        address: coolcatAddress,
+        abi: contractInterface,
+        address: contractAddress,
         method: "addressMintedBalance",
         args: [account],
     }) ?? [];
 
     const [maxAmount] = useContractCall({
-        abi: coolcatInterface,
-        address: coolcatAddress,
+        abi: contractInterface,
+        address: contractAddress,
         method: "maxMintAmount",
         args: [],
     }) ?? [];
@@ -60,7 +60,7 @@ function GetMaxMintAmount() {
 
 export const MintArea = () => {
     const { account, chainId, activateBrowserWallet, deactivate } = useEthers()
-    const isConnected = account !== undefined && chainId == 42
+    const isConnected = false; //account !== undefined && chainId == 42
     const supply = GetSupply();
     const [mintPage, setmintPage] = useState(false);
     function ToggleMintPage() {
@@ -74,7 +74,7 @@ export const MintArea = () => {
     const price = GetPrice();
     const maxMintAmount = GetMaxMintAmount();
 
-    const { state, send } = useContractFunction(coolcatContract, 'MintCollectible', { transactionName: 'Mint' })
+    const { state, send } = useContractFunction(contractContract, 'MintCollectible', { transactionName: 'Mint' })
     function MintNFT(mintAmount: string) {
         send(mintAmount, {
             value: (parseFloat(mintAmount) * parseFloat(price)).toString(),
@@ -93,11 +93,11 @@ export const MintArea = () => {
                         isConnected ?
                             <div style={{ fontFamily: 'Raleway', fontSize: '2vw', color: 'white', textShadow: '1px 1px 1px #000000' }
                             } >
-                                {supply}
+                                Pre-Sale
                             </div >
                             :
                             <div style={{ fontFamily: 'Raleway', fontSize: '2vw', color: 'white', textShadow: '1px 1px 1px #000000' }}>
-                                minting state
+                                Pre-Sale (Jan 20th, 8AM PST)
                             </div>
                     }
 
@@ -127,7 +127,7 @@ export const MintArea = () => {
                                 </div>
                             ) : (
                                 <div>
-                                    <button className="DisabledButton" style={{ width: '25vw', height: '5vw', fontSize: '1.5vw', padding: '1vw 5vw', alignSelf: 'right' }}> Connect Wallet</button>
+                                    <a href="https://discord.gg/6jwUPvsfKW" target="_blank">< button className="NormalButton" style={{ width: '25vw', height: '5vw', fontSize: '1.5vw', padding: '1vw 5vw', alignSelf: 'right' }}>Get Access</button></a>
                                 </div>
                             )
                         }
@@ -138,7 +138,7 @@ export const MintArea = () => {
                     <div>
                         <div style={{ fontFamily: 'Raleway', fontSize: '2vw', color: 'white', textShadow: '1px 1px 1px #000000' }
                         } >
-                            NFT reveal
+                            NFT Reveal
                         </div >
                         < button className="DisabledButton" style={{ width: '25vw', height: '5vw', fontSize: '1.5vw', padding: '1vw 5vw', alignSelf: 'right' }}>(after sold out)</button>
                     </div>
@@ -148,7 +148,7 @@ export const MintArea = () => {
                     <div>
                         <div style={{ fontFamily: 'Raleway', fontSize: '2vw', color: 'white', textShadow: '1px 1px 1px #000000' }
                         } >
-                            golden reveal
+                            Golden Reveal
                         </div >
                         < button className="DisabledButton" style={{ width: '25vw', height: '5vw', fontSize: '1.5vw', padding: '1vw 5vw', alignSelf: 'right' }}>(coming soon)</button>
                     </div>
