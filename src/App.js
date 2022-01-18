@@ -16,6 +16,7 @@ import SandBox from './images/Assets/SandBox.png';
 import Ticket from './images/Assets/Ticket.png';
 import Unreveal from './images/PremintRevealOfficial.jpg';
 import DiscordWhitelistBanner from './images/DiscordAndWhitelistBanner.jpg';
+import { Helmet } from "react-helmet";
 
 
 /*
@@ -104,7 +105,12 @@ function App() {
     <DAppProvider config={{
       config
     }}>
-
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Gradient Life NFT</title>
+        <link rel="canonical" href="https://gradientlifenft.io/" />
+        <meta name="description" content="Gradient Life NFT" />
+      </Helmet>
       <div className='Primary'>
         <div className='mainHeader'>
 
