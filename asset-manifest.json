@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/MintingWebsite/static/css/main.7c5b5b71.chunk.css",
-    "main.js": "/MintingWebsite/static/js/main.710ea63a.chunk.js",
-    "main.js.map": "/MintingWebsite/static/js/main.710ea63a.chunk.js.map",
+    "main.js": "/MintingWebsite/static/js/main.a51954f9.chunk.js",
+    "main.js.map": "/MintingWebsite/static/js/main.a51954f9.chunk.js.map",
     "runtime-main.js": "/MintingWebsite/static/js/runtime-main.f452eb35.js",
     "runtime-main.js.map": "/MintingWebsite/static/js/runtime-main.f452eb35.js.map",
     "static/js/2.c8336b76.chunk.js": "/MintingWebsite/static/js/2.c8336b76.chunk.js",
@@ -32,6 +32,6 @@
     "static/js/runtime-main.f452eb35.js",
     "static/js/2.c8336b76.chunk.js",
     "static/css/main.7c5b5b71.chunk.css",
-    "static/js/main.710ea63a.chunk.js"
+    "static/js/main.a51954f9.chunk.js"
   ]
 }
