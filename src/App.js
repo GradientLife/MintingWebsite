@@ -242,9 +242,7 @@ function App() {
 
                       <div className="BoldText" style={{ margin: "5%", fontSize: '1.5vw' }}>Rarity</div>
 
-                      <div className="SmallerText" style={{ padding: "2%", fontSize: '.8vw' }}>Tier 2: Achievement(5.07%), Alcohol(2.71%), Beauty(3.45%), Belonging(5.80%), Creating(3.89%), Drugs(2.42%), Equality(5.36%), Eternity(0.94%), Fame(6.54%), Food(5.58%), Freedom(4.85%), Gamble(2.86%), Happiness(6.78%), Health(4.41%), Intimacy(1.02%), Knowledge(5.43%), Love(5.88%), Perfection(2.12%), Power(6.10%), Satisfaction(6.39%), Strength(6.32%), Tranquil(3.59%), Truth(3.37%).</div>
-
-                      <div className="SmallerText" style={{ padding: "2%", fontSize: '.8vw' }}>Tier 1: Nothing(0.50%), NFT(0.65%).</div>
+                      <div className="SmallerText" style={{ padding: "2%", fontSize: '.8vw' }}>Achievement(5.1%), Alcohol(2.73%), Beauty(3.57%), Belonging(5.84%), Creating(3.91%), Drugs(2.43%), Equality(5.40%), Eternity(0.95%), Fame(6.58%), Food(5.62%), Freedom(4.80%), Gamble(2.88%), Happiness(4.88%), Health(4.43%), Intimacy(1.02%), Knowledge(5.47%), Love(5.92%), Perfection(2.13%), Power(6.14%), Satisfaction(6.44%), Strength(6.36%), Tranquil(3.62%), Truth(3.40%), Nothing(0.50%).</div>
 
                     </div>
 
