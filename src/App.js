@@ -18,13 +18,6 @@ import Unreveal from './images/PremintRevealOfficial.jpg';
 import DiscordWhitelistBanner from './images/DiscordAndWhitelistBanner.jpg';
 import { Helmet } from "react-helmet";
 
-
-/*
-        <div className='maskZigZag'>
-          <div style={{ height: "inherit" }} className="SectionOneColor"></div>
-        </div>
-        */
-
 const config = {
   readOnlyChainId: ChainId.Kovan,
   readOnlyUrls: {
@@ -110,30 +103,29 @@ function App() {
         <title>Gradient Life NFT</title>
         <link rel="canonical" href="https://gradientlifenft.io/" />
         <meta name="description" content="Gradient Life NFT" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
       </Helmet>
       <div className='Primary'>
         <div className='mainHeader'>
 
           <div className='mainHeaderLabel'>
-            <div style={{ fontSize: '1vw' }}> Gradient Life</div>
-            <div style={{ fontSize: '.8vw' }}>NFT</div>
+            <div style={{ fontSize: '1vw' }}> Gradient Life NFT</div>
           </div>
           <Header />
 
-          <div style={{ position: 'absolute', margin: '0px' }}>
-            <a href="#Mint"> <button className="NormalButton" type="button">Mint</button></a>
-            <a href="#About"> <button className="NormalButton" type="button">About</button></a>
-            <a href="#Lore"> <button className="NormalButton" type="button">Lore</button></a>
-            <a href="#Roadmap"> <button className="NormalButton" type="button">Roadmap</button></a>
-            <a href="#FAQ"> <button className="NormalButton" type="button">FAQ</button></a>
-            <a href="#Team"> <button className="NormalButton" type="button">Team</button></a>
+          <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'left' }}>
+            <a href="#Mint" style={{ textDecoration: 'none' }}> <div className="NormalButton" style={{ width: '5vw' }}>Mint</div></a>
+            <a href="#About" style={{ textDecoration: 'none' }}> <div className="NormalButton" style={{ width: '5vw' }}>Mint</div></a>
+            <a href="#Lore" style={{ textDecoration: 'none' }}> <div className="NormalButton" style={{ width: '5vw' }}>Mint</div></a>
+            <a href="#Roadmap" style={{ textDecoration: 'none' }}> <div className="NormalButton" style={{ width: '5vw' }}>Mint</div></a>
+            <a href="#FAQ" style={{ textDecoration: 'none' }}> <div className="NormalButton" style={{ width: '5vw' }}>Mint</div></a>
+            <a href="#Team" style={{ textDecoration: 'none' }}> <div className="NormalButton" style={{ width: '5vw' }}>Mint</div></a>
+            <a href="https://twitter.com/GradientLifeNFT" style={{ marginLeft: '40vw', textDecoration: 'none' }} target="_blank"> <div className="NormalButton" style={{ width: '5vw' }}>Twitter</div></a>
+            <a href="https://discord.gg/7pR9PY9V7q" style={{ textDecoration: 'none' }} target="_blank"> <div className="NormalButton" style={{ width: '5vw' }}>Discord</div></a>
           </div>
 
-          <div style={{ position: 'absolute', right: '0px' }}>
-            <a href="https://twitter.com/GradientLifeNFT" target="_blank"> <button className="NormalButton" type="button">Twitter</button></a>
-            <a href="https://discord.gg/7pR9PY9V7q" target="_blank"> <button className="NormalButton" type="button">Discord</button></a>
-          </div>
         </div>
+
         <div id='Mint' style={{ marginTop: '-120px' }} className="SectionOneColor">
           <div style={{ marginTop: '120px' }}></div>
           <div className='Panel1'>
@@ -164,7 +156,7 @@ function App() {
 
               <div className="FlexBoxes" style={{
 
-                boxShadow: "0px 0px 1vw rgba(24, 22 ,33,.5) inset", backgroundColor: 'rgb(255, 191, 105)', width: "65vw", height: "30vw", borderRadius: "1vw"
+                boxShadow: "0px 0px 1vw rgba(24, 22 ,33,.5) inset", backgroundColor: 'rgb(255, 191, 105)', width: "65vw", height: '30vw', borderRadius: "1vw"
 
               }}>
 
@@ -173,25 +165,16 @@ function App() {
                   < div className="FadeInner">
 
                     <div className="FadeTrigger" style={{ overflow: 'hidden' }}>
-
                       <img src={WeatherGif} style={{ width: "100%" }}></img>
-
-                      <div className="BoldText" style={{ margin: "5%", fontSize: '1.5vw' }}>Weather</div>
-
+                      <div className="BoldText" style={{ fontSize: '1vw' }}>Weather</div>
                       <div className="SmallerText" style={{ fontSize: '1vw', margin: '0.5vw', backgroundColor: 'rgba(38, 37, 37, .9)', borderRadius: '1vw', boxShadow: "0px 0px 1vw rgba(24, 22 ,33,.5)" }}>The “Weathers” of each “Gradie” are the background of where they are currently in at the time.</div>
-
                     </div>
 
                     <div className="FadeContent">
-
-                      <div className="BoldText" style={{ margin: "5%", fontSize: '1.5vw' }}>Rarity</div>
-
-                      <div className="SmallerText" style={{ padding: "2%", fontSize: '.8vw' }}>Tier 3: Raining(12.38%), Cloudy(12.5%), Sunny(12.64%), Night(11.24%), Snowy(10.1%), Windy(10.55%).</div>
-
-                      <div className="SmallerText" style={{ padding: "2%", fontSize: '.8vw' }}>Tier 2: Thunder Storm(6.68%), Foggy(5.66%), Icy(4.87%), Tornado(4.3%), Sandstorm(4.52%), Hailing(4.07%).</div>
-
-                      <div className="SmallerText" style={{ padding: "2%", fontSize: '.8vw' }}>Tier 1: Rainbow(0.55%).</div>
-
+                      <div className="BoldText" style={{ fontSize: '1vw' }}>Rarity</div>
+                      <div className="SmallerText" style={{ padding: ".5vw", fontSize: '.8vw' }}>Tier 3: Raining(12.38%), Cloudy(12.5%), Sunny(12.64%), Night(11.24%), Snowy(10.1%), Windy(10.55%).</div>
+                      <div className="SmallerText" style={{ padding: ".5vw", fontSize: '.8vw' }}>Tier 2: Thunder Storm(6.68%), Foggy(5.66%), Icy(4.87%), Tornado(4.3%), Sandstorm(4.52%), Hailing(4.07%).</div>
+                      <div className="SmallerText" style={{ padding: ".5vw", fontSize: '.8vw' }}>Tier 1: Rainbow(0.55%).</div>
                     </div>
 
                   </div>
@@ -203,26 +186,18 @@ function App() {
                   <div className="FadeInner">
 
                     <div className="FadeTrigger" style={{ overflow: 'hidden' }}>
-
                       <img src={PersonalityGif} style={{ width: "100%" }}></img>
-
-                      <div className="BoldText" style={{ margin: "5%", fontSize: '1.5vw' }}>Personality</div>
-
+                      <div className="BoldText" style={{ fontSize: '1vw' }}>Personality</div>
                       <div className="SmallerText" style={{ fontSize: '1vw', margin: '0.5vw', backgroundColor: 'rgba(38, 37, 37, .9)', borderRadius: '1vw', boxShadow: "0px 0px 1vw rgba(24, 22 ,33,.5)" }}>All “Gradie” has their own unique “Personality” which represents their character.</div>
-
                     </div>
 
                     <div className="FadeContent">
 
-                      <div className="BoldText" style={{ margin: "5%", fontSize: '1.5vw' }}>Rarity</div>
-
-                      <div className="SmallerText" style={{ padding: "2%", fontSize: '.8vw' }}>Tier 3: Brave(4.74%), Caring(4.90%), Cautious(5.74%), Disorganized(7.24%), Fool(4.07%), Ego(4.55%), Pervert(3.49%), Slow(3.15%), Serious(3.24%), Stingy(6.91%), Wimpy(7.41%), Kind(5.74%), Tricky(4.82%), Flowery(6.41%), Playful(4.90%), Creative(3.82%).</div>
-
-                      <div className="SmallerText" style={{ padding: "2%", fontSize: '.8vw' }}>Tier 2: Adventurous(2.74%), Decisive(2.15%), Elegant(1.32%), Fabulous(1.65%), Generous(1.57%), Imposter(1.32%), Loyal(2.23%), Mysterious(1.98%), Peaceful(1.82%).</div>
-
-                      <div className="SmallerText" style={{ padding: "2%", fontSize: '.8vw' }}>Tier 1: Achiever(0.98%), Clever(0.82%), Dominant(0.48%).</div>
-
-                      <div className="SmallerText" style={{ padding: "2%", fontSize: '.8vw' }}>*After Fully Minted, Golden will be reveal during the Golden Gradie Day*</div>
+                      <div className="BoldText" style={{ fontSize: '1vw' }}>Rarity</div>
+                      <div className="SmallerText" style={{ padding: ".5vw", fontSize: '.8vw' }}>Tier 3: Brave(4.74%), Caring(4.90%), Cautious(5.74%), Disorganized(7.24%), Fool(4.07%), Ego(4.55%), Pervert(3.49%), Slow(3.15%), Serious(3.24%), Stingy(6.91%), Wimpy(7.41%), Kind(5.74%), Tricky(4.82%), Flowery(6.41%), Playful(4.90%), Creative(3.82%).</div>
+                      <div className="SmallerText" style={{ padding: ".5vw", fontSize: '.8vw' }}>Tier 2: Adventurous(2.74%), Decisive(2.15%), Elegant(1.32%), Fabulous(1.65%), Generous(1.57%), Imposter(1.32%), Loyal(2.23%), Mysterious(1.98%), Peaceful(1.82%).</div>
+                      <div className="SmallerText" style={{ padding: ".5vw", fontSize: '.8vw' }}>Tier 1: Achiever(0.98%), Clever(0.82%), Dominant(0.48%).</div>
+                      <div className="SmallerText" style={{ padding: ".5vw", fontSize: '.8vw' }}>*After Fully Minted, Golden will be reveal during the Golden Gradie Day*</div>
 
                     </div>
 
@@ -238,17 +213,15 @@ function App() {
 
                       <img src={DesireGif} style={{ width: "100%" }}></img>
 
-                      <div className="BoldText" style={{ margin: "5%", fontSize: '1.5vw' }}>Desire</div>
-
+                      <div className="BoldText" style={{ fontSize: '1vw' }}>Desire</div>
                       <div className="SmallerText" style={{ fontSize: '1vw', margin: '0.5vw', backgroundColor: 'rgba(38, 37, 37, .9)', borderRadius: '1vw', boxShadow: "0px 0px 1vw rgba(24, 22 ,33,.5)" }}>The “Desires” of each “Gradie” consist of a unique body tattoo and items that represents their true desire.</div>
 
                     </div>
 
                     <div className="FadeContent">
 
-                      <div className="BoldText" style={{ margin: "5%", fontSize: '1.5vw' }}>Rarity</div>
-
-                      <div className="SmallerText" style={{ padding: "2%", fontSize: '.8vw' }}>Achievement(5.1%), Alcohol(2.73%), Beauty(3.57%), Belonging(5.84%), Creating(3.91%), Drugs(2.43%), Equality(5.40%), Eternity(0.95%), Fame(6.58%), Food(5.62%), Freedom(4.80%), Gamble(2.88%), Happiness(4.88%), Health(4.43%), Intimacy(1.02%), Knowledge(5.47%), Love(5.92%), Perfection(2.13%), Power(6.14%), Satisfaction(6.44%), Strength(6.36%), Tranquil(3.62%), Truth(3.40%), Nothing(0.50%).</div>
+                      <div className="BoldText" style={{ fontSize: '1vw' }}>Rarity</div>
+                      <div className="SmallerText" style={{ padding: ".5vw", fontSize: '.8vw' }}>Achievement(5.1%), Alcohol(2.73%), Beauty(3.57%), Belonging(5.84%), Creating(3.91%), Drugs(2.43%), Equality(5.40%), Eternity(0.95%), Fame(6.58%), Food(5.62%), Freedom(4.80%), Gamble(2.88%), Happiness(4.88%), Health(4.43%), Intimacy(1.02%), Knowledge(5.47%), Love(5.92%), Perfection(2.13%), Power(6.14%), Satisfaction(6.44%), Strength(6.36%), Tranquil(3.62%), Truth(3.40%), Nothing(0.50%).</div>
 
                     </div>
 
@@ -263,20 +236,20 @@ function App() {
                     <div className="FadeTrigger" style={{ overflow: 'hidden' }}>
 
                       <img src={EmotionGif} style={{ width: "100%" }}></img>
-                      <div className="BoldText" style={{ margin: "5%", fontSize: '1.5vw' }}>Emotion</div>
+                      <div className="BoldText" style={{ fontSize: '1vw' }}>Emotion</div>
                       <div className="SmallerText" style={{ fontSize: '1vw', margin: '0.5vw', backgroundColor: 'rgba(38, 37, 37, .9)', borderRadius: '1vw', boxShadow: "0px 0px 1vw rgba(24, 22 ,33,.5)" }}>The “Emotions” of each “Gradie” are an icon that represents their emotion.</div>
 
                     </div>
 
                     <div className="FadeContent">
 
-                      <div className="BoldText" style={{ margin: "5%", fontSize: '1.5vw' }}>Rarity</div>
-                      <div className="SmallerText" style={{ padding: "2%", fontSize: '.8vw' }}>Tier 3: Joy(18.08%), Sad(18.28%), Annoy(18.48%).</div>
-                      <div className="SmallerText" style={{ padding: "2%", fontSize: '.8vw' }}>Tier 2: Fear(14.77%), Surprise(11.60%), Interest(10.44%).</div>
-                      <div className="SmallerText" style={{ padding: "2%", fontSize: '.8vw' }}>Tier 1: Angry(4.79%), Trust(3.12%), NoEmotion(0.51%).</div>
+                      <div className="BoldText" style={{ fontSize: '1vw' }}>Rarity</div>
+                      <div className="SmallerText" style={{ padding: ".5vw", fontSize: '.8vw' }}>Tier 3: Joy(18.08%), Sad(18.28%), Annoy(18.48%).</div>
+                      <div className="SmallerText" style={{ padding: ".5vw", fontSize: '.8vw' }}>Tier 2: Fear(14.77%), Surprise(11.60%), Interest(10.44%).</div>
+                      <div className="SmallerText" style={{ padding: ".5vw", fontSize: '.8vw' }}>Tier 1: Angry(4.79%), Trust(3.12%), NoEmotion(0.51%).</div>
 
-                      <div className="SmallerText" style={{ padding: "2%", fontSize: '.8vw' }}>Each emotion has 3 levels, from mildest to strongest, it represents the state of emotion of your Gradie.</div>
-                      <div className="SmallerText" style={{ padding: "2%", fontSize: '.8vw' }}>Drop Rates: Level 1 Mild (60%), Level Moderate (25%), Level 3 Strong (15%)</div>
+                      <div className="SmallerText" style={{ padding: ".5vw", fontSize: '.8vw' }}>Each emotion has 3 levels, from mildest to strongest, it represents the state of emotion of your Gradie.</div>
+                      <div className="SmallerText" style={{ padding: ".5vw", fontSize: '.8vw' }}>Drop Rates: Level 1 Mild (60%), Level Moderate (25%), Level 3 Strong (15%)</div>
 
                     </div>
 
@@ -634,10 +607,10 @@ function App() {
         </div>
 
 
-        <div className='mainHeader' style={{ height: '100px' }}>
-          <div style={{ height: '20px' }}></div>
-          <div style={{ height: '1px', backgroundColor: 'rgba(0,0,0,.7)', margin: '0vw 2vw 0vw 2vw' }}></div>
-          <div style={{ margin: '0vw 0vw 1vw 3vw', color: 'rgba(0,0,0,.7)' }}>© Gradient Life NFT</div>
+        <div className='mainHeader' style={{ height: '10vw' }}>
+          <div style={{ height: '4vw' }}></div>
+          <div style={{ height: '.1vw', backgroundColor: 'rgba(0,0,0,.7)', margin: '0vw 2vw 0vw 2vw' }}></div>
+          <div style={{ margin: '0vw 0vw 1vw 3vw', color: 'rgba(0,0,0,.7)', fontSize: "1vw" }}>© Gradient Life NFT</div>
         </div>
       </div >
 
