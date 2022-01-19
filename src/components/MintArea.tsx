@@ -3,7 +3,6 @@ import ContractABI from '../ContractABI.json';
 import { utils, ethers } from 'ethers';
 import { Contract } from '@ethersproject/contracts'
 import React, { useState } from 'react';
-import { useRef, useEffect } from 'react';
 import '../main.css';
 import { margin } from "@mui/system";
 import UnrevealImage from '../images/Premint-Official-TransparentBackground.png';

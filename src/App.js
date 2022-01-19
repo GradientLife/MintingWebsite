@@ -101,7 +101,7 @@ function App() {
       <Helmet>
         <meta charSet="utf-8" />
         <title>Gradient Life NFT</title>
-        <link rel="canonical" href="https://gradientlifenft.io/" />
+        <link rel="canonical" href="https://gradientlifenft.io" />
         <meta name="description" content="Gradient Life NFT" />
         <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
       </Helmet>
@@ -109,19 +109,19 @@ function App() {
         <div className='mainHeader'>
 
           <div className='mainHeaderLabel'>
-            <div style={{ fontSize: '1vw' }}> Gradient Life NFT</div>
+            <div style={{ fontSize: '1vw' }}>Gradient Life NFT</div>
           </div>
           <Header />
 
           <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'left' }}>
-            <a href="#Mint" style={{ textDecoration: 'none' }}> <div className="NormalButton" style={{ width: '5vw' }}>Mint</div></a>
-            <a href="#About" style={{ textDecoration: 'none' }}> <div className="NormalButton" style={{ width: '5vw' }}>About</div></a>
-            <a href="#Lore" style={{ textDecoration: 'none' }}> <div className="NormalButton" style={{ width: '5vw' }}>Lore</div></a>
-            <a href="#Roadmap" style={{ textDecoration: 'none' }}> <div className="NormalButton" style={{ width: '5vw' }}>Roadmap</div></a>
-            <a href="#FAQ" style={{ textDecoration: 'none' }}> <div className="NormalButton" style={{ width: '5vw' }}>FAQ</div></a>
-            <a href="#Team" style={{ textDecoration: 'none' }}> <div className="NormalButton" style={{ width: '5vw' }}>Team</div></a>
-            <a href="https://twitter.com/GradientLifeNFT" style={{ marginLeft: '40vw', textDecoration: 'none' }} target="_blank"> <div className="NormalButton" style={{ width: '5vw' }}>Twitter</div></a>
-            <a href="https://discord.gg/7pR9PY9V7q" style={{ textDecoration: 'none' }} target="_blank"> <div className="NormalButton" style={{ width: '5vw' }}>Discord</div></a>
+            <a href="#Mint" style={{ textDecoration: 'none' }}> <div className="NormalButton" style={{ width: '5vw', margin: '.3vw' }}>Mint</div></a>
+            <a href="#About" style={{ textDecoration: 'none' }}> <div className="NormalButton" style={{ width: '5vw', margin: '.3vw' }}>About</div></a>
+            <a href="#Lore" style={{ textDecoration: 'none' }}> <div className="NormalButton" style={{ width: '5vw', margin: '.3vw' }}>Lore</div></a>
+            <a href="#Roadmap" style={{ textDecoration: 'none' }}> <div className="NormalButton" style={{ width: '5vw', margin: '.3vw' }}>Roadmap</div></a>
+            <a href="#FAQ" style={{ textDecoration: 'none' }}> <div className="NormalButton" style={{ width: '5vw', margin: '.3vw' }}>FAQ</div></a>
+            <a href="#Team" style={{ textDecoration: 'none' }}> <div className="NormalButton" style={{ width: '5vw', margin: '.3vw' }}>Team</div></a>
+            <a href="https://twitter.com/GradientLifeNFT" style={{ marginLeft: '35vw', textDecoration: 'none' }} target="_blank"> <div className="NormalButton" style={{ width: '5vw', margin: '.3vw' }}>Twitter</div></a>
+            <a href="https://discord.gg/7pR9PY9V7q" style={{ textDecoration: 'none' }} target="_blank"> <div className="NormalButton" style={{ width: '5vw', margin: '.3vw' }}>Discord</div></a>
           </div>
 
         </div>
