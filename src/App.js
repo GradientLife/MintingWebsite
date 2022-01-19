@@ -115,11 +115,11 @@ function App() {
 
           <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'left' }}>
             <a href="#Mint" style={{ textDecoration: 'none' }}> <div className="NormalButton" style={{ width: '5vw' }}>Mint</div></a>
-            <a href="#About" style={{ textDecoration: 'none' }}> <div className="NormalButton" style={{ width: '5vw' }}>Mint</div></a>
-            <a href="#Lore" style={{ textDecoration: 'none' }}> <div className="NormalButton" style={{ width: '5vw' }}>Mint</div></a>
-            <a href="#Roadmap" style={{ textDecoration: 'none' }}> <div className="NormalButton" style={{ width: '5vw' }}>Mint</div></a>
-            <a href="#FAQ" style={{ textDecoration: 'none' }}> <div className="NormalButton" style={{ width: '5vw' }}>Mint</div></a>
-            <a href="#Team" style={{ textDecoration: 'none' }}> <div className="NormalButton" style={{ width: '5vw' }}>Mint</div></a>
+            <a href="#About" style={{ textDecoration: 'none' }}> <div className="NormalButton" style={{ width: '5vw' }}>About</div></a>
+            <a href="#Lore" style={{ textDecoration: 'none' }}> <div className="NormalButton" style={{ width: '5vw' }}>Lore</div></a>
+            <a href="#Roadmap" style={{ textDecoration: 'none' }}> <div className="NormalButton" style={{ width: '5vw' }}>Roadmap</div></a>
+            <a href="#FAQ" style={{ textDecoration: 'none' }}> <div className="NormalButton" style={{ width: '5vw' }}>FAQ</div></a>
+            <a href="#Team" style={{ textDecoration: 'none' }}> <div className="NormalButton" style={{ width: '5vw' }}>Team</div></a>
             <a href="https://twitter.com/GradientLifeNFT" style={{ marginLeft: '40vw', textDecoration: 'none' }} target="_blank"> <div className="NormalButton" style={{ width: '5vw' }}>Twitter</div></a>
             <a href="https://discord.gg/7pR9PY9V7q" style={{ textDecoration: 'none' }} target="_blank"> <div className="NormalButton" style={{ width: '5vw' }}>Discord</div></a>
           </div>
