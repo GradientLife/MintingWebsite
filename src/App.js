@@ -120,8 +120,9 @@ function App() {
             <a href="#Roadmap" style={{ textDecoration: 'none' }}> <div className="NormalButton" style={{ width: '5vw', margin: '.3vw' }}>Roadmap</div></a>
             <a href="#FAQ" style={{ textDecoration: 'none' }}> <div className="NormalButton" style={{ width: '5vw', margin: '.3vw' }}>FAQ</div></a>
             <a href="#Team" style={{ textDecoration: 'none' }}> <div className="NormalButton" style={{ width: '5vw', margin: '.3vw' }}>Team</div></a>
-            <a href="https://twitter.com/GradientLifeNFT" style={{ marginLeft: '35vw', textDecoration: 'none' }} target="_blank"> <div className="NormalButton" style={{ width: '5vw', margin: '.3vw' }}>Twitter</div></a>
+            <a href="https://twitter.com/GradientLifeNFT" style={{ marginLeft: '30vw', textDecoration: 'none' }} target="_blank"> <div className="NormalButton" style={{ width: '5vw', margin: '.3vw' }}>Twitter</div></a>
             <a href="https://discord.gg/7pR9PY9V7q" style={{ textDecoration: 'none' }} target="_blank"> <div className="NormalButton" style={{ width: '5vw', margin: '.3vw' }}>Discord</div></a>
+            <a href="https://opensea.io/collection/gradient-life-nft-official" style={{ textDecoration: 'none' }} target="_blank"> <div className="NormalButton" style={{ width: '5vw', margin: '.3vw' }}>Opensea</div></a>
           </div>
 
         </div>
