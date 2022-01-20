@@ -229,7 +229,7 @@
     },
     {
         "inputs": [],
-        "name": "defaultUri",
+        "name": "defaultURI",
         "outputs": [
             {
                 "internalType": "string",
@@ -276,6 +276,25 @@
         "inputs": [
             {
                 "internalType": "address",
+                "name": "_check",
+                "type": "address"
+            }
+        ],
+        "name": "getPrice",
+        "outputs": [
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
                 "name": "_to",
                 "type": "address"
             },
@@ -286,6 +305,19 @@
             }
         ],
         "name": "giveAway",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address[]",
+                "name": "_to",
+                "type": "address[]"
+            }
+        ],
+        "name": "givewayForAll",
         "outputs": [],
         "stateMutability": "nonpayable",
         "type": "function"
@@ -348,7 +380,7 @@
     },
     {
         "inputs": [],
-        "name": "maxMintAmount",
+        "name": "maxMintPerTransaction",
         "outputs": [
             {
                 "internalType": "uint256",
@@ -669,7 +701,7 @@
         ],
         "name": "setGradientLifeOwner",
         "outputs": [],
-        "stateMutability": "payable",
+        "stateMutability": "nonpayable",
         "type": "function"
     },
     {
@@ -719,7 +751,7 @@
                 "type": "uint256"
             }
         ],
-        "name": "setmaxMintAmount",
+        "name": "setmaxMintPerTransaction",
         "outputs": [],
         "stateMutability": "nonpayable",
         "type": "function"
@@ -789,19 +821,6 @@
             }
         ],
         "name": "tokenOfOwnerByIndex",
-        "outputs": [
-            {
-                "internalType": "uint256",
-                "name": "",
-                "type": "uint256"
-            }
-        ],
-        "stateMutability": "view",
-        "type": "function"
-    },
-    {
-        "inputs": [],
-        "name": "tokenPerAddressLimit",
         "outputs": [
             {
                 "internalType": "uint256",
@@ -932,16 +951,10 @@
         "type": "function"
     },
     {
-        "inputs": [
-            {
-                "internalType": "uint256",
-                "name": "_percent",
-                "type": "uint256"
-            }
-        ],
-        "name": "withdraw",
+        "inputs": [],
+        "name": "withdrawAll",
         "outputs": [],
-        "stateMutability": "payable",
+        "stateMutability": "nonpayable",
         "type": "function"
     }
 ]

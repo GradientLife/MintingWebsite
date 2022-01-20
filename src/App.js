@@ -19,9 +19,9 @@ import DiscordWhitelistBanner from './images/DiscordAndWhitelistBanner.jpg';
 import { Helmet } from "react-helmet";
 
 const config = {
-  readOnlyChainId: ChainId.Kovan,
+  readOnlyChainId: ChainId.Mainnet,
   readOnlyUrls: {
-    [ChainId.Kovan]: `https://kovan.infura.io/v3/${process.env.INFURA_ID}`,
+    [ChainId.Mainnet]: `https://mainnet.infura.io/v3/${process.env.INFURA_ID}`,
   },
   notifications: {
     expirationPeriod: 1000,

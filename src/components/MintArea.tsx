@@ -10,7 +10,7 @@ import RevealImage from '../images/PersonalityRevealGif.gif';
 import GoldenImage from '../images/All-Personality-Gold-Unreveal.gif';
 
 const contractInterface = new ethers.utils.Interface(ContractABI);
-const contractAddress = '0x235bB261718BcD06C0BB21C6F2542d62CF032eB0';
+const contractAddress = '0xd411c8A986866d55f7E4F521eCe501B386dF88e2';
 const contractContract = new Contract(contractAddress, contractInterface);
 
 console.log("ContractAddress = ", contractAddress);
@@ -28,11 +28,12 @@ function GetSupply() {
 }
 
 function GetPrice() {
+    const { account } = useEthers()
     const [price] = useContractCall({
         abi: contractInterface,
         address: contractAddress,
-        method: "generalCost",
-        args: [],
+        method: "getPrice",
+        args: [account],
     }) ?? [];
 
     return price ? price.toString() : '';
@@ -50,7 +51,7 @@ function GetMaxMintAmount() {
     const [maxAmount] = useContractCall({
         abi: contractInterface,
         address: contractAddress,
-        method: "maxMintAmount",
+        method: "mintPerAddressLimit",
         args: [],
     }) ?? [];
 
@@ -59,7 +60,7 @@ function GetMaxMintAmount() {
 
 export const MintArea = () => {
     const { account, chainId, activateBrowserWallet, deactivate } = useEthers()
-    const isConnected = false; //account !== undefined && chainId == 42
+    const isConnected = account !== undefined && chainId == 1
     const supply = GetSupply();
     const [mintPage, setmintPage] = useState(false);
     function ToggleMintPage() {
@@ -92,11 +93,11 @@ export const MintArea = () => {
                         isConnected ?
                             <div style={{ fontFamily: 'Raleway', fontSize: '2vw', color: 'white', textShadow: '1px 1px 1px #000000' }
                             } >
-                                Pre-Sale
+                                {supply}
                             </div >
                             :
                             <div style={{ fontFamily: 'Raleway', fontSize: '2vw', color: 'white', textShadow: '1px 1px 1px #000000' }}>
-                                Pre-Sale (Jan 20th, 8AM PST)
+                                Pre-Sale
                             </div>
                     }
 
@@ -109,12 +110,12 @@ export const MintArea = () => {
                                             <div>
                                                 < button className="NormalButton" style={{ width: '25vw', height: '5vw', fontSize: '1.5vw', padding: '1vw 5vw', alignSelf: 'right' }} onClick={() => ToggleMintPage()} > Close</button>
                                                 <div style={{ backgroundColor: 'rgba(38, 37, 37, .9)', margin: '1vw', borderRadius: '1vw', padding: '1vw', boxShadow: "0px 0px 1vw rgba(24,  22 ,33,.5)" }}>
-                                                    <div style={{ color: 'white', textShadow: '1px 1px 1px #000000' }}>choose mint amount, maximum {maxMintAmount} </div>
-                                                    <button className="NormalButton" style={{ margin: '10px' }} onClick={() => MintNFT("1")}>1</button>
-                                                    <button className="NormalButton" style={{ margin: '10px' }} onClick={() => MintNFT("2")}>2</button>
-                                                    <button className="NormalButton" style={{ margin: '10px' }} onClick={() => MintNFT("3")}>3</button>
-                                                    <button className="NormalButton" style={{ margin: '10px' }} onClick={() => MintNFT("4")}>4</button>
-                                                    <button className="NormalButton" style={{ margin: '10px' }} onClick={() => MintNFT("5")}>5</button>
+                                                    <div style={{ color: 'white', textShadow: '1px 1px 1px #000000', fontSize: '1vw' }}>choose mint amount, maximum {maxMintAmount} </div>
+                                                    <button className="NormalButton" style={{ margin: '.5vw' }} onClick={() => MintNFT("1")}>1</button>
+                                                    <button className="NormalButton" style={{ margin: '.5vw' }} onClick={() => MintNFT("2")}>2</button>
+                                                    <button className="NormalButton" style={{ margin: '.5vw' }} onClick={() => MintNFT("3")}>3</button>
+                                                    <button className="NormalButton" style={{ margin: '.5vw' }} onClick={() => MintNFT("4")}>4</button>
+                                                    <button className="NormalButton" style={{ margin: '.5vw' }} onClick={() => MintNFT("5")}>5</button>
                                                 </div>
                                             </div>
                                         )
@@ -126,7 +127,7 @@ export const MintArea = () => {
                                 </div>
                             ) : (
                                 <div>
-                                    <a href="https://discord.gg/6jwUPvsfKW" target="_blank">< button className="NormalButton" style={{ width: '25vw', height: '5vw', fontSize: '1.5vw', padding: '1vw 5vw', alignSelf: 'right' }}>Get Access</button></a>
+                                    < button className="DisabledButton" style={{ width: '25vw', height: '5vw', fontSize: '1.5vw', padding: '1vw 5vw', alignSelf: 'right' }}> Connect Wallet </button>
                                 </div>
                             )
                         }
