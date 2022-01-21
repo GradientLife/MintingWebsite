@@ -93,7 +93,7 @@ export const MintArea = () => {
                         isConnected ?
                             <div style={{ fontFamily: 'Raleway', fontSize: '2vw', color: 'white', textShadow: '1px 1px 1px #000000' }
                             } >
-                                {supply}
+                                Pre-Sale
                             </div >
                             :
                             <div style={{ fontFamily: 'Raleway', fontSize: '2vw', color: 'white', textShadow: '1px 1px 1px #000000' }}>
@@ -110,7 +110,7 @@ export const MintArea = () => {
                                             <div>
                                                 < button className="NormalButton" style={{ width: '25vw', height: '5vw', fontSize: '1.5vw', padding: '1vw 5vw', alignSelf: 'right' }} onClick={() => ToggleMintPage()} > Close</button>
                                                 <div style={{ backgroundColor: 'rgba(38, 37, 37, .9)', margin: '1vw', borderRadius: '1vw', padding: '1vw', boxShadow: "0px 0px 1vw rgba(24,  22 ,33,.5)" }}>
-                                                    <div style={{ color: 'white', textShadow: '1px 1px 1px #000000', fontSize: '1vw' }}>choose mint amount, maximum {maxMintAmount} </div>
+                                                    <div style={{ color: 'white', textShadow: '1px 1px 1px #000000', fontSize: '1vw' }}>{price / 100000000000000000} eth per GRADIE, maximum {maxMintAmount} </div>
                                                     <button className="NormalButton" style={{ margin: '.5vw' }} onClick={() => MintNFT("1")}>1</button>
                                                     <button className="NormalButton" style={{ margin: '.5vw' }} onClick={() => MintNFT("2")}>2</button>
                                                     <button className="NormalButton" style={{ margin: '.5vw' }} onClick={() => MintNFT("3")}>3</button>
