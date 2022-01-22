@@ -86,18 +86,27 @@ export const MintArea = () => {
             padding: '1vw', verticalAlign: 'middle', textAlign: 'center'
         }}>
             <div className="FlexBoxes">
-
+                <div style={{ margin: '1vw' }}>
+                    <img src={RevealImage} style={{ height: '25vw', margin: '-5vw' }}></img>
+                    <div>
+                        <div style={{ fontFamily: 'Raleway', fontSize: '2vw', color: 'white', textShadow: '1px 1px 1px #000000' }
+                        } >
+                            NFT Reveal
+                        </div >
+                        < button className="DisabledButton" style={{ width: '25vw', height: '5vw', fontSize: '1.5vw', padding: '1vw 5vw', alignSelf: 'right' }}>(after sold out)</button>
+                    </div>
+                </div>
                 <div style={{ margin: '1vw' }}>
                     <img src={UnrevealImage} style={{ height: '25vw', margin: '-5vw' }}></img>
                     {
                         isConnected ?
                             <div style={{ fontFamily: 'Raleway', fontSize: '2vw', color: 'white', textShadow: '1px 1px 1px #000000' }
                             } >
-                                Pre-Sale
+                                Mint Now
                             </div >
                             :
                             <div style={{ fontFamily: 'Raleway', fontSize: '2vw', color: 'white', textShadow: '1px 1px 1px #000000' }}>
-                                Pre-Sale
+                                Mint Now
                             </div>
                     }
 
@@ -134,23 +143,13 @@ export const MintArea = () => {
                     </div>
                 </div>
                 <div style={{ margin: '1vw' }}>
-                    <img src={RevealImage} style={{ height: '25vw', margin: '-5vw' }}></img>
-                    <div>
-                        <div style={{ fontFamily: 'Raleway', fontSize: '2vw', color: 'white', textShadow: '1px 1px 1px #000000' }
-                        } >
-                            NFT Reveal
-                        </div >
-                        < button className="DisabledButton" style={{ width: '25vw', height: '5vw', fontSize: '1.5vw', padding: '1vw 5vw', alignSelf: 'right' }}>(after sold out)</button>
-                    </div>
-                </div>
-                <div style={{ margin: '1vw' }}>
                     <img src={GoldenImage} style={{ height: '25vw', margin: '-5vw' }}></img>
                     <div>
                         <div style={{ fontFamily: 'Raleway', fontSize: '2vw', color: 'white', textShadow: '1px 1px 1px #000000' }
                         } >
                             Golden Reveal
                         </div >
-                        < button className="DisabledButton" style={{ width: '25vw', height: '5vw', fontSize: '1.5vw', padding: '1vw 5vw', alignSelf: 'right' }}>(coming soon)</button>
+                        < button className="DisabledButton" style={{ width: '25vw', height: '5vw', fontSize: '1.5vw', padding: '1vw 5vw', alignSelf: 'right' }}>(after sold out)</button>
                     </div>
                 </div>
             </div>
