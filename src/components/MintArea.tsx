@@ -1,4 +1,4 @@
-import { useEthers, useContractCall, useContractFunction } from "@usedapp/core";
+import { useEthers, useContractCall, useContractFunction, useEtherBalance } from "@usedapp/core";
 import ContractABI from '../ContractABI.json';
 import { utils, ethers } from 'ethers';
 import { Contract } from '@ethersproject/contracts'
@@ -8,15 +8,20 @@ import { margin } from "@mui/system";
 import UnrevealImage from '../images/Premint-Official-TransparentBackground.png';
 import RevealImage from '../images/PersonalityRevealGif.gif';
 import GoldenImage from '../images/All-Personality-Gold-Unreveal.gif';
+import { debug } from "console";
 
 const contractInterface = new ethers.utils.Interface(ContractABI);
 const contractAddress = '0xd411c8A986866d55f7E4F521eCe501B386dF88e2';
 const contractContract = new Contract(contractAddress, contractInterface);
 
 console.log("ContractAddress = ", contractAddress);
-console.log("ABI = ", contractInterface);
-function GetSupply() {
 
+function AlertPrice(price: string) {
+    alert("require " + `${price}` + " ETH to mint");
+}
+
+function GetSupply() {
+    const { account } = useEthers()
     const [count] = useContractCall({
         abi: contractInterface,
         address: contractAddress,
@@ -41,6 +46,7 @@ function GetPrice() {
 
 function GetMaxMintAmount() {
     const { account } = useEthers()
+
     const [mintedAmount] = useContractCall({
         abi: contractInterface,
         address: contractAddress,
@@ -61,6 +67,7 @@ function GetMaxMintAmount() {
 export const MintArea = () => {
     const { account, chainId, activateBrowserWallet, deactivate } = useEthers()
     const isConnected = account !== undefined && chainId == 1
+    const etherBalance = Number(useEtherBalance(account))
     const supply = GetSupply();
     const [mintPage, setmintPage] = useState(false);
     function ToggleMintPage() {
@@ -76,6 +83,9 @@ export const MintArea = () => {
 
     const { state, send } = useContractFunction(contractContract, 'MintCollectible', { transactionName: 'Mint' })
     function MintNFT(mintAmount: string) {
+        if (etherBalance < parseFloat(mintAmount) * parseFloat(price)) {
+            AlertPrice((parseFloat(mintAmount) * parseFloat(price) / 1000000000000000000).toString())
+        }
         send(mintAmount, {
             value: (parseFloat(mintAmount) * parseFloat(price)).toString(),
         });
