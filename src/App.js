@@ -15,6 +15,7 @@ import MegaPrize from './images/Assets/GlowMegaPrize.png';
 import SandBox from './images/Assets/SandBox.png';
 import Ticket from './images/Assets/Ticket.png';
 import Unreveal from './images/PremintRevealOfficial.jpg';
+import PFPDemo from './images/PhotographDemo.png';
 import DiscordWhitelistBanner from './images/DiscordAndWhitelistBanner.jpg';
 import { Helmet } from "react-helmet";
 
@@ -120,38 +121,41 @@ function App() {
             <a href="#Roadmap" style={{ textDecoration: 'none' }}> <div className="NormalButton" style={{ width: '5vw', margin: '.3vw' }}>Roadmap</div></a>
             <a href="#FAQ" style={{ textDecoration: 'none' }}> <div className="NormalButton" style={{ width: '5vw', margin: '.3vw' }}>FAQ</div></a>
             <a href="#Team" style={{ textDecoration: 'none' }}> <div className="NormalButton" style={{ width: '5vw', margin: '.3vw' }}>Team</div></a>
-            <a href="https://twitter.com/GradientLifeNFT" style={{ marginLeft: '30vw', textDecoration: 'none' }} target="_blank"> <div className="NormalButton" style={{ width: '5vw', margin: '.3vw' }}>Twitter</div></a>
-            <a href="https://discord.gg/7pR9PY9V7q" style={{ textDecoration: 'none' }} target="_blank"> <div className="NormalButton" style={{ width: '5vw', margin: '.3vw' }}>Discord</div></a>
+            <a href="https://twitter.com/GradientLifeNFT" style={{ marginLeft: '20vw', textDecoration: 'none' }} target="_blank"> <div className="NormalButton" style={{ width: '5vw', margin: '.3vw' }}>Twitter</div></a>
+            <a href="https://discord.gg/7pR9PY9V7q" style={{ textDecoration: 'none' }} target="_blank"> <div className="NormalButton" style={{ width: '15vw', margin: '.3vw' }}>Discord (Whitelist INFO)</div></a>
             <a href="https://opensea.io/collection/gradient-life-nft-official" style={{ textDecoration: 'none' }} target="_blank"> <div className="NormalButton" style={{ width: '5vw', margin: '.3vw' }}>Opensea</div></a>
           </div>
 
         </div>
 
         <div id='Mint' style={{ marginTop: '-120px' }} className="SectionOneColor">
-          <div style={{ marginTop: '120px' }}></div>
           <div className='Panel1'>
-            <div style={{ padding: '5vw' }}></div>
+            <div style={{ padding: '10vw' }}></div>
             <MintArea />
 
           </div>
 
         </div >
 
+        <div className="SectionAbout" style={{ overflow: "auto" }}>
+          <div id='About' style={{ textAlign: 'left', verticalAlign: 'middle', color: 'white', margin: 'auto', width: "90vw" }}>
+            <div style={{ color: 'white', marginTop: '2vw', fontSize: '3vw' }} className="TitleHeader">What is Gradient Life NFT?</div>
+            <div className='FlexBoxes' style={{}}>
+              <div style={{ width: '40vw', margin: '2vw' }}>
+                <div style={{ backgroundColor: 'rgba(38, 37, 37, .9)', borderRadius: '1vw', padding: '1vw', boxShadow: "0px 0px 1vw rgba(24,  22 ,33,.5)" }}>
+                  <div className="SmallerText" style={{ margin: "1vw" }}>Gradient Life NFT is a collection of 10,000 hand drawn generative art with no hats no cloths no accessories that’s what makes it special. the true personality of them turned their appearance into various of faces and their inner desire and emotion wrapped their body up, so you might be a wimpy alien desired for fame or an adventurous explorer desired for beauty, with all these unique traits to form an extremely unique piece of art that is a depiction of your true self,</div>
+                  <div className="SmallerText" style={{ margin: "1vw" }}>Words can’t describe much about what we plan to do with our project, actions are more important, we have the passion to explore and innovate in the NFT Space to maximize the possibility of this amazing NFT Tech with our community, our goals are to build an exceptional quality and value for Gradient Life, we hope to see Gradies shine through the whole world as we will soon release our GradiMerch for holders and supporters to show their love for Gradies.</div>
+                </div>
+              </div>
+
+              <img src={PFPDemo} style={{ height: "30vw", borderRadius: '1vw', margin: '5vw 0vw 0vw 0vw' }}></img>
+
+            </div>
+          </div>
+        </div>
+
         <div className="SectionTwoColor" style={{ overflow: "auto" }}>
           <div style={{ margin: "5vw 55vw 0vw 3vw", width: '25vw' }}>
-
-            <div id='About' style={{ textAlign: 'left', verticalAlign: 'middle', color: 'white', margin: 'auto', width: "90vw" }}>
-              <div style={{ padding: '1vw' }}></div>
-              <div style={{ color: 'white' }} className="TitleHeader">What is Gradient Life NFT?</div>
-              <div style={{ backgroundColor: 'rgba(38, 37, 37, .9)', borderRadius: '1vw', padding: '1vw', boxShadow: "0px 0px 1vw rgba(24,  22 ,33,.5)" }}>
-                <div className="SmallerText" style={{ margin: "1vw" }}>Gradient Life NFT is a collection of 10,000 hand drawn generative art with no hats no cloths no accessories that’s what makes it special. the true personality of them turned their appearance into various of faces and their inner desire and emotion wrapped their body up, so you might be a wimpy alien desired for fame or an adventurous explorer desired for beauty, with all these unique traits to form an extremely unique piece of art that is a depiction of your true self,</div>
-                <div className="SmallerText" style={{ margin: "1vw" }}>Words can’t describe much about what we plan to do with our project, actions are more important, we have the passion to explore and innovate in the NFT Space to maximize the possibility of this amazing NFT Tech with our community, our goals are to build an exceptional quality and value for Gradient Life, we hope to see Gradies shine through the whole world as we will soon release our GradiMerch for holders and supporters to show their love for Gradies.</div>
-              </div>
-            </div>
-
-            <div style={{ padding: '1vw' }}></div>
-            <a href="https://discord.gg/7pR9PY9V7q" target="_blank" style={{ display: "block", textAlign: 'center' }}><img src={DiscordWhitelistBanner} style={{ width: "30vw" }}></img></a>
-            <div style={{ padding: '1vw' }}></div>
 
             <div id='Lore' className="SmallerText" style={{ fontFamily: 'Poppins, sans-serif', whiteSpace: 'nowrap', color: 'rgb(251, 86, 7)', fontSize: '4vw', margin: '5vw 0vw 0vw 5vw', textShadow: '2px 2px 4px #000000' }}> the <span style={{ color: "white", fontSize: "10vw" }}>Lore</span> of Gradient Life</div>
 
@@ -482,16 +486,16 @@ function App() {
                 </div>
               </div>
             </div>
+
           </div>
           <div style={{ margin: '5vw' }}></div>
+          <div className='mainHeader' style={{ height: '5vw' }}>
+            <div style={{ height: '3vw' }}></div>
+            <div style={{ height: '.1vw', backgroundColor: 'rgba(255,255,255,.7)', margin: '0vw 1vw 0vw 1vw' }}></div>
+            <div style={{ margin: '0vw 0vw 1vw 3vw', color: 'rgba(255,255,255,.7)', fontSize: "1vw" }}>© Gradient Life NFT</div>
+          </div>
         </div>
 
-
-        <div className='mainHeader' style={{ height: '10vw' }}>
-          <div style={{ height: '4vw' }}></div>
-          <div style={{ height: '.1vw', backgroundColor: 'rgba(0,0,0,.7)', margin: '0vw 2vw 0vw 2vw' }}></div>
-          <div style={{ margin: '0vw 0vw 1vw 3vw', color: 'rgba(0,0,0,.7)', fontSize: "1vw" }}>© Gradient Life NFT</div>
-        </div>
       </div >
 
     </DAppProvider >
