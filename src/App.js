@@ -130,9 +130,9 @@ function App() {
 
         <div id='Mint' style={{ marginTop: '-120px' }} className="SectionOneColor">
           <div className='Panel1'>
-            <div style={{ padding: '10vw' }}></div>
+            <div style={{ padding: '5vw' }}></div>
             <MintArea />
-
+            <div style={{ padding: '1vw' }}></div>
           </div>
 
         </div >

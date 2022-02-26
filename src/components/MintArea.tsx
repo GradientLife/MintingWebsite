@@ -97,28 +97,28 @@ export const MintArea = () => {
         }}>
             <div className="FlexBoxes">
                 <div style={{ margin: '1vw' }}>
+
+                    <div style={{ backgroundColor: 'rgba(38, 37, 37, .9)', borderRadius: '1vw', fontFamily: 'Poppins, sans-serif', fontSize: '2vw', color: 'white', textShadow: '1px 1px 1px #000000', marginBottom: '5vw' }} >
+                        NFT Reveal
+                    </div >
                     <img src={RevealImage} style={{ height: '25vw', margin: '-5vw' }}></img>
                     <div>
-                        <div style={{ fontFamily: 'Raleway', fontSize: '2vw', color: 'white', textShadow: '1px 1px 1px #000000' }
-                        } >
-                            NFT Reveal
-                        </div >
                         < button className="DisabledButton" style={{ width: '25vw', height: '5vw', fontSize: '1.5vw', padding: '1vw 5vw', alignSelf: 'right' }}>(after sold out)</button>
                     </div>
                 </div>
                 <div style={{ margin: '1vw' }}>
-                    <img src={UnrevealImage} style={{ height: '25vw', margin: '-5vw' }}></img>
                     {
                         isConnected ?
-                            <div style={{ fontFamily: 'Raleway', fontSize: '2vw', color: 'white', textShadow: '1px 1px 1px #000000' }
+                            <div style={{ backgroundColor: 'rgba(38, 37, 37, .9)', borderRadius: '1vw', fontFamily: 'Poppins, sans-serif', fontSize: '2vw', color: 'white', textShadow: '1px 1px 1px #000000', marginBottom: '5vw' }
                             } >
                                 Mint Now
                             </div >
                             :
-                            <div style={{ fontFamily: 'Raleway', fontSize: '2vw', color: 'white', textShadow: '1px 1px 1px #000000' }}>
+                            <div style={{ backgroundColor: 'rgba(38, 37, 37, .9)', borderRadius: '1vw', fontFamily: 'Poppins, sans-serif', fontSize: '2vw', color: 'white', textShadow: '1px 1px 1px #000000', marginBottom: '5vw' }}>
                                 Mint Now
                             </div>
                     }
+                    <img src={UnrevealImage} style={{ height: '25vw', margin: '-5vw' }}></img>
 
                     <div>
                         {isConnected ?
@@ -153,12 +153,11 @@ export const MintArea = () => {
                     </div>
                 </div>
                 <div style={{ margin: '1vw' }}>
+                    <div style={{ backgroundColor: 'rgba(38, 37, 37, .9)', borderRadius: '1vw', fontFamily: 'Poppins, sans-serif', fontSize: '2vw', color: 'white', textShadow: '1px 1px 1px #000000', marginBottom: '5vw' }} >
+                        Golden Reveal
+                    </div >
                     <img src={GoldenImage} style={{ height: '25vw', margin: '-5vw' }}></img>
                     <div>
-                        <div style={{ fontFamily: 'Raleway', fontSize: '2vw', color: 'white', textShadow: '1px 1px 1px #000000' }
-                        } >
-                            Golden Reveal
-                        </div >
                         < button className="DisabledButton" style={{ width: '25vw', height: '5vw', fontSize: '1.5vw', padding: '1vw 5vw', alignSelf: 'right' }}>(after sold out)</button>
                     </div>
                 </div>
