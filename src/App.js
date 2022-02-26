@@ -128,11 +128,11 @@ function App() {
 
         </div>
 
-        <div id='Mint' style={{ marginTop: '-120px' }} className="SectionOneColor">
+        <div id='Mint' style={{ marginTop: '-10vw' }} className="SectionOneColor">
           <div className='Panel1'>
-            <div style={{ padding: '5vw' }}></div>
+            <div style={{ padding: '8vw' }}></div>
             <MintArea />
-            <div style={{ padding: '1vw' }}></div>
+            <div style={{ padding: '2vw' }}></div>
           </div>
 
         </div >
@@ -164,7 +164,7 @@ function App() {
 
               <div className="FlexBoxes" style={{
 
-                boxShadow: "0px 0px 1vw rgba(24, 22 ,33,.5) inset", backgroundColor: 'rgb(255, 191, 105)', width: "65vw", height: '30vw', borderRadius: "1vw"
+                width: "65vw", height: '30vw'
 
               }}>
 
