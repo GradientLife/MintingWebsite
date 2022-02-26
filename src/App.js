@@ -133,6 +133,13 @@ function App() {
             <div style={{ padding: '5vw' }}></div>
             <MintArea />
 
+          </div>
+
+        </div >
+
+        <div className="SectionTwoColor" style={{ overflow: "auto" }}>
+          <div style={{ margin: "5vw 55vw 0vw 3vw", width: '25vw' }}>
+
             <div id='About' style={{ textAlign: 'left', verticalAlign: 'middle', color: 'white', margin: 'auto', width: "90vw" }}>
               <div style={{ padding: '1vw' }}></div>
               <div style={{ color: 'white' }} className="TitleHeader">What is Gradient Life NFT?</div>
@@ -145,13 +152,9 @@ function App() {
             <div style={{ padding: '1vw' }}></div>
             <a href="https://discord.gg/7pR9PY9V7q" target="_blank" style={{ display: "block", textAlign: 'center' }}><img src={DiscordWhitelistBanner} style={{ width: "30vw" }}></img></a>
             <div style={{ padding: '1vw' }}></div>
-          </div>
 
-        </div >
-
-        <div className="SectionTwoColor" style={{ overflow: "auto" }}>
-          <div style={{ margin: "5vw 55vw 0vw 3vw", width: '25vw' }}>
             <div id='Lore' className="SmallerText" style={{ fontFamily: 'Poppins, sans-serif', whiteSpace: 'nowrap', color: 'rgb(251, 86, 7)', fontSize: '4vw', margin: '5vw 0vw 0vw 5vw', textShadow: '2px 2px 4px #000000' }}> the <span style={{ color: "white", fontSize: "10vw" }}>Lore</span> of Gradient Life</div>
+
 
             <div style={{ display: 'flex', justifyContent: 'flex-end', margin: "0vw 3vw 5vw 27vw", position: 'absolute' }}>
 
@@ -288,127 +291,7 @@ function App() {
         <div className="SectionThreeColor" style={{ overflow: "auto" }}>
           <div id='Roadmap' className="TitleHeader" style={{ padding: "5vw 0vw 0vw 0vw" }}> Roadmap</div>
           <div style={{ margin: "5vw 10vw 5vw 10vw" }}>
-            <div className="FlexBoxes" style={{
 
-              boxShadow: "0px 0px 1vw rgba(24, 22 ,33,.5) inset", backgroundImage: 'linear-gradient(rgb(255, 191, 105), rgb(255, 159, 28))', borderRadius: "5px"
-
-            }}>
-
-              <div className='RoadMapHover' style={{ margin: '1vw', backgroundImage: 'linear-gradient(rgb(255, 191, 105),rgb(255, 159, 28))', boxShadow: "0px 0px 1vw rgba(24, 22 ,33,.5)", width: '100%' }}>
-
-                <img src={Airdrop} className='RoadMapImageLeft'></img>
-
-                <img src={Airdrop} className='RoadMapImageRight'></img>
-
-                <div className="BoldText" style={{ margin: "2%", fontSize: '2vw', color: 'rgb(251, 86, 7)', textAlign: 'center' }}>Free Airdrop (25%)</div>
-
-                <div className="SmallerText RoadmapDes">
-
-                  When 25% of the Gradies sell out, 25 lucky holders will be airdropped one free Gradie each.
-
-                </div>
-
-              </div>
-
-              <div className='RoadMapHover' style={{ margin: '1vw', backgroundImage: 'linear-gradient(rgb(255, 191, 105),rgb(255, 159, 28))', boxShadow: "0px 0px 1vw rgba(24, 22 ,33,.5)", width: '100%' }}>
-
-                <img src={Ticket} className='RoadMapImageLeft'></img>
-
-                <img src={Ticket} className='RoadMapImageRight'></img>
-
-                <div className="BoldText" style={{ margin: "2%", fontSize: '2vw', color: 'rgb(251, 86, 7)', textAlign: 'center' }}>Exclusive Raffle (50%)</div>
-
-                <div className="SmallerText RoadmapDes">
-
-                  When 50% of the Gradies sell out, we’ll be doing a community exclusive raffle to win some Ethereum!
-
-                </div>
-
-              </div>
-
-              <div className='RoadMapHover' style={{ margin: '1vw', backgroundImage: 'linear-gradient(rgb(255, 191, 105),rgb(255, 159, 28))', boxShadow: "0px 0px 1vw rgba(24, 22 ,33,.5)", width: '100%' }}>
-
-                <img src={SandBox} className='RoadMapImageLeft'></img>
-
-                <img src={SandBox} className='RoadMapImageRight'></img>
-
-                <div className="BoldText" style={{ margin: "2%", fontSize: '2vw', color: 'rgb(251, 86, 7)', textAlign: 'center' }}>Sandbox Land Acquisition (60%)</div>
-
-                <div className="SmallerText RoadmapDes">
-
-                  When 60% of the Gradies sell out, we’ll be acquiring Sandbox land for our community, will be hosting events in Sandbox with our community!
-
-                </div>
-
-              </div>
-
-              <div className='RoadMapHover' style={{ margin: '1vw', backgroundImage: 'linear-gradient(rgb(255, 191, 105),rgb(255, 159, 28))', boxShadow: "0px 0px 1vw rgba(24, 22 ,33,.5)", width: '100%' }}>
-
-                <img src={Shirt} className='RoadMapImageLeft'></img>
-
-                <img src={Shirt} className='RoadMapImageRight'></img>
-
-                <div className="BoldText" style={{ margin: "2%", fontSize: '2vw', color: 'rgb(251, 86, 7)', textAlign: 'center' }}>Merchandise Giveaway (75%)</div>
-
-                <div className="SmallerText RoadmapDes">
-
-                  When 75% of the Gradies sell out, we'll be sending 500 members exclusive merchandises out, including custom T-Shirt with your Unique Gradient Life NFT, your wallet address QR and some other surprises!
-
-                </div>
-
-              </div>
-
-              <div className='RoadMapHover' style={{ margin: '1vw', backgroundImage: 'linear-gradient(rgb(255, 191, 105),rgb(255, 159, 28))', boxShadow: "0px 0px 1vw rgba(24, 22 ,33,.5)", width: '100%' }}>
-
-                <img src={MegaPrize} className='RoadMapImageLeft'></img>
-
-                <img src={MegaPrize} className='RoadMapImageRight'></img>
-
-                <div className="BoldText" style={{ margin: "2%", fontSize: '2vw', color: 'rgb(251, 86, 7)', textAlign: 'center' }}>Exclusive Mega Raffle (100%)</div>
-
-                <div className="SmallerText RoadmapDes">
-
-                  When 100% of the Gradies sell out, we’ll be doing a community exclusive lucky draw with 300,000 USD in prize.
-
-                </div>
-
-              </div>
-
-              <div style={{ margin: '1vw', backgroundImage: 'linear-gradient(rgb(255, 191, 105),rgb(255, 159, 28))', boxShadow: "0px 0px 1vw rgba(24, 22 ,33,.5)", width: '100%' }}>
-
-                <div className="BoldText" style={{ margin: "2%", fontSize: '2vw', color: 'rgb(251, 86, 7)', textAlign: 'center' }}>Future Updates</div>
-
-                <div>
-
-                  <div className="SmallerText RoadmapDes RoadMapHover">
-
-                    Rarity Tools - We will list The Gradies on Rarity Tools.
-
-                  </div>
-
-                  <div className="SmallerText RoadmapDes RoadMapHover">
-
-                    Gradient DAO establishment - To benefit our community for long term.
-
-                  </div>
-
-                  <div className="SmallerText RoadmapDes">
-
-                    Game Development - Official Gradient Life Roadmap to be announced on early 2022.
-
-                  </div>
-
-                  <div className="SmallerText RoadmapDes">
-
-                    Loading...
-
-                  </div>
-
-                </div>
-
-              </div>
-
-            </div>
 
           </div>
         </div>
@@ -580,25 +463,21 @@ function App() {
           <div style={{ fontSize: '2vw', color: 'white' }}>
             <div id='Team' className="TitleHeader" style={{ padding: "5vw 0vw 0vw 0vw" }}>Team</div>
             <div className='FlexBoxes'>
-              <div style={{ backgroundColor: 'rgba(38, 37, 37, .9)', borderRadius: '1vw', boxShadow: "0px 0px 1vw rgba(24,  22 ,33,.5)", width: '30vw', margin: '1vw' }}>
-                <div style={{ margin: '3vw' }}>
-                  <div style={{ margin: "0vw 0vw 1vw 0vw" }} className='BoldText'>OpenSystem</div>
-                  <img src={Unreveal} style={{ width: "100%", borderRadius: '1vw' }}></img>
-                  <div className="SlimText" style={{ margin: "1vw" }}>
+              <div style={{ backgroundColor: 'rgba(38, 37, 37, .9)', borderRadius: '1vw', boxShadow: "0px 0px 1vw rgba(24,  22 ,33,.5)", width: '18vw', margin: '1vw' }}>
+                <div style={{ margin: '.5vw' }}>
+                  <div style={{ margin: "0vw 0vw 1vw 0vw", fontSize: '2vw', textAlign: 'center' }} className='BoldText'>OpenSystem</div>
+                  <a href="https://twitter.com/OpenSystem777" target="_blank"><img src={Unreveal} style={{ width: "100%", borderRadius: '1vw' }}></img></a>
+                  <div className="SlimText" style={{ margin: "1vw", fontSize: '1vw' }}>
                     <div>Design - Art - Project Management - Marketing</div>
-
-                    <a href="https://twitter.com/OpenSystem777" className='BoldText'>twitter</a>
                   </div>
                 </div>
               </div>
-              <div style={{ backgroundColor: 'rgba(38, 37, 37, .9)', borderRadius: '1vw', boxShadow: "0px 0px 1vw rgba(24,  22 ,33,.5)", width: '30vw', margin: '1vw' }}>
-                <div style={{ margin: '3vw' }}>
-                  <div style={{ margin: "0vw 0vw 1vw 0vw" }} className='BoldText'>TextGuy</div>
-                  <img src={Unreveal} style={{ width: "100%", borderRadius: '1vw' }}></img>
-                  <div className="SlimText" style={{ margin: "1vw" }}>
+              <div style={{ backgroundColor: 'rgba(38, 37, 37, .9)', borderRadius: '1vw', boxShadow: "0px 0px 1vw rgba(24,  22 ,33,.5)", width: '18vw', margin: '1vw' }}>
+                <div style={{ margin: '.5vw' }}>
+                  <div style={{ margin: "0vw 0vw 1vw 0vw", fontSize: '2vw', textAlign: 'center' }} className='BoldText'>TextGuy</div>
+                  <a href="https://twitter.com/TextGuyYT" target="_blank"><img src={Unreveal} style={{ width: "100%", borderRadius: '1vw' }}></img>  </a>
+                  <div className="SlimText" style={{ margin: "1vw", fontSize: '1vw' }}>
                     <div>Design - Art - Website - Smart Contract - Development</div>
-
-                    <a href="https://twitter.com/TextGuyYT" className='BoldText'>twitter</a>
                   </div>
                 </div>
               </div>
