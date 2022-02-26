@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/MintingWebsite/static/css/main.1f0541b2.chunk.css",
-    "main.js": "/MintingWebsite/static/js/main.60237dc9.chunk.js",
-    "main.js.map": "/MintingWebsite/static/js/main.60237dc9.chunk.js.map",
+    "main.css": "/MintingWebsite/static/css/main.ec3a1ac1.chunk.css",
+    "main.js": "/MintingWebsite/static/js/main.d8aefa9f.chunk.js",
+    "main.js.map": "/MintingWebsite/static/js/main.d8aefa9f.chunk.js.map",
     "runtime-main.js": "/MintingWebsite/static/js/runtime-main.518a3e94.js",
     "runtime-main.js.map": "/MintingWebsite/static/js/runtime-main.518a3e94.js.map",
     "static/js/2.b9214b80.chunk.js": "/MintingWebsite/static/js/2.b9214b80.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.c6ac6dd1.chunk.js": "/MintingWebsite/static/js/3.c6ac6dd1.chunk.js",
     "static/js/3.c6ac6dd1.chunk.js.map": "/MintingWebsite/static/js/3.c6ac6dd1.chunk.js.map",
     "index.html": "/MintingWebsite/index.html",
-    "static/css/main.1f0541b2.chunk.css.map": "/MintingWebsite/static/css/main.1f0541b2.chunk.css.map",
+    "static/css/main.ec3a1ac1.chunk.css.map": "/MintingWebsite/static/css/main.ec3a1ac1.chunk.css.map",
     "static/js/2.b9214b80.chunk.js.LICENSE.txt": "/MintingWebsite/static/js/2.b9214b80.chunk.js.LICENSE.txt",
     "static/media/AirDrop.af7cc6aa.png": "/MintingWebsite/static/media/AirDrop.af7cc6aa.png",
     "static/media/All-Personality-Gold-Unreveal.7145b6d0.gif": "/MintingWebsite/static/media/All-Personality-Gold-Unreveal.7145b6d0.gif",
@@ -19,9 +19,10 @@
     "static/media/DiscordAndWhitelistBanner.07c1a603.jpg": "/MintingWebsite/static/media/DiscordAndWhitelistBanner.07c1a603.jpg",
     "static/media/Emotions-for-Website.465138d5.gif": "/MintingWebsite/static/media/Emotions-for-Website.465138d5.gif",
     "static/media/GlowMegaPrize.d4201947.png": "/MintingWebsite/static/media/GlowMegaPrize.d4201947.png",
-    "static/media/main.css": "/MintingWebsite/static/media/Rainbow.bac2d01d.png",
+    "static/media/main.css": "/MintingWebsite/static/media/WoodenTextureGradient.afe93053.png",
     "static/media/Personality-for-Website.a99d71e5.gif": "/MintingWebsite/static/media/Personality-for-Website.a99d71e5.gif",
     "static/media/PersonalityRevealGif.264641d8.gif": "/MintingWebsite/static/media/PersonalityRevealGif.264641d8.gif",
+    "static/media/PhotographDemo.851c1977.png": "/MintingWebsite/static/media/PhotographDemo.851c1977.png",
     "static/media/Premint-Official-TransparentBackground.c19e4fe3.png": "/MintingWebsite/static/media/Premint-Official-TransparentBackground.c19e4fe3.png",
     "static/media/PremintRevealOfficial.c2582236.jpg": "/MintingWebsite/static/media/PremintRevealOfficial.c2582236.jpg",
     "static/media/SandBox.afa3809f.png": "/MintingWebsite/static/media/SandBox.afa3809f.png",
@@ -31,7 +32,7 @@
   "entrypoints": [
     "static/js/runtime-main.518a3e94.js",
     "static/js/2.b9214b80.chunk.js",
-    "static/css/main.1f0541b2.chunk.css",
-    "static/js/main.60237dc9.chunk.js"
+    "static/css/main.ec3a1ac1.chunk.css",
+    "static/js/main.d8aefa9f.chunk.js"
   ]
 }
