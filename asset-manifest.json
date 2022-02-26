@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/MintingWebsite/static/css/main.0434b581.chunk.css",
+    "main.css": "/MintingWebsite/static/css/main.15896a3f.chunk.css",
     "main.js": "/MintingWebsite/static/js/main.f891859b.chunk.js",
     "main.js.map": "/MintingWebsite/static/js/main.f891859b.chunk.js.map",
     "runtime-main.js": "/MintingWebsite/static/js/runtime-main.518a3e94.js",
@@ -10,7 +10,7 @@
     "static/js/3.c6ac6dd1.chunk.js": "/MintingWebsite/static/js/3.c6ac6dd1.chunk.js",
     "static/js/3.c6ac6dd1.chunk.js.map": "/MintingWebsite/static/js/3.c6ac6dd1.chunk.js.map",
     "index.html": "/MintingWebsite/index.html",
-    "static/css/main.0434b581.chunk.css.map": "/MintingWebsite/static/css/main.0434b581.chunk.css.map",
+    "static/css/main.15896a3f.chunk.css.map": "/MintingWebsite/static/css/main.15896a3f.chunk.css.map",
     "static/js/2.b9214b80.chunk.js.LICENSE.txt": "/MintingWebsite/static/js/2.b9214b80.chunk.js.LICENSE.txt",
     "static/media/AirDrop.af7cc6aa.png": "/MintingWebsite/static/media/AirDrop.af7cc6aa.png",
     "static/media/All-Personality-Gold-Unreveal.7145b6d0.gif": "/MintingWebsite/static/media/All-Personality-Gold-Unreveal.7145b6d0.gif",
@@ -32,7 +32,7 @@
   "entrypoints": [
     "static/js/runtime-main.518a3e94.js",
     "static/js/2.b9214b80.chunk.js",
-    "static/css/main.0434b581.chunk.css",
+    "static/css/main.15896a3f.chunk.css",
     "static/js/main.f891859b.chunk.js"
   ]
 }
