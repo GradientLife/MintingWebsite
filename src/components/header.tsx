@@ -20,6 +20,7 @@ const useStyles = makeStyles((theme) => ({
         padding: '0 2vw',
         fontSize: '1vw',
         width: '10vw',
+        fontFamily: 'Kaushan Script, cursive'
     }
 }))
 

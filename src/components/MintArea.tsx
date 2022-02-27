@@ -98,7 +98,7 @@ export const MintArea = () => {
             <div className="FlexBoxes">
                 <div style={{ margin: '1vw' }}>
 
-                    <div style={{ backgroundColor: 'rgba(38, 37, 37, .9)', borderRadius: '1vw', fontFamily: 'Poppins, sans-serif', fontSize: '2vw', color: 'white', textShadow: '1px 1px 1px #000000', marginBottom: '5vw' }} >
+                    <div style={{ backgroundColor: 'rgba(38, 37, 37, .9)', borderRadius: '1vw', fontFamily: 'Kaushan Script, cursive', fontSize: '2vw', color: 'white', textShadow: '1px 1px 1px #000000', marginBottom: '5vw' }} >
                         NFT Reveal
                     </div >
                     <img src={RevealImage} style={{ height: '25vw', margin: '-5vw' }}></img>
@@ -109,12 +109,12 @@ export const MintArea = () => {
                 <div style={{ margin: '1vw' }}>
                     {
                         isConnected ?
-                            <div style={{ backgroundColor: 'rgba(38, 37, 37, .9)', borderRadius: '1vw', fontFamily: 'Poppins, sans-serif', fontSize: '2vw', color: 'white', textShadow: '1px 1px 1px #000000', marginBottom: '5vw' }
+                            <div style={{ backgroundColor: 'rgba(38, 37, 37, .9)', borderRadius: '1vw', fontFamily: 'Kaushan Script, cursive', fontSize: '2vw', color: 'white', textShadow: '1px 1px 1px #000000', marginBottom: '5vw' }
                             } >
                                 Mint Now
                             </div >
                             :
-                            <div style={{ backgroundColor: 'rgba(38, 37, 37, .9)', borderRadius: '1vw', fontFamily: 'Poppins, sans-serif', fontSize: '2vw', color: 'white', textShadow: '1px 1px 1px #000000', marginBottom: '5vw' }}>
+                            <div style={{ backgroundColor: 'rgba(38, 37, 37, .9)', borderRadius: '1vw', fontFamily: 'Kaushan Script, cursive', fontSize: '2vw', color: 'white', textShadow: '1px 1px 1px #000000', marginBottom: '5vw' }}>
                                 Mint Now
                             </div>
                     }
@@ -153,7 +153,7 @@ export const MintArea = () => {
                     </div>
                 </div>
                 <div style={{ margin: '1vw' }}>
-                    <div style={{ backgroundColor: 'rgba(38, 37, 37, .9)', borderRadius: '1vw', fontFamily: 'Poppins, sans-serif', fontSize: '2vw', color: 'white', textShadow: '1px 1px 1px #000000', marginBottom: '5vw' }} >
+                    <div style={{ backgroundColor: 'rgba(38, 37, 37, .9)', borderRadius: '1vw', fontFamily: 'Kaushan Script, cursive', fontSize: '2vw', color: 'white', textShadow: '1px 1px 1px #000000', marginBottom: '5vw' }} >
                         Golden Reveal
                     </div >
                     <img src={GoldenImage} style={{ height: '25vw', margin: '-5vw' }}></img>
