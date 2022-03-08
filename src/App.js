@@ -41,6 +41,7 @@ import DiscordIcon from './images/discord.png';
 import OpenseaIcon from './images/opensea.png';
 
 import DiscordWhitelistBanner from './images/DiscordAndWhitelistBanner.jpg';
+import RoadMapV1 from './images/Roadmap V2.png';
 
 import { Helmet } from "react-helmet";
 
@@ -266,7 +267,7 @@ function App() {
 
         <div className="SectionAbout" style={{ overflow: "auto" }}>
 
-          <div id='About' style={{ textAlign: 'left', verticalAlign: 'middle', color: 'white', margin: 'auto', width: "90vw" }}>
+          <div id='About' style={{ textAlign: 'left', verticalAlign: 'middle', color: 'white', margin: 'auto', width: "90vw", marginBottom: '5vw' }}>
 
             <div style={{ color: 'black', marginTop: '2vw', fontSize: '3vw', textShadow: '0px 0px 0px #000000' }} className="TitleHeader">What is Gradient Life NFT?</div>
 
@@ -294,7 +295,7 @@ function App() {
 
         <div className="SectionTwoColor" style={{ overflow: "auto" }}>
 
-          <div style={{ margin: "5vw 55vw 0vw 3vw", width: '25vw' }}>
+          <div style={{ margin: "5vw 55vw 3vw 3vw", width: '25vw' }}>
 
             <div id='Lore' className="SmallerText" style={{ fontFamily: 'Kaushan Script, cursive', whiteSpace: 'nowrap', color: 'rgb(251, 86, 7)', fontSize: '4vw', margin: '5vw 0vw 0vw 5vw', textShadow: '2px 2px 4px #000000' }}> the <span style={{ color: "white", fontSize: "10vw" }}>Lore</span> of Gradient Life</div>
 
@@ -466,11 +467,9 @@ function App() {
 
         <div className="SectionThreeColor" style={{ overflow: "auto" }}>
 
-          <div id='Roadmap' className="TitleHeader" style={{ padding: "5vw 0vw 0vw 0vw", color: 'black', textShadow: '0px 0px 0px #000000' }}> Roadmap</div>
+          <div id='Roadmap' className="TitleHeader" style={{ padding: "5vw 0vw 0vw 0vw", color: 'white', textShadow: '2px 2px 4px #000000' }}> Roadmap</div>
 
-          <div style={{ margin: "5vw 10vw 5vw 10vw" }}>
-
-          </div>
+          <img src={RoadMapV1} style={{ width: "60vw", margin: '3vw auto 5vw auto', display: 'block' }}></img>
 
         </div>
 
@@ -808,7 +807,7 @@ function App() {
 
                   <div style={{ margin: "0vw 0vw 1vw 0vw", fontSize: '2vw', textAlign: 'center' }} className='BoldText'>TextGuy</div>
 
-                  <a href="https://twitter.com/TextGuyYT" target="_blank"><img src={Unreveal} style={{ width: "100%", borderRadius: '1vw' }}></img>  </a>
+                  <a href="https://twitter.com/TextGuyYT" target="_blank"><img src={Unreveal} style={{ width: "100%", borderRadius: '1vw' }}></img> </a>
 
                   <div className="SlimText" style={{ margin: "1vw", fontSize: '1vw' }}>
 

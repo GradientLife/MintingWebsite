@@ -64,6 +64,19 @@ function GetMaxMintAmount() {
     return (mintedAmount && maxAmount) ? mintedAmount.toString() + "/" + maxAmount.toString() : '';
 }
 
+function GetMinted() {
+    const { account } = useEthers()
+
+    const [mintedAmount] = useContractCall({
+        abi: contractInterface,
+        address: contractAddress,
+        method: "addressMintedBalance",
+        args: [account],
+    }) ?? [];
+
+    return mintedAmount;
+}
+
 export const MintArea = () => {
     const { account, chainId, activateBrowserWallet, deactivate } = useEthers()
     const isConnected = account !== undefined && chainId == 1
@@ -78,8 +91,10 @@ export const MintArea = () => {
             setmintPage(true);
         }
     }
+
     const price = GetPrice();
     const maxMintAmount = GetMaxMintAmount();
+    const minted = GetMinted();
 
     const { state, send } = useContractFunction(contractContract, 'MintCollectible', { transactionName: 'Mint' })
     function MintNFT(mintAmount: string) {
@@ -101,7 +116,7 @@ export const MintArea = () => {
                     <div style={{ backgroundColor: 'rgba(38, 37, 37, .9)', borderRadius: '1vw', fontFamily: 'Kaushan Script, cursive', fontSize: '2vw', color: 'white', textShadow: '1px 1px 1px #000000', marginBottom: '5vw' }} >
                         NFT Reveal
                     </div >
-                    <img src={RevealImage} style={{ height: '25vw', margin: '-5vw' }}></img>
+                    <img src={RevealImage} style={{ height: '25vw', margin: '-5vw 0vw -1vw 0vw' }}></img>
                     <div>
                         < button className="DisabledButton" style={{ width: '25vw', height: '5vw', fontSize: '1.5vw', padding: '1vw 5vw', alignSelf: 'right' }}>(after sold out)</button>
                     </div>
@@ -118,7 +133,7 @@ export const MintArea = () => {
                                 Mint Now
                             </div>
                     }
-                    <img src={UnrevealImage} style={{ height: '25vw', margin: '-5vw' }}></img>
+                    <img src={UnrevealImage} style={{ height: '25vw', margin: '-5vw 0vw -1vw 0vw' }}></img>
 
                     <div>
                         {isConnected ?
@@ -127,20 +142,22 @@ export const MintArea = () => {
                                     {mintPage ?
                                         (
                                             <div>
-                                                < button className="NormalButton" style={{ width: '25vw', height: '5vw', fontSize: '1.5vw', padding: '1vw 5vw', alignSelf: 'right' }} onClick={() => ToggleMintPage()} > Close</button>
-                                                <div style={{ backgroundColor: 'rgba(38, 37, 37, .9)', margin: '1vw', borderRadius: '1vw', padding: '1vw', boxShadow: "0px 0px 1vw rgba(24,  22 ,33,.5)" }}>
+                                                < button className="NormalButton" style={{ width: '25vw', height: '5vw', fontSize: '1.5vw', padding: '1vw 5vw', alignSelf: 'right', background: 'linear-gradient(rgba(38, 37, 37, 1) ,rgb(17, 17, 17))' }} onClick={() => ToggleMintPage()} > Close</button>
+                                                <div style={{ backgroundColor: 'rgba(38, 37, 37, .9)', margin: '1vw 0vw 0vw 0vw', borderRadius: '1vw', padding: '1vw', boxShadow: "0px 0px 1vw rgba(24,  22 ,33,.5)" }}>
                                                     <div style={{ color: 'white', textShadow: '1px 1px 1px #000000', fontSize: '1vw' }}>{price / 1000000000000000000} eth per GRADIE, maximum {maxMintAmount} </div>
-                                                    <button className="NormalButton" style={{ margin: '.5vw' }} onClick={() => MintNFT("1")}>1</button>
-                                                    <button className="NormalButton" style={{ margin: '.5vw' }} onClick={() => MintNFT("2")}>2</button>
-                                                    <button className="NormalButton" style={{ margin: '.5vw' }} onClick={() => MintNFT("3")}>3</button>
-                                                    <button className="NormalButton" style={{ margin: '.5vw' }} onClick={() => MintNFT("4")}>4</button>
-                                                    <button className="NormalButton" style={{ margin: '.5vw' }} onClick={() => MintNFT("5")}>5</button>
+
+
+                                                    {Number(minted) < 5 ? <button className="RainbowButton" style={{ margin: '.5vw' }} onClick={() => MintNFT("1")}>1</button> : <button className="NormalButton" style={{ margin: '.5vw' }} onClick={() => MintNFT("1")}>1</button>}
+                                                    {Number(minted) < 4 ? <button className="RainbowButton" style={{ margin: '.5vw' }} onClick={() => MintNFT("2")}>2</button> : <button className="NormalButton" style={{ margin: '.5vw' }} onClick={() => MintNFT("2")}>2</button>}
+                                                    {Number(minted) < 3 ? <button className="RainbowButton" style={{ margin: '.5vw' }} onClick={() => MintNFT("3")}>3</button> : <button className="NormalButton" style={{ margin: '.5vw' }} onClick={() => MintNFT("3")}>3</button>}
+                                                    {Number(minted) < 2 ? <button className="RainbowButton" style={{ margin: '.5vw' }} onClick={() => MintNFT("4")}>4</button> : <button className="NormalButton" style={{ margin: '.5vw' }} onClick={() => MintNFT("4")}>4</button>}
+                                                    {Number(minted) < 1 ? <button className="RainbowButton" style={{ margin: '.5vw' }} onClick={() => MintNFT("5")}>5</button> : <button className="NormalButton" style={{ margin: '.5vw' }} onClick={() => MintNFT("5")}>5</button>}
                                                 </div>
                                             </div>
                                         )
                                         :
                                         (<div>
-                                            < button className="NormalButton" style={{ width: '25vw', height: '5vw', fontSize: '1.5vw', padding: '1vw 5vw', alignSelf: 'right' }} onClick={() => ToggleMintPage()} > Mint</button>
+                                            < button className="RainbowButton" style={{ width: '25vw', height: '5vw', fontSize: '1.5vw', padding: '1vw 5vw', alignSelf: 'right' }} onClick={() => ToggleMintPage()} > Mint</button>
                                         </div>)
                                     }
                                 </div>
@@ -156,7 +173,7 @@ export const MintArea = () => {
                     <div style={{ backgroundColor: 'rgba(38, 37, 37, .9)', borderRadius: '1vw', fontFamily: 'Kaushan Script, cursive', fontSize: '2vw', color: 'white', textShadow: '1px 1px 1px #000000', marginBottom: '5vw' }} >
                         Golden Reveal
                     </div >
-                    <img src={GoldenImage} style={{ height: '25vw', margin: '-5vw' }}></img>
+                    <img src={GoldenImage} style={{ height: '25vw', margin: '-5vw 0vw -1vw 0vw' }}></img>
                     <div>
                         < button className="DisabledButton" style={{ width: '25vw', height: '5vw', fontSize: '1.5vw', padding: '1vw 5vw', alignSelf: 'right' }}>(after sold out)</button>
                     </div>
