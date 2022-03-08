@@ -41,7 +41,7 @@ import DiscordIcon from './images/discord.png';
 import OpenseaIcon from './images/opensea.png';
 
 import DiscordWhitelistBanner from './images/DiscordAndWhitelistBanner.jpg';
-import RoadMapV1 from './images/Roadmap V2.png';
+import RoadMapV1 from './images/Roadmap V3.png';
 
 import { Helmet } from "react-helmet";
 
@@ -787,9 +787,9 @@ function App() {
 
                 <div style={{ margin: '.5vw' }}>
 
-                  <div style={{ margin: "0vw 0vw 1vw 0vw", fontSize: '2vw', textAlign: 'center' }} className='BoldText'>OpenSystem</div>
+                  <div style={{ margin: "0vw 0vw 1vw 0vw", fontSize: '2vw', textAlign: 'center' }} className='BoldText'>Mr Rainbow</div>
 
-                  <a href="https://twitter.com/OpenSystem777" target="_blank"><img src={Unreveal} style={{ width: "100%", borderRadius: '1vw' }}></img></a>
+                  <a href="https://twitter.com/MrRainbow95" target="_blank"><img src={Unreveal} style={{ width: "100%", borderRadius: '1vw' }}></img></a>
 
                   <div className="SlimText" style={{ margin: "1vw", fontSize: '1vw' }}>
 
@@ -812,6 +812,42 @@ function App() {
                   <div className="SlimText" style={{ margin: "1vw", fontSize: '1vw' }}>
 
                     <div>Design - Art - Website - Smart Contract - Development</div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div style={{ backgroundColor: 'rgba(38, 37, 37, .9)', borderRadius: '1vw', boxShadow: "0px 0px 1vw rgba(24,  22 ,33,.5)", width: '18vw', margin: '1vw' }}>
+
+                <div style={{ margin: '.5vw' }}>
+
+                  <div style={{ margin: "0vw 0vw 1vw 0vw", fontSize: '2vw', textAlign: 'center' }} className='BoldText'>The Woman</div>
+
+                  <a href="https://twitter.com/TheWoman97" target="_blank"><img src={Unreveal} style={{ width: "100%", borderRadius: '1vw' }}></img></a>
+
+                  <div className="SlimText" style={{ margin: "1vw", fontSize: '1vw' }}>
+
+                    <div>Marketing Manager</div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div style={{ backgroundColor: 'rgba(38, 37, 37, .9)', borderRadius: '1vw', boxShadow: "0px 0px 1vw rgba(24,  22 ,33,.5)", width: '18vw', margin: '1vw' }}>
+
+                <div style={{ margin: '.5vw' }}>
+
+                  <div style={{ margin: "0vw 0vw 1vw 0vw", fontSize: '2vw', textAlign: 'center' }} className='BoldText'>Abeee</div>
+
+                  <a href="https://twitter.com/Abeee87" target="_blank"><img src={Unreveal} style={{ width: "100%", borderRadius: '1vw' }}></img></a>
+
+                  <div className="SlimText" style={{ margin: "1vw", fontSize: '1vw' }}>
+
+                    <div>Discord Manager</div>
 
                   </div>
 
