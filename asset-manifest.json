@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/MintingWebsite/static/css/main.86ce13eb.chunk.css",
-    "main.js": "/MintingWebsite/static/js/main.7c92c587.chunk.js",
-    "main.js.map": "/MintingWebsite/static/js/main.7c92c587.chunk.js.map",
+    "main.css": "/MintingWebsite/static/css/main.4cce6510.chunk.css",
+    "main.js": "/MintingWebsite/static/js/main.ca456d47.chunk.js",
+    "main.js.map": "/MintingWebsite/static/js/main.ca456d47.chunk.js.map",
     "runtime-main.js": "/MintingWebsite/static/js/runtime-main.518a3e94.js",
     "runtime-main.js.map": "/MintingWebsite/static/js/runtime-main.518a3e94.js.map",
     "static/js/2.b9214b80.chunk.js": "/MintingWebsite/static/js/2.b9214b80.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.c6ac6dd1.chunk.js": "/MintingWebsite/static/js/3.c6ac6dd1.chunk.js",
     "static/js/3.c6ac6dd1.chunk.js.map": "/MintingWebsite/static/js/3.c6ac6dd1.chunk.js.map",
     "index.html": "/MintingWebsite/index.html",
-    "static/css/main.86ce13eb.chunk.css.map": "/MintingWebsite/static/css/main.86ce13eb.chunk.css.map",
+    "static/css/main.4cce6510.chunk.css.map": "/MintingWebsite/static/css/main.4cce6510.chunk.css.map",
     "static/js/2.b9214b80.chunk.js.LICENSE.txt": "/MintingWebsite/static/js/2.b9214b80.chunk.js.LICENSE.txt",
     "static/media/AirDrop.af7cc6aa.png": "/MintingWebsite/static/media/AirDrop.af7cc6aa.png",
     "static/media/All-Personality-Gold-Unreveal.7145b6d0.gif": "/MintingWebsite/static/media/All-Personality-Gold-Unreveal.7145b6d0.gif",
@@ -25,6 +25,7 @@
     "static/media/PhotographDemo.851c1977.png": "/MintingWebsite/static/media/PhotographDemo.851c1977.png",
     "static/media/Premint-Official-TransparentBackground.c19e4fe3.png": "/MintingWebsite/static/media/Premint-Official-TransparentBackground.c19e4fe3.png",
     "static/media/PremintRevealOfficial.c2582236.jpg": "/MintingWebsite/static/media/PremintRevealOfficial.c2582236.jpg",
+    "static/media/Roadmap V2.e06e5601.png": "/MintingWebsite/static/media/Roadmap V2.e06e5601.png",
     "static/media/SandBox.afa3809f.png": "/MintingWebsite/static/media/SandBox.afa3809f.png",
     "static/media/Ticket.6c8feb36.png": "/MintingWebsite/static/media/Ticket.6c8feb36.png",
     "static/media/Weathers-for-Website.989206e5.gif": "/MintingWebsite/static/media/Weathers-for-Website.989206e5.gif"
@@ -32,7 +33,7 @@
   "entrypoints": [
     "static/js/runtime-main.518a3e94.js",
     "static/js/2.b9214b80.chunk.js",
-    "static/css/main.86ce13eb.chunk.css",
-    "static/js/main.7c92c587.chunk.js"
+    "static/css/main.4cce6510.chunk.css",
+    "static/js/main.ca456d47.chunk.js"
   ]
 }
