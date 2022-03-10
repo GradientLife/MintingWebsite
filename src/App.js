@@ -533,7 +533,7 @@ function App() {
 
                     </div >
 
-                    <div style={{ padding: '.5vw', fontSize: '1.2vw' }}>The Pre-Sale private mint will launch on January, 20th at 8AM PST and our Public Sale general mint on January, 21st at 8AM PST.</div>
+                    <div style={{ padding: '.5vw', fontSize: '1.2vw' }}>The Pre-Sale Private Mint and Public Sale General Mint Date (TBA)</div>
 
                   </div>
 
@@ -605,17 +605,13 @@ function App() {
 
                     <div>
 
-                      <div style={{ position: 'absolute', fontSize: '1.5vw', padding: '.25vw 0vw .25vw 1vw', fontWeight: 'bolder', fontFamily: 'Kaushan Script, cursive' }}>4 - WHAT DOES MY GRADIE GET ME?</div>
+                      <div style={{ position: 'absolute', fontSize: '1.5vw', padding: '.25vw 0vw .25vw 1vw', fontWeight: 'bolder', fontFamily: 'Kaushan Script, cursive' }}>4 - FUTURE OF GRADIENT LIFE NFT?</div>
 
                       <div style={{ justifyContent: 'flex-end', display: 'flex' }}>< button className="NormalButton" onClick={() => ToggleFAQ4()} >-</button></div>
 
                     </div >
 
-                    <div style={{ padding: '.5vw', fontSize: '1.2vw' }}>Minting a Gradie gets you an awesome PFP that depicts your true self, and a ticket to all of our events, early access to our merchandises and a pass to all big and small updates in every coming events.</div>
-
-                    <div style={{ padding: '.5vw', fontSize: '1.2vw' }}>Our road map is community based, with new and innovative goals and roadmap from our community and combining it with our ideas to make it more exciting for our beloved Gradie holders and our community, stay tuned for Roadmap 2.0 and Website 2.0.</div>
-
-                    <div style={{ padding: '.5vw', fontSize: '1.2vw' }}>Come join the Gradies in the Gradiverse!</div>
+                    <div style={{ padding: '.5vw', fontSize: '1.2vw' }}>Building value and quality on our project is our main goal, we will explore and innovate in the NFT Space with the endless possibility of NFT Tech, for sure we will have a breeding system for our Gen 2 collection and utility token soon, make sure to join our discord so you will be up to date with our latest updates!</div>
 
                   </div>
 
@@ -627,7 +623,7 @@ function App() {
 
                   <div>
 
-                    <div style={{ position: 'absolute', fontSize: '1.5vw', padding: '.25vw 0vw .25vw 1vw', fontWeight: 'bolder', fontFamily: 'Kaushan Script, cursive' }}>4 - WHAT DOES MY GRADIE GET ME?</div>
+                    <div style={{ position: 'absolute', fontSize: '1.5vw', padding: '.25vw 0vw .25vw 1vw', fontWeight: 'bolder', fontFamily: 'Kaushan Script, cursive' }}>4 - FUTURE OF GRADIENT LIFE NFT?</div>
 
                     <div style={{ justifyContent: 'flex-end', display: 'flex' }}>< button className="NormalButton" onClick={() => ToggleFAQ4()} >+</button></div>
 
@@ -647,13 +643,13 @@ function App() {
 
                     <div>
 
-                      <div style={{ position: 'absolute', fontSize: '1.5vw', padding: '.25vw 0vw .25vw 1vw', fontWeight: 'bolder', fontFamily: 'Kaushan Script, cursive' }}>5 - FUTURE OF GRADIENT LIFE NFT?</div>
+                      <div style={{ position: 'absolute', fontSize: '1.2vw', padding: '.25vw 0vw .25vw 1vw', fontWeight: 'bolder', fontFamily: 'Kaushan Script, cursive' }}>5 - ARE THERE ANY NFT GIVEAWAYS?</div>
 
                       <div style={{ justifyContent: 'flex-end', display: 'flex' }}>< button className="NormalButton" onClick={() => ToggleFAQ5()} >-</button></div>
 
                     </div >
 
-                    <div style={{ padding: '.5vw', fontSize: '1.2vw' }}>Building value and quality on our project is our main goal, we will explore and innovate in the NFT Space with the endless possibility of NFT Tech, for sure we will have a breeding system for our Gen 2 collection and utility token soon, make sure to join our discord so you will be up to date with our latest updates!</div>
+                    <div style={{ padding: '.5vw', fontSize: '1.2vw' }}>Yes, we have reserved 300 Gradies for community giveaway only.</div>
 
                   </div>
 
@@ -665,7 +661,7 @@ function App() {
 
                   <div>
 
-                    <div style={{ position: 'absolute', fontSize: '1.5vw', padding: '.25vw 0vw .25vw 1vw', fontWeight: 'bolder', fontFamily: 'Kaushan Script, cursive' }}>5 - FUTURE OF GRADIENT LIFE NFT?</div>
+                    <div style={{ position: 'absolute', fontSize: '1.5vw', padding: '.25vw 0vw .25vw 1vw', fontWeight: 'bolder', fontFamily: 'Kaushan Script, cursive' }}>5 - ARE THERE ANY NFT GIVEAWAYS?</div>
 
                     <div style={{ justifyContent: 'flex-end', display: 'flex' }}>< button className="NormalButton" onClick={() => ToggleFAQ5()} >+</button></div>
 
@@ -685,47 +681,9 @@ function App() {
 
                     <div>
 
-                      <div style={{ position: 'absolute', fontSize: '1.2vw', padding: '.25vw 0vw .25vw 1vw', fontWeight: 'bolder', fontFamily: 'Kaushan Script, cursive' }}>6 - ARE THERE ANY NFT GIVEAWAYS?</div>
+                      <div style={{ position: 'absolute', fontSize: '1.5vw', padding: '.25vw 0vw .25vw 1vw', fontWeight: 'bolder', fontFamily: 'Kaushan Script, cursive' }}>6 - HOW TO BUY?</div>
 
                       <div style={{ justifyContent: 'flex-end', display: 'flex' }}>< button className="NormalButton" onClick={() => ToggleFAQ6()} >-</button></div>
-
-                    </div >
-
-                    <div style={{ padding: '.5vw', fontSize: '1.2vw' }}>Yes, we have reserved 300 Gradies for community giveaway only.</div>
-
-                  </div>
-
-                )
-
-                :
-
-                (<div>
-
-                  <div>
-
-                    <div style={{ position: 'absolute', fontSize: '1.5vw', padding: '.25vw 0vw .25vw 1vw', fontWeight: 'bolder', fontFamily: 'Kaushan Script, cursive' }}>6 - ARE THERE ANY NFT GIVEAWAYS?</div>
-
-                    <div style={{ justifyContent: 'flex-end', display: 'flex' }}>< button className="NormalButton" onClick={() => ToggleFAQ6()} >+</button></div>
-
-                  </div>
-
-                </div>)}
-
-            </div>
-
-            <div style={{ backgroundColor: 'rgba(38, 37, 37, .9)', borderRadius: '1vw', margin: '1vw', padding: '.5vw', boxShadow: "0px 0px 1vw rgba(24,  22 ,33,.5)" }}>
-
-              {FAQPage7 ?
-
-                (
-
-                  <div>
-
-                    <div>
-
-                      <div style={{ position: 'absolute', fontSize: '1.5vw', padding: '.25vw 0vw .25vw 1vw', fontWeight: 'bolder', fontFamily: 'Kaushan Script, cursive' }}>7 - HOW TO BUY?</div>
-
-                      <div style={{ justifyContent: 'flex-end', display: 'flex' }}>< button className="NormalButton" onClick={() => ToggleFAQ7()} >-</button></div>
 
                     </div >
 
@@ -759,9 +717,9 @@ function App() {
 
                   <div>
 
-                    <div style={{ position: 'absolute', fontSize: '1.5vw', padding: '.25vw 0vw .25vw 1vw', fontWeight: 'bolder', fontFamily: 'Kaushan Script, cursive' }}>7 - HOW TO BUY?</div>
+                    <div style={{ position: 'absolute', fontSize: '1.5vw', padding: '.25vw 0vw .25vw 1vw', fontWeight: 'bolder', fontFamily: 'Kaushan Script, cursive' }}>6 - HOW TO BUY?</div>
 
-                    <div style={{ justifyContent: 'flex-end', display: 'flex' }}>< button className="NormalButton" onClick={() => ToggleFAQ7()} >+</button></div>
+                    <div style={{ justifyContent: 'flex-end', display: 'flex' }}>< button className="NormalButton" onClick={() => ToggleFAQ6()} >+</button></div>
 
                   </div>
 
@@ -793,7 +751,7 @@ function App() {
 
                   <div className="SlimText" style={{ margin: "1vw", fontSize: '1vw' }}>
 
-                    <div>Design - Art - Project Management - Marketing</div>
+                    <div>Founder - Project Manager</div>
 
                   </div>
 
@@ -811,7 +769,7 @@ function App() {
 
                   <div className="SlimText" style={{ margin: "1vw", fontSize: '1vw' }}>
 
-                    <div>Design - Art - Website - Smart Contract - Development</div>
+                    <div>Founder - Core Developer </div>
 
                   </div>
 
@@ -829,7 +787,7 @@ function App() {
 
                   <div className="SlimText" style={{ margin: "1vw", fontSize: '1vw' }}>
 
-                    <div>Marketing Manager</div>
+                    <div>Marketing Manager - Founding Member</div>
 
                   </div>
 
@@ -847,7 +805,7 @@ function App() {
 
                   <div className="SlimText" style={{ margin: "1vw", fontSize: '1vw' }}>
 
-                    <div>Discord Manager</div>
+                    <div>Discord Manager - Founding Member</div>
 
                   </div>
 
