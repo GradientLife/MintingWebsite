@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/MintingWebsite/static/css/main.4cce6510.chunk.css",
-    "main.js": "/MintingWebsite/static/js/main.e1ab1269.chunk.js",
-    "main.js.map": "/MintingWebsite/static/js/main.e1ab1269.chunk.js.map",
+    "main.js": "/MintingWebsite/static/js/main.a4b4fd35.chunk.js",
+    "main.js.map": "/MintingWebsite/static/js/main.a4b4fd35.chunk.js.map",
     "runtime-main.js": "/MintingWebsite/static/js/runtime-main.518a3e94.js",
     "runtime-main.js.map": "/MintingWebsite/static/js/runtime-main.518a3e94.js.map",
-    "static/js/2.32ab54dd.chunk.js": "/MintingWebsite/static/js/2.32ab54dd.chunk.js",
-    "static/js/2.32ab54dd.chunk.js.map": "/MintingWebsite/static/js/2.32ab54dd.chunk.js.map",
+    "static/js/2.b9214b80.chunk.js": "/MintingWebsite/static/js/2.b9214b80.chunk.js",
+    "static/js/2.b9214b80.chunk.js.map": "/MintingWebsite/static/js/2.b9214b80.chunk.js.map",
     "static/js/3.c6ac6dd1.chunk.js": "/MintingWebsite/static/js/3.c6ac6dd1.chunk.js",
     "static/js/3.c6ac6dd1.chunk.js.map": "/MintingWebsite/static/js/3.c6ac6dd1.chunk.js.map",
     "index.html": "/MintingWebsite/index.html",
     "static/css/main.4cce6510.chunk.css.map": "/MintingWebsite/static/css/main.4cce6510.chunk.css.map",
-    "static/js/2.32ab54dd.chunk.js.LICENSE.txt": "/MintingWebsite/static/js/2.32ab54dd.chunk.js.LICENSE.txt",
+    "static/js/2.b9214b80.chunk.js.LICENSE.txt": "/MintingWebsite/static/js/2.b9214b80.chunk.js.LICENSE.txt",
     "static/media/AirDrop.af7cc6aa.png": "/MintingWebsite/static/media/AirDrop.af7cc6aa.png",
     "static/media/All-Personality-Gold-Unreveal.7145b6d0.gif": "/MintingWebsite/static/media/All-Personality-Gold-Unreveal.7145b6d0.gif",
     "static/media/BlueShirt.0077530a.png": "/MintingWebsite/static/media/BlueShirt.0077530a.png",
@@ -32,8 +32,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.518a3e94.js",
-    "static/js/2.32ab54dd.chunk.js",
+    "static/js/2.b9214b80.chunk.js",
     "static/css/main.4cce6510.chunk.css",
-    "static/js/main.e1ab1269.chunk.js"
+    "static/js/main.a4b4fd35.chunk.js"
   ]
 }
