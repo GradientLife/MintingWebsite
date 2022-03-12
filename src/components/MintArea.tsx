@@ -118,7 +118,7 @@ export const MintArea = () => {
                     </div >
                     <img src={RevealImage} style={{ height: '25vw', margin: '-5vw 0vw -1vw 0vw' }}></img>
                     <div>
-                        < button className="DisabledButton" style={{ width: '25vw', height: '5vw', fontSize: '1.5vw', padding: '1vw 5vw', alignSelf: 'right' }}>(after sold out)</button>
+                        < button className="DisabledButton" style={{ width: '25vw', height: '5vw', fontSize: '1.5vw', padding: '1vw 5vw', alignSelf: 'right' }}>After Sold Out</button>
                     </div>
                 </div>
                 <div style={{ margin: '1vw' }}>
@@ -136,7 +136,7 @@ export const MintArea = () => {
                     <img src={UnrevealImage} style={{ height: '25vw', margin: '-5vw 0vw -1vw 0vw' }}></img>
 
                     <div>
-                        {isConnected ?
+                        {false ?
                             (
                                 <div>
                                     {mintPage ?
@@ -163,7 +163,7 @@ export const MintArea = () => {
                                 </div>
                             ) : (
                                 <div>
-                                    < button className="DisabledButton" style={{ width: '25vw', height: '5vw', fontSize: '1.5vw', padding: '1vw 5vw', alignSelf: 'right' }}> Connect Wallet </button>
+                                    < button className="DisabledButton" style={{ width: '25vw', height: '5vw', fontSize: '1.5vw', padding: '1vw 5vw', alignSelf: 'right' }}> To Be Announced </button>
                                 </div>
                             )
                         }
@@ -175,7 +175,7 @@ export const MintArea = () => {
                     </div >
                     <img src={GoldenImage} style={{ height: '25vw', margin: '-5vw 0vw -1vw 0vw' }}></img>
                     <div>
-                        < button className="DisabledButton" style={{ width: '25vw', height: '5vw', fontSize: '1.5vw', padding: '1vw 5vw', alignSelf: 'right' }}>(after sold out)</button>
+                        < button className="DisabledButton" style={{ width: '25vw', height: '5vw', fontSize: '1.5vw', padding: '1vw 5vw', alignSelf: 'right' }}>After Sold Out</button>
                     </div>
                 </div>
             </div>

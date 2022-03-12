@@ -801,7 +801,7 @@ function App() {
 
                   <div style={{ margin: "0vw 0vw 1vw 0vw", fontSize: '2vw', textAlign: 'center' }} className='BoldText'>Abeee</div>
 
-                  <a href="https://twitter.com/Abeee87" target="_blank"><img src={Unreveal} style={{ width: "100%", borderRadius: '1vw' }}></img></a>
+                  <a href="https://twitter.com/abeee87nft" target="_blank"><img src={Unreveal} style={{ width: "100%", borderRadius: '1vw' }}></img></a>
 
                   <div className="SlimText" style={{ margin: "1vw", fontSize: '1vw' }}>
 
