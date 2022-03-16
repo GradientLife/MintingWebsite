@@ -243,8 +243,6 @@ function App() {
 
             <a href="https://twitter.com/GradientLifeNFT" style={{ marginLeft: '1vw', textDecoration: 'none' }} target="_blank"> <img className="NormalButton" src={TwitterIcon} style={{ height: '2vw', padding: '.5vw' }}></img></a>
 
-            <a href="https://discord.gg/7pR9PY9V7q" style={{ textDecoration: 'none' }} target="_blank"> <img className="NormalButton" src={DiscordIcon} style={{ height: '2vw', padding: '.5vw' }}></img></a>
-
             <a href="https://opensea.io/collection/gradient-life-nft-official" style={{ textDecoration: 'none' }} target="_blank"> <img className="NormalButton" src={OpenseaIcon} style={{ height: '2vw', padding: '.5vw' }}></img></a>
 
           </div>
