@@ -29,7 +29,7 @@ function GetSupply() {
         args: [],
     }) ?? [];
 
-    return count ? count.toString() + '/10000' : '';
+    return count ? count.toString() + '/3333' : '';
 }
 
 function GetPrice() {
