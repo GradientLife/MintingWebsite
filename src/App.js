@@ -569,9 +569,9 @@ function App() {
 
                     </div >
 
-                    <div style={{ padding: '.5vw', fontSize: '1.2vw' }}>Pre-Sale: 0.05E</div>
+                    <div style={{ padding: '.5vw', fontSize: '1.2vw' }}>Pre-Sale: TBA</div>
 
-                    <div style={{ padding: '.5vw', fontSize: '1.2vw' }}>Public Sale: 0.07E</div>
+                    <div style={{ padding: '.5vw', fontSize: '1.2vw' }}>Public Sale: TBA</div>
 
                   </div>
 

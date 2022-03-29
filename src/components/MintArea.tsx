@@ -144,7 +144,7 @@ export const MintArea = () => {
                                             <div>
                                                 < button className="NormalButton" style={{ width: '25vw', height: '5vw', fontSize: '1.5vw', padding: '1vw 5vw', alignSelf: 'right', background: 'linear-gradient(rgba(38, 37, 37, 1) ,rgb(17, 17, 17))' }} onClick={() => ToggleMintPage()} > Close</button>
                                                 <div style={{ backgroundColor: 'rgba(38, 37, 37, .9)', margin: '1vw 0vw 0vw 0vw', borderRadius: '1vw', padding: '1vw', boxShadow: "0px 0px 1vw rgba(24,  22 ,33,.5)" }}>
-                                                    <div style={{ color: 'white', textShadow: '1px 1px 1px #000000', fontSize: '1vw' }}>{price / 1000000000000000000} eth per GRADIE, maximum {maxMintAmount} </div>
+                                                    <div style={{ color: 'white', textShadow: '1px 1px 1px #000000', fontSize: '1vw' }}>TBA eth per GRADIE, maximum {maxMintAmount} </div>
 
 
                                                     {Number(minted) < 5 ? <button className="RainbowButton" style={{ margin: '.5vw' }} onClick={() => MintNFT("1")}>1</button> : <button className="NormalButton" style={{ margin: '.5vw' }} onClick={() => MintNFT("1")}>1</button>}
