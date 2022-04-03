@@ -43,6 +43,13 @@ import OpenseaIcon from './images/opensea.png';
 import DiscordWhitelistBanner from './images/DiscordAndWhitelistBanner.jpg';
 import RoadMapV1 from './images/Roadmap V3.png';
 
+import Abeee from './images/Mod Profiles/Abeee.jpg';
+import TheWoman from './images/Mod Profiles/The Woman.jpg';
+import JAARwei from './images/Mod Profiles/JAARwei.jpg';
+import 泰来 from './images/Mod Profiles/泰来develop eth.jpg';
+import Makiii from './images/Mod Profiles/Makiii.jpg';
+import XCORTEZ701 from './images/Mod Profiles/XCORTEZ701.jpg';
+
 import { Helmet } from "react-helmet";
 
 const config = {
@@ -531,7 +538,9 @@ function App() {
 
                     </div >
 
-                    <div style={{ padding: '.5vw', fontSize: '1.2vw' }}>The Pre-Sale Private Mint and Public Sale General Mint Date (TBA)</div>
+                    <div style={{ padding: '.5vw', fontSize: '1.2vw' }}>Pre-Sale Mint Date: April 20th, 10am PST</div>
+
+                    <div style={{ padding: '.5vw', fontSize: '1.2vw' }}>Public Mint Date: April 21th, 10am PST.</div>
 
                   </div>
 
@@ -569,9 +578,9 @@ function App() {
 
                     </div >
 
-                    <div style={{ padding: '.5vw', fontSize: '1.2vw' }}>Pre-Sale: TBA</div>
+                    <div style={{ padding: '.5vw', fontSize: '1.2vw' }}>Pre-Sale: 0.03 ETH</div>
 
-                    <div style={{ padding: '.5vw', fontSize: '1.2vw' }}>Public Sale: TBA</div>
+                    <div style={{ padding: '.5vw', fontSize: '1.2vw' }}>Public Sale: 0.04 ETH</div>
 
                   </div>
 
@@ -763,7 +772,7 @@ function App() {
 
                   <div style={{ margin: "0vw 0vw 1vw 0vw", fontSize: '2vw', textAlign: 'center' }} className='BoldText'>TextGuy</div>
 
-                  <a href="https://twitter.com/TextGuyYT" target="_blank"><img src={Unreveal} style={{ width: "100%", borderRadius: '1vw' }}></img> </a>
+                  <a href="https://twitter.com/TextGuyOfficial" target="_blank"><img src={Unreveal} style={{ width: "100%", borderRadius: '1vw' }}></img> </a>
 
                   <div className="SlimText" style={{ margin: "1vw", fontSize: '1vw' }}>
 
@@ -781,11 +790,11 @@ function App() {
 
                   <div style={{ margin: "0vw 0vw 1vw 0vw", fontSize: '2vw', textAlign: 'center' }} className='BoldText'>The Woman</div>
 
-                  <a href="https://twitter.com/TheWoman97" target="_blank"><img src={Unreveal} style={{ width: "100%", borderRadius: '1vw' }}></img></a>
+                  <a href="https://twitter.com/TheWoman97" target="_blank"><img src={TheWoman} style={{ width: "100%", borderRadius: '1vw' }}></img></a>
 
                   <div className="SlimText" style={{ margin: "1vw", fontSize: '1vw' }}>
 
-                    <div>Marketing Manager - Founding Member</div>
+                    <div>Discord Moderator - Team Member</div>
 
                   </div>
 
@@ -799,11 +808,83 @@ function App() {
 
                   <div style={{ margin: "0vw 0vw 1vw 0vw", fontSize: '2vw', textAlign: 'center' }} className='BoldText'>Abeee</div>
 
-                  <a href="https://twitter.com/abeee87nft" target="_blank"><img src={Unreveal} style={{ width: "100%", borderRadius: '1vw' }}></img></a>
+                  <a href="https://twitter.com/abeee87nft" target="_blank"><img src={Abeee} style={{ width: "100%", borderRadius: '1vw' }}></img></a>
 
                   <div className="SlimText" style={{ margin: "1vw", fontSize: '1vw' }}>
 
-                    <div>Discord Manager - Founding Member</div>
+                    <div>Discord Moderator - Team Member</div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div style={{ backgroundColor: 'rgba(38, 37, 37, .9)', borderRadius: '1vw', boxShadow: "0px 0px 1vw rgba(24,  22 ,33,.5)", width: '18vw', margin: '1vw' }}>
+
+                <div style={{ margin: '.5vw' }}>
+
+                  <div style={{ margin: "0vw 0vw 1vw 0vw", fontSize: '2vw', textAlign: 'center' }} className='BoldText'>JAARwei</div>
+
+                  <a href="https://twitter.com/JAARwei" target="_blank"><img src={JAARwei} style={{ width: "100%", borderRadius: '1vw' }}></img></a>
+
+                  <div className="SlimText" style={{ margin: "1vw", fontSize: '1vw' }}>
+
+                    <div>Discord Moderator - Team Member</div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div style={{ backgroundColor: 'rgba(38, 37, 37, .9)', borderRadius: '1vw', boxShadow: "0px 0px 1vw rgba(24,  22 ,33,.5)", width: '18vw', margin: '1vw' }}>
+
+                <div style={{ margin: '.5vw' }}>
+
+                  <div style={{ margin: "0vw 0vw 1vw 0vw", fontSize: '2vw', textAlign: 'center' }} className='BoldText'>Makiii</div>
+
+                  <a href="https://twitter.com/MoonnMakiii" target="_blank"><img src={Makiii} style={{ width: "100%", borderRadius: '1vw' }}></img></a>
+
+                  <div className="SlimText" style={{ margin: "1vw", fontSize: '1vw' }}>
+
+                    <div>Discord Moderator - Team Member</div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div style={{ backgroundColor: 'rgba(38, 37, 37, .9)', borderRadius: '1vw', boxShadow: "0px 0px 1vw rgba(24,  22 ,33,.5)", width: '18vw', margin: '1vw' }}>
+
+                <div style={{ margin: '.5vw' }}>
+
+                  <div style={{ margin: "0vw 0vw 1vw 0vw", fontSize: '2vw', textAlign: 'center' }} className='BoldText'>XCORTEZ701🆘</div>
+
+                  <a href="https://twitter.com/xcortez701" target="_blank"><img src={XCORTEZ701} style={{ width: "100%", borderRadius: '1vw' }}></img></a>
+
+                  <div className="SlimText" style={{ margin: "1vw", fontSize: '1vw' }}>
+
+                    <div>Discord Moderator - Team Member</div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div style={{ backgroundColor: 'rgba(38, 37, 37, .9)', borderRadius: '1vw', boxShadow: "0px 0px 1vw rgba(24,  22 ,33,.5)", width: '18vw', margin: '1vw' }}>
+
+                <div style={{ margin: '.5vw' }}>
+
+                  <div style={{ margin: "0vw 0vw 1vw 0vw", fontSize: '2vw', textAlign: 'center' }} className='BoldText'>泰来develop eth</div>
+
+                  <a href="https://twitter.com/yehaifei" target="_blank"><img src={泰来} style={{ width: "100%", borderRadius: '1vw' }}></img></a>
+
+                  <div className="SlimText" style={{ margin: "1vw", fontSize: '1vw' }}>
+
+                    <div>Discord Moderator - Team Member</div>
 
                   </div>
 
