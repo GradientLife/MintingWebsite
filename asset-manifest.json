@@ -1,17 +1,18 @@
 {
   "files": {
     "main.css": "/static/css/main.46f480a9.chunk.css",
-    "main.js": "/static/js/main.8515f5b9.chunk.js",
-    "main.js.map": "/static/js/main.8515f5b9.chunk.js.map",
+    "main.js": "/static/js/main.9e98d03d.chunk.js",
+    "main.js.map": "/static/js/main.9e98d03d.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.b0bb4467.js",
     "runtime-main.js.map": "/static/js/runtime-main.b0bb4467.js.map",
-    "static/js/2.b9214b80.chunk.js": "/static/js/2.b9214b80.chunk.js",
-    "static/js/2.b9214b80.chunk.js.map": "/static/js/2.b9214b80.chunk.js.map",
+    "static/js/2.32ab54dd.chunk.js": "/static/js/2.32ab54dd.chunk.js",
+    "static/js/2.32ab54dd.chunk.js.map": "/static/js/2.32ab54dd.chunk.js.map",
     "static/js/3.c6ac6dd1.chunk.js": "/static/js/3.c6ac6dd1.chunk.js",
     "static/js/3.c6ac6dd1.chunk.js.map": "/static/js/3.c6ac6dd1.chunk.js.map",
     "index.html": "/index.html",
     "static/css/main.46f480a9.chunk.css.map": "/static/css/main.46f480a9.chunk.css.map",
-    "static/js/2.b9214b80.chunk.js.LICENSE.txt": "/static/js/2.b9214b80.chunk.js.LICENSE.txt",
+    "static/js/2.32ab54dd.chunk.js.LICENSE.txt": "/static/js/2.32ab54dd.chunk.js.LICENSE.txt",
+    "static/media/Abeee.c7cd2305.jpg": "/static/media/Abeee.c7cd2305.jpg",
     "static/media/AirDrop.af7cc6aa.png": "/static/media/AirDrop.af7cc6aa.png",
     "static/media/All-Personality-Gold-Unreveal.7145b6d0.gif": "/static/media/All-Personality-Gold-Unreveal.7145b6d0.gif",
     "static/media/BlueShirt.0077530a.png": "/static/media/BlueShirt.0077530a.png",
@@ -20,6 +21,8 @@
     "static/media/Emotions-for-Website.465138d5.gif": "/static/media/Emotions-for-Website.465138d5.gif",
     "static/media/GlowMegaPrize.d4201947.png": "/static/media/GlowMegaPrize.d4201947.png",
     "static/media/main.css": "/static/media/SmokesGradient.18cee1bf.png",
+    "static/media/JAARwei.76670d1f.jpg": "/static/media/JAARwei.76670d1f.jpg",
+    "static/media/Makiii.196c811b.jpg": "/static/media/Makiii.196c811b.jpg",
     "static/media/Personality-for-Website.a99d71e5.gif": "/static/media/Personality-for-Website.a99d71e5.gif",
     "static/media/PersonalityRevealGif.264641d8.gif": "/static/media/PersonalityRevealGif.264641d8.gif",
     "static/media/PhotographDemo.851c1977.png": "/static/media/PhotographDemo.851c1977.png",
@@ -27,13 +30,16 @@
     "static/media/PremintRevealOfficial.c2582236.jpg": "/static/media/PremintRevealOfficial.c2582236.jpg",
     "static/media/Roadmap V3.7fbd5b57.png": "/static/media/Roadmap V3.7fbd5b57.png",
     "static/media/SandBox.afa3809f.png": "/static/media/SandBox.afa3809f.png",
+    "static/media/The Woman.e912157a.jpg": "/static/media/The Woman.e912157a.jpg",
     "static/media/Ticket.6c8feb36.png": "/static/media/Ticket.6c8feb36.png",
-    "static/media/Weathers-for-Website.989206e5.gif": "/static/media/Weathers-for-Website.989206e5.gif"
+    "static/media/Weathers-for-Website.989206e5.gif": "/static/media/Weathers-for-Website.989206e5.gif",
+    "static/media/XCORTEZ701.810f9414.jpg": "/static/media/XCORTEZ701.810f9414.jpg",
+    "static/media/泰来develop eth.38b9845f.jpg": "/static/media/泰来develop eth.38b9845f.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.b0bb4467.js",
-    "static/js/2.b9214b80.chunk.js",
+    "static/js/2.32ab54dd.chunk.js",
     "static/css/main.46f480a9.chunk.css",
-    "static/js/main.8515f5b9.chunk.js"
+    "static/js/main.9e98d03d.chunk.js"
   ]
 }
