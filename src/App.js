@@ -49,6 +49,7 @@ import JAARwei from './images/Mod Profiles/JAARwei.jpg';
 import 泰来 from './images/Mod Profiles/泰来develop eth.jpg';
 import Makiii from './images/Mod Profiles/Makiii.jpg';
 import XCORTEZ701 from './images/Mod Profiles/XCORTEZ701.jpg';
+import Momma from './images/Mod Profiles/Momma.jpg';
 
 import { Helmet } from "react-helmet";
 
@@ -748,7 +749,7 @@ function App() {
 
             <div className='FlexBoxes'>
 
-              <div style={{ backgroundColor: 'rgba(38, 37, 37, .9)', borderRadius: '1vw', boxShadow: "0px 0px 1vw rgba(24,  22 ,33,.5)", width: '18vw', margin: '1vw' }}>
+              <div style={{ backgroundColor: 'rgba(38, 37, 37, .9)', borderRadius: '1vw', boxShadow: "0px 0px 1vw rgba(24,  22 ,33,.5)", width: '15vw', margin: '1vw' }}>
 
                 <div style={{ margin: '.5vw' }}>
 
@@ -766,7 +767,7 @@ function App() {
 
               </div>
 
-              <div style={{ backgroundColor: 'rgba(38, 37, 37, .9)', borderRadius: '1vw', boxShadow: "0px 0px 1vw rgba(24,  22 ,33,.5)", width: '18vw', margin: '1vw' }}>
+              <div style={{ backgroundColor: 'rgba(38, 37, 37, .9)', borderRadius: '1vw', boxShadow: "0px 0px 1vw rgba(24,  22 ,33,.5)", width: '15vw', margin: '1vw' }}>
 
                 <div style={{ margin: '.5vw' }}>
 
@@ -784,7 +785,7 @@ function App() {
 
               </div>
 
-              <div style={{ backgroundColor: 'rgba(38, 37, 37, .9)', borderRadius: '1vw', boxShadow: "0px 0px 1vw rgba(24,  22 ,33,.5)", width: '18vw', margin: '1vw' }}>
+              <div style={{ backgroundColor: 'rgba(38, 37, 37, .9)', borderRadius: '1vw', boxShadow: "0px 0px 1vw rgba(24,  22 ,33,.5)", width: '15vw', margin: '1vw' }}>
 
                 <div style={{ margin: '.5vw' }}>
 
@@ -802,7 +803,7 @@ function App() {
 
               </div>
 
-              <div style={{ backgroundColor: 'rgba(38, 37, 37, .9)', borderRadius: '1vw', boxShadow: "0px 0px 1vw rgba(24,  22 ,33,.5)", width: '18vw', margin: '1vw' }}>
+              <div style={{ backgroundColor: 'rgba(38, 37, 37, .9)', borderRadius: '1vw', boxShadow: "0px 0px 1vw rgba(24,  22 ,33,.5)", width: '15vw', margin: '1vw' }}>
 
                 <div style={{ margin: '.5vw' }}>
 
@@ -819,8 +820,24 @@ function App() {
                 </div>
 
               </div>
+              <div style={{ backgroundColor: 'rgba(38, 37, 37, .9)', borderRadius: '1vw', boxShadow: "0px 0px 1vw rgba(24,  22 ,33,.5)", width: '15vw', margin: '1vw' }}>
 
-              <div style={{ backgroundColor: 'rgba(38, 37, 37, .9)', borderRadius: '1vw', boxShadow: "0px 0px 1vw rgba(24,  22 ,33,.5)", width: '18vw', margin: '1vw' }}>
+                <div style={{ margin: '.5vw' }}>
+
+                  <div style={{ margin: "0vw 0vw 1vw 0vw", fontSize: '2vw', textAlign: 'center' }} className='BoldText'>Makiii</div>
+
+                  <a href="https://twitter.com/MoonnMakiii" target="_blank"><img src={Makiii} style={{ width: "100%", borderRadius: '1vw' }}></img></a>
+
+                  <div className="SlimText" style={{ margin: "1vw", fontSize: '1vw' }}>
+
+                    <div>Discord Moderator - Team Member</div>
+
+                  </div>
+
+                </div>
+
+              </div>
+              <div style={{ backgroundColor: 'rgba(38, 37, 37, .9)', borderRadius: '1vw', boxShadow: "0px 0px 1vw rgba(24,  22 ,33,.5)", width: '15vw', margin: '1vw' }}>
 
                 <div style={{ margin: '.5vw' }}>
 
@@ -838,13 +855,13 @@ function App() {
 
               </div>
 
-              <div style={{ backgroundColor: 'rgba(38, 37, 37, .9)', borderRadius: '1vw', boxShadow: "0px 0px 1vw rgba(24,  22 ,33,.5)", width: '18vw', margin: '1vw' }}>
+              <div style={{ backgroundColor: 'rgba(38, 37, 37, .9)', borderRadius: '1vw', boxShadow: "0px 0px 1vw rgba(24,  22 ,33,.5)", width: '15vw', margin: '1vw' }}>
 
                 <div style={{ margin: '.5vw' }}>
 
-                  <div style={{ margin: "0vw 0vw 1vw 0vw", fontSize: '2vw', textAlign: 'center' }} className='BoldText'>Makiii</div>
+                  <div style={{ margin: "0vw 0vw 1vw 0vw", fontSize: '2vw', textAlign: 'center' }} className='BoldText'>泰来develop eth</div>
 
-                  <a href="https://twitter.com/MoonnMakiii" target="_blank"><img src={Makiii} style={{ width: "100%", borderRadius: '1vw' }}></img></a>
+                  <a href="https://twitter.com/yehaifei" target="_blank"><img src={泰来} style={{ width: "100%", borderRadius: '1vw' }}></img></a>
 
                   <div className="SlimText" style={{ margin: "1vw", fontSize: '1vw' }}>
 
@@ -856,7 +873,7 @@ function App() {
 
               </div>
 
-              <div style={{ backgroundColor: 'rgba(38, 37, 37, .9)', borderRadius: '1vw', boxShadow: "0px 0px 1vw rgba(24,  22 ,33,.5)", width: '18vw', margin: '1vw' }}>
+              <div style={{ backgroundColor: 'rgba(38, 37, 37, .9)', borderRadius: '1vw', boxShadow: "0px 0px 1vw rgba(24,  22 ,33,.5)", width: '15vw', margin: '1vw' }}>
 
                 <div style={{ margin: '.5vw' }}>
 
@@ -874,13 +891,13 @@ function App() {
 
               </div>
 
-              <div style={{ backgroundColor: 'rgba(38, 37, 37, .9)', borderRadius: '1vw', boxShadow: "0px 0px 1vw rgba(24,  22 ,33,.5)", width: '18vw', margin: '1vw' }}>
+              <div style={{ backgroundColor: 'rgba(38, 37, 37, .9)', borderRadius: '1vw', boxShadow: "0px 0px 1vw rgba(24,  22 ,33,.5)", width: '15vw', margin: '1vw' }}>
 
                 <div style={{ margin: '.5vw' }}>
 
-                  <div style={{ margin: "0vw 0vw 1vw 0vw", fontSize: '2vw', textAlign: 'center' }} className='BoldText'>泰来develop eth</div>
+                  <div style={{ margin: "0vw 0vw 1vw 0vw", fontSize: '2vw', textAlign: 'center' }} className='BoldText'>Momma</div>
 
-                  <a href="https://twitter.com/yehaifei" target="_blank"><img src={泰来} style={{ width: "100%", borderRadius: '1vw' }}></img></a>
+                  <a href="https://twitter.com/Official__Momma" target="_blank"><img src={Momma} style={{ width: "100%", borderRadius: '1vw' }}></img></a>
 
                   <div className="SlimText" style={{ margin: "1vw", fontSize: '1vw' }}>
 
