@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.46f480a9.chunk.css",
-    "main.js": "/static/js/main.9e98d03d.chunk.js",
-    "main.js.map": "/static/js/main.9e98d03d.chunk.js.map",
+    "main.js": "/static/js/main.2caeea35.chunk.js",
+    "main.js.map": "/static/js/main.2caeea35.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.b0bb4467.js",
     "runtime-main.js.map": "/static/js/runtime-main.b0bb4467.js.map",
     "static/js/2.32ab54dd.chunk.js": "/static/js/2.32ab54dd.chunk.js",
@@ -23,6 +23,7 @@
     "static/media/main.css": "/static/media/SmokesGradient.18cee1bf.png",
     "static/media/JAARwei.76670d1f.jpg": "/static/media/JAARwei.76670d1f.jpg",
     "static/media/Makiii.196c811b.jpg": "/static/media/Makiii.196c811b.jpg",
+    "static/media/Momma.43230ace.jpg": "/static/media/Momma.43230ace.jpg",
     "static/media/Personality-for-Website.a99d71e5.gif": "/static/media/Personality-for-Website.a99d71e5.gif",
     "static/media/PersonalityRevealGif.264641d8.gif": "/static/media/PersonalityRevealGif.264641d8.gif",
     "static/media/PhotographDemo.851c1977.png": "/static/media/PhotographDemo.851c1977.png",
@@ -40,6 +41,6 @@
     "static/js/runtime-main.b0bb4467.js",
     "static/js/2.32ab54dd.chunk.js",
     "static/css/main.46f480a9.chunk.css",
-    "static/js/main.9e98d03d.chunk.js"
+    "static/js/main.2caeea35.chunk.js"
   ]
 }
