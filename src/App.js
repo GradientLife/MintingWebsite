@@ -747,11 +747,11 @@ function App() {
 
             <div className='FlexBoxes'>
 
-              <div style={{ backgroundColor: 'rgba(38, 37, 37, .9)', borderRadius: '1vw', boxShadow: "0px 0px 1vw rgba(24,  22 ,33,.5)", width: '15vw', margin: '1vw' }}>
+              <div style={{ backgroundColor: 'rgba(38, 37, 37, .9)', borderRadius: '1vw', boxShadow: "0px 0px 1vw rgba(24,  22 ,33,.5)", width: '10vw', margin: '1vw' }}>
 
                 <div style={{ margin: '.5vw' }}>
 
-                  <div style={{ margin: "0vw 0vw 1vw 0vw", fontSize: '2vw', textAlign: 'center' }} className='BoldText'>Mr Rainbow</div>
+                  <div style={{ margin: "0vw 0vw 1vw 0vw", fontSize: '1vw', textAlign: 'center' }} className='BoldText'>Mr Rainbow</div>
 
                   <a href="https://twitter.com/MrRainbow95" target="_blank"><img src={Unreveal} style={{ width: "100%", borderRadius: '1vw' }}></img></a>
 
@@ -765,11 +765,11 @@ function App() {
 
               </div>
 
-              <div style={{ backgroundColor: 'rgba(38, 37, 37, .9)', borderRadius: '1vw', boxShadow: "0px 0px 1vw rgba(24,  22 ,33,.5)", width: '15vw', margin: '1vw' }}>
+              <div style={{ backgroundColor: 'rgba(38, 37, 37, .9)', borderRadius: '1vw', boxShadow: "0px 0px 1vw rgba(24,  22 ,33,.5)", width: '10vw', margin: '1vw' }}>
 
                 <div style={{ margin: '.5vw' }}>
 
-                  <div style={{ margin: "0vw 0vw 1vw 0vw", fontSize: '2vw', textAlign: 'center' }} className='BoldText'>TextGuy</div>
+                  <div style={{ margin: "0vw 0vw 1vw 0vw", fontSize: '1vw', textAlign: 'center' }} className='BoldText'>TextGuy</div>
 
                   <a href="https://twitter.com/TextGuyOfficial" target="_blank"><img src={Unreveal} style={{ width: "100%", borderRadius: '1vw' }}></img> </a>
 
@@ -783,11 +783,11 @@ function App() {
 
               </div>
 
-              <div style={{ backgroundColor: 'rgba(38, 37, 37, .9)', borderRadius: '1vw', boxShadow: "0px 0px 1vw rgba(24,  22 ,33,.5)", width: '15vw', margin: '1vw' }}>
+              <div style={{ backgroundColor: 'rgba(38, 37, 37, .9)', borderRadius: '1vw', boxShadow: "0px 0px 1vw rgba(24,  22 ,33,.5)", width: '10vw', margin: '1vw' }}>
 
                 <div style={{ margin: '.5vw' }}>
 
-                  <div style={{ margin: "0vw 0vw 1vw 0vw", fontSize: '2vw', textAlign: 'center' }} className='BoldText'>The Woman</div>
+                  <div style={{ margin: "0vw 0vw 1vw 0vw", fontSize: '1vw', textAlign: 'center' }} className='BoldText'>The Woman</div>
 
                   <a href="https://twitter.com/TheWoman97" target="_blank"><img src={TheWoman} style={{ width: "100%", borderRadius: '1vw' }}></img></a>
 
@@ -801,45 +801,11 @@ function App() {
 
               </div>
 
-              <div style={{ backgroundColor: 'rgba(38, 37, 37, .9)', borderRadius: '1vw', boxShadow: "0px 0px 1vw rgba(24,  22 ,33,.5)", width: '15vw', margin: '1vw' }}>
+              <div style={{ backgroundColor: 'rgba(38, 37, 37, .9)', borderRadius: '1vw', boxShadow: "0px 0px 1vw rgba(24,  22 ,33,.5)", width: '10vw', margin: '1vw' }}>
 
                 <div style={{ margin: '.5vw' }}>
 
-                  <div style={{ margin: "0vw 0vw 1vw 0vw", fontSize: '2vw', textAlign: 'center' }} className='BoldText'>Abeee</div>
-
-                  <a href="https://twitter.com/abeee87nft" target="_blank"><img src={Abeee} style={{ width: "100%", borderRadius: '1vw' }}></img></a>
-
-                  <div className="SlimText" style={{ margin: "1vw", fontSize: '1vw' }}>
-
-                    <div>Discord Moderator - Team Member</div>
-
-                  </div>
-
-                </div>
-
-              </div>
-              <div style={{ backgroundColor: 'rgba(38, 37, 37, .9)', borderRadius: '1vw', boxShadow: "0px 0px 1vw rgba(24,  22 ,33,.5)", width: '15vw', margin: '1vw' }}>
-
-                <div style={{ margin: '.5vw' }}>
-
-                  <div style={{ margin: "0vw 0vw 1vw 0vw", fontSize: '2vw', textAlign: 'center' }} className='BoldText'>Makiii</div>
-
-                  <a href="https://twitter.com/MoonnMakiii" target="_blank"><img src={Makiii} style={{ width: "100%", borderRadius: '1vw' }}></img></a>
-
-                  <div className="SlimText" style={{ margin: "1vw", fontSize: '1vw' }}>
-
-                    <div>Discord Moderator - Team Member</div>
-
-                  </div>
-
-                </div>
-
-              </div>
-              <div style={{ backgroundColor: 'rgba(38, 37, 37, .9)', borderRadius: '1vw', boxShadow: "0px 0px 1vw rgba(24,  22 ,33,.5)", width: '15vw', margin: '1vw' }}>
-
-                <div style={{ margin: '.5vw' }}>
-
-                  <div style={{ margin: "0vw 0vw 1vw 0vw", fontSize: '2vw', textAlign: 'center' }} className='BoldText'>JAARwei</div>
+                  <div style={{ margin: "0vw 0vw 1vw 0vw", fontSize: '1vw', textAlign: 'center' }} className='BoldText'>JAARwei</div>
 
                   <a href="https://twitter.com/JAARwei" target="_blank"><img src={JAARwei} style={{ width: "100%", borderRadius: '1vw' }}></img></a>
 
@@ -853,11 +819,11 @@ function App() {
 
               </div>
 
-              <div style={{ backgroundColor: 'rgba(38, 37, 37, .9)', borderRadius: '1vw', boxShadow: "0px 0px 1vw rgba(24,  22 ,33,.5)", width: '15vw', margin: '1vw' }}>
+              <div style={{ backgroundColor: 'rgba(38, 37, 37, .9)', borderRadius: '1vw', boxShadow: "0px 0px 1vw rgba(24,  22 ,33,.5)", width: '10vw', margin: '1vw' }}>
 
                 <div style={{ margin: '.5vw' }}>
 
-                  <div style={{ margin: "0vw 0vw 1vw 0vw", fontSize: '2vw', textAlign: 'center' }} className='BoldText'>泰来develop eth</div>
+                  <div style={{ margin: "0vw 0vw 1vw 0vw", fontSize: '1vw', textAlign: 'center' }} className='BoldText'>泰来develop eth</div>
 
                   <a href="https://twitter.com/yehaifei" target="_blank"><img src={泰来} style={{ width: "100%", borderRadius: '1vw' }}></img></a>
 
@@ -871,11 +837,11 @@ function App() {
 
               </div>
 
-              <div style={{ backgroundColor: 'rgba(38, 37, 37, .9)', borderRadius: '1vw', boxShadow: "0px 0px 1vw rgba(24,  22 ,33,.5)", width: '15vw', margin: '1vw' }}>
+              <div style={{ backgroundColor: 'rgba(38, 37, 37, .9)', borderRadius: '1vw', boxShadow: "0px 0px 1vw rgba(24,  22 ,33,.5)", width: '10vw', margin: '1vw' }}>
 
                 <div style={{ margin: '.5vw' }}>
 
-                  <div style={{ margin: "0vw 0vw 1vw 0vw", fontSize: '2vw', textAlign: 'center' }} className='BoldText'>XCORTEZ701🆘</div>
+                  <div style={{ margin: "0vw 0vw 1vw 0vw", fontSize: '1vw', textAlign: 'center' }} className='BoldText'>XCORTEZ701🆘</div>
 
                   <a href="https://twitter.com/xcortez701" target="_blank"><img src={XCORTEZ701} style={{ width: "100%", borderRadius: '1vw' }}></img></a>
 
@@ -889,11 +855,11 @@ function App() {
 
               </div>
 
-              <div style={{ backgroundColor: 'rgba(38, 37, 37, .9)', borderRadius: '1vw', boxShadow: "0px 0px 1vw rgba(24,  22 ,33,.5)", width: '15vw', margin: '1vw' }}>
+              <div style={{ backgroundColor: 'rgba(38, 37, 37, .9)', borderRadius: '1vw', boxShadow: "0px 0px 1vw rgba(24,  22 ,33,.5)", width: '10vw', margin: '1vw' }}>
 
                 <div style={{ margin: '.5vw' }}>
 
-                  <div style={{ margin: "0vw 0vw 1vw 0vw", fontSize: '2vw', textAlign: 'center' }} className='BoldText'>Momma</div>
+                  <div style={{ margin: "0vw 0vw 1vw 0vw", fontSize: '1vw', textAlign: 'center' }} className='BoldText'>Momma</div>
 
                   <a href="https://twitter.com/Official__Momma" target="_blank"><img src={Momma} style={{ width: "100%", borderRadius: '1vw' }}></img></a>
 

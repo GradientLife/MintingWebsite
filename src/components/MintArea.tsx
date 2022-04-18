@@ -10,8 +10,10 @@ import RevealImage from '../images/PersonalityRevealGif.gif';
 import GoldenImage from '../images/All-Personality-Gold-Unreveal.gif';
 import { debug } from "console";
 
+import { GetProof } from '../scripts/merkletree'
+
 const contractInterface = new ethers.utils.Interface(ContractABI);
-const contractAddress = '0xd411c8A986866d55f7E4F521eCe501B386dF88e2';
+const contractAddress = '0xDB04B97827F8A23e56AEAF95D4d4523912A1De79';
 const contractContract = new Contract(contractAddress, contractInterface);
 
 console.log("ContractAddress = ", contractAddress);
@@ -95,13 +97,14 @@ export const MintArea = () => {
     const price = GetPrice();
     const maxMintAmount = GetMaxMintAmount();
     const minted = GetMinted();
+    const proof = GetProof(account);
 
-    const { state, send } = useContractFunction(contractContract, 'MintCollectible', { transactionName: 'Mint' })
+    const { state, send } = useContractFunction(contractContract, 'WhitelistMint', { transactionName: 'Mint' })
     function MintNFT(mintAmount: string) {
         if (etherBalance < parseFloat(mintAmount) * parseFloat(price)) {
             AlertPrice((parseFloat(mintAmount) * parseFloat(price) / 1000000000000000000).toString())
         }
-        send(mintAmount, {
+        send(mintAmount, proof, {
             value: (parseFloat(mintAmount) * parseFloat(price)).toString(),
         });
     }
@@ -112,7 +115,6 @@ export const MintArea = () => {
         }}>
             <div className="FlexBoxes">
                 <div style={{ margin: '1vw' }}>
-
                     <div style={{ backgroundColor: 'rgba(38, 37, 37, .9)', borderRadius: '1vw', fontFamily: 'Kaushan Script, cursive', fontSize: '2vw', color: 'white', textShadow: '1px 1px 1px #000000', marginBottom: '5vw' }} >
                         NFT Reveal
                     </div >

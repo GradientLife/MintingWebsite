@@ -28,7 +28,7 @@ export const Header = () => {
     const classes = useStyles()
     const { account, activateBrowserWallet, deactivate, chainId } = useEthers()
 
-    const isConnected = account !== undefined && chainId == 42
+    const isConnected = account !== undefined && chainId == 4
     return (
         <div className={classes.container}>
             {isConnected ?
