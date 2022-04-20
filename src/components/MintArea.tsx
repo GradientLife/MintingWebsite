@@ -13,7 +13,7 @@ import { debug } from "console";
 import { GetProof, GetWhitelist } from '../scripts/merkletree'
 
 const contractInterface = new ethers.utils.Interface(ContractABI);
-const contractAddress = '0x973C6b8C59FCF4986f6EacB7ED1eC35aED0fB4a0';
+const contractAddress = '0xFE93785F5AD4C5a740628f9b950bef90C67260d9';
 const contractContract = new Contract(contractAddress, contractInterface);
 
 console.log("ContractAddress = ", contractAddress);
