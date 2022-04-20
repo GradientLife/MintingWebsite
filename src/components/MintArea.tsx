@@ -14,6 +14,7 @@ import { GetProof, GetWhitelist } from '../scripts/merkletree'
 
 const contractInterface = new ethers.utils.Interface(ContractABI);
 const contractAddress = '0xFE93785F5AD4C5a740628f9b950bef90C67260d9';
+
 const contractContract = new Contract(contractAddress, contractInterface);
 
 console.log("ContractAddress = ", contractAddress);
@@ -42,7 +43,7 @@ function GetMaxMintAmount() {
     const { account } = useEthers()
 
     const [mintedAmount] = useContractCall({
-        abi: contractInterface, 
+        abi: contractInterface,
         address: contractAddress,
         method: "numberMinted",
         args: [account],
@@ -115,10 +116,10 @@ export const MintArea = () => {
             padding: '1vw', verticalAlign: 'middle', textAlign: 'center'
         }}>
             <div className="FlexBoxes">
-            <div style={{ margin: '1vw' }}>
-                            <div style={{  backgroundColor: 'rgba(243, 235, 235, .9)', borderRadius: '1vw', fontFamily: 'Kaushan Script, cursive', fontSize: '2vw', color: 'black',  marginBottom: '5vw' }} >
-                                Whitelist Mint
-                            </div >
+                <div style={{ margin: '1vw' }}>
+                    <div style={{ backgroundColor: 'rgba(243, 235, 235, .9)', borderRadius: '1vw', fontFamily: 'Kaushan Script, cursive', fontSize: '2vw', color: 'black', marginBottom: '5vw' }} >
+                        Whitelist Mint
+                    </div >
                     <img src={UnrevealImage} style={{ height: '25vw', margin: '-5vw 0vw -1vw 0vw' }}></img>
 
                     <div>
@@ -128,24 +129,24 @@ export const MintArea = () => {
                                     {mintWLPage ?
                                         (
                                             <div>
-                                                < button className="NormalButton" style={{ width: '25vw', height: '5vw', fontSize: '2.5vw', alignSelf: 'right', backgroundColor: 'rgb(243, 235, 235)', color:'black', textShadow:'none' }} onClick={() => ToggleWLMintPage()} > Close</button>
-                                                <div style={{ margin: '1vw 0vw 0vw 0vw', borderRadius: '1vw', padding: '1vw', boxShadow: "0px 0px 1vw rgba(24,  22 ,33,.5)", backgroundColor: 'rgba(243, 235, 235,.9)', color:'black', textShadow:'none'  }}>
-                                                    <div style={{ fontSize: '1vw', color:'black', fontWeight:'900' }}>0.03 eth per GRADIE, maximum {maxMintAmount} </div>
+                                                < button className="NormalButton" style={{ width: '25vw', height: '5vw', fontSize: '2.5vw', alignSelf: 'right', backgroundColor: 'rgb(243, 235, 235)', color: 'black', textShadow: 'none' }} onClick={() => ToggleWLMintPage()} > Close</button>
+                                                <div style={{ margin: '1vw 0vw 0vw 0vw', borderRadius: '1vw', padding: '1vw', boxShadow: "0px 0px 1vw rgba(24,  22 ,33,.5)", backgroundColor: 'rgba(243, 235, 235,.9)', color: 'black', textShadow: 'none' }}>
+                                                    <div style={{ fontSize: '1vw', color: 'black', fontWeight: '900' }}>0.03 eth per GRADIE, maximum {maxMintAmount} </div>
 
 
-                                                    {Number(minted) < 5 ? <button className="RainbowButton" style={{ margin: '.5vw', backgroundColor: 'rgb(243, 235, 235)', color:'black', textShadow:'none'  }} onClick={() => WhitelistMint("1")}>1</button> : <button className="NormalButton" style={{ margin: '.5vw', backgroundColor: 'rgb(243, 235, 235)', color:'black', textShadow:'none'  }} onClick={() => WhitelistMint("1")}>1</button>}
-                                                    {Number(minted) < 4 ? <button className="RainbowButton" style={{ margin: '.5vw', backgroundColor: 'rgb(243, 235, 235)', color:'black', textShadow:'none'  }} onClick={() => WhitelistMint("2")}>2</button> : <button className="NormalButton" style={{ margin: '.5vw' , backgroundColor: 'rgb(243, 235, 235)', color:'black', textShadow:'none' }} onClick={() => WhitelistMint("2")}>2</button>}
-                                                    {Number(minted) < 3 ? <button className="RainbowButton" style={{ margin: '.5vw', backgroundColor: 'rgb(243, 235, 235)', color:'black', textShadow:'none'  }} onClick={() => WhitelistMint("3")}>3</button> : <button className="NormalButton" style={{ margin: '.5vw', backgroundColor: 'rgb(243, 235, 235)', color:'black', textShadow:'none'  }} onClick={() => WhitelistMint("3")}>3</button>}
-                                                    {Number(minted) < 2 ? <button className="RainbowButton" style={{ margin: '.5vw', backgroundColor: 'rgb(243, 235, 235)', color:'black', textShadow:'none'  }} onClick={() => WhitelistMint("4")}>4</button> : <button className="NormalButton" style={{ margin: '.5vw', backgroundColor: 'rgb(243, 235, 235)', color:'black', textShadow:'none'  }} onClick={() => WhitelistMint("4")}>4</button>}
-                                                    {Number(minted) < 1 ? <button className="RainbowButton" style={{ margin: '.5vw', backgroundColor: 'rgb(243, 235, 235)', color:'black', textShadow:'none'  }} onClick={() => WhitelistMint("5")}>5</button> : <button className="NormalButton" style={{ margin: '.5vw', backgroundColor: 'rgb(243, 235, 235)', color:'black', textShadow:'none'  }} onClick={() => WhitelistMint("5")}>5</button>}
+                                                    {Number(minted) < 5 ? <button className="RainbowButton" style={{ margin: '.5vw', backgroundColor: 'rgb(243, 235, 235)', color: 'black', textShadow: 'none' }} onClick={() => WhitelistMint("1")}>1</button> : <button className="NormalButton" style={{ margin: '.5vw', backgroundColor: 'rgb(243, 235, 235)', color: 'black', textShadow: 'none' }} onClick={() => WhitelistMint("1")}>1</button>}
+                                                    {Number(minted) < 4 ? <button className="RainbowButton" style={{ margin: '.5vw', backgroundColor: 'rgb(243, 235, 235)', color: 'black', textShadow: 'none' }} onClick={() => WhitelistMint("2")}>2</button> : <button className="NormalButton" style={{ margin: '.5vw', backgroundColor: 'rgb(243, 235, 235)', color: 'black', textShadow: 'none' }} onClick={() => WhitelistMint("2")}>2</button>}
+                                                    {Number(minted) < 3 ? <button className="RainbowButton" style={{ margin: '.5vw', backgroundColor: 'rgb(243, 235, 235)', color: 'black', textShadow: 'none' }} onClick={() => WhitelistMint("3")}>3</button> : <button className="NormalButton" style={{ margin: '.5vw', backgroundColor: 'rgb(243, 235, 235)', color: 'black', textShadow: 'none' }} onClick={() => WhitelistMint("3")}>3</button>}
+                                                    {Number(minted) < 2 ? <button className="RainbowButton" style={{ margin: '.5vw', backgroundColor: 'rgb(243, 235, 235)', color: 'black', textShadow: 'none' }} onClick={() => WhitelistMint("4")}>4</button> : <button className="NormalButton" style={{ margin: '.5vw', backgroundColor: 'rgb(243, 235, 235)', color: 'black', textShadow: 'none' }} onClick={() => WhitelistMint("4")}>4</button>}
+                                                    {Number(minted) < 1 ? <button className="RainbowButton" style={{ margin: '.5vw', backgroundColor: 'rgb(243, 235, 235)', color: 'black', textShadow: 'none' }} onClick={() => WhitelistMint("5")}>5</button> : <button className="NormalButton" style={{ margin: '.5vw', backgroundColor: 'rgb(243, 235, 235)', color: 'black', textShadow: 'none' }} onClick={() => WhitelistMint("5")}>5</button>}
                                                 </div>
-                                                <div style={{ color: 'white', textShadow: '1px 1px 1px #000000', fontSize: '1vw', fontWeight:'900' }}> *for whitelisted address only* </div>
+                                                <div style={{ color: 'white', textShadow: '1px 1px 1px #000000', fontSize: '1vw', fontWeight: '900' }}> *for whitelisted address only* </div>
                                             </div>
                                         )
                                         :
                                         (<div>
-                                            < button className="RainbowButton" style={{ width: '25vw', height: '5vw', fontSize: '2.5vw', alignSelf: 'right',backgroundColor: 'rgb(243, 235, 235)', color:'black', textShadow:'none' }} onClick={() => ToggleWLMintPage()} > Mint</button>
-                                            <div style={{ color: 'white', textShadow: '1px 1px 1px #000000', fontSize: '1vw', fontWeight:'900' }}> *for whitelisted address only* </div>
+                                            < button className="RainbowButton" style={{ width: '25vw', height: '5vw', fontSize: '2.5vw', alignSelf: 'right', backgroundColor: 'rgb(243, 235, 235)', color: 'black', textShadow: 'none' }} onClick={() => ToggleWLMintPage()} > Mint</button>
+                                            <div style={{ color: 'white', textShadow: '1px 1px 1px #000000', fontSize: '1vw', fontWeight: '900' }}> *for whitelisted address only* </div>
                                         </div>)
                                     }
                                 </div>
@@ -158,9 +159,9 @@ export const MintArea = () => {
                     </div>
                 </div>
                 <div style={{ margin: '1vw' }}>
-                            <div style={{ backgroundColor: 'rgba(38, 37, 37, .9)', borderRadius: '1vw', fontFamily: 'Kaushan Script, cursive', fontSize: '2vw', color: 'white', textShadow: '1px 1px 1px #000000', marginBottom: '5vw' }} >
-                                General Mint
-                            </div >
+                    <div style={{ backgroundColor: 'rgba(38, 37, 37, .9)', borderRadius: '1vw', fontFamily: 'Kaushan Script, cursive', fontSize: '2vw', color: 'white', textShadow: '1px 1px 1px #000000', marginBottom: '5vw' }} >
+                        General Mint
+                    </div >
                     <img src={RevealImage} style={{ height: '25vw', margin: '-5vw 0vw -1vw 0vw' }}></img>
 
                     <div>
@@ -170,7 +171,7 @@ export const MintArea = () => {
                                     {mintPage ?
                                         (
                                             <div>
-                                                < button className="NormalButton" style={{ width: '25vw', height: '5vw', fontSize: '2.5vw', alignSelf: 'right', backgroundColor: 'rgb(38, 37, 37)', textShadow:'none' }} onClick={() => ToggleMintPage()} > Close</button>
+                                                < button className="NormalButton" style={{ width: '25vw', height: '5vw', fontSize: '2.5vw', alignSelf: 'right', backgroundColor: 'rgb(38, 37, 37)', textShadow: 'none' }} onClick={() => ToggleMintPage()} > Close</button>
                                                 <div style={{ backgroundColor: 'rgba(38, 37, 37, .9)', margin: '1vw 0vw 0vw 0vw', borderRadius: '1vw', padding: '1vw', boxShadow: "0px 0px 1vw rgba(24,  22 ,33,.5)" }}>
                                                     <div style={{ color: 'white', textShadow: '1px 1px 1px #000000', fontSize: '1vw' }}>0.04 eth per GRADIE, maximum {maxMintAmount} </div>
 
@@ -186,17 +187,17 @@ export const MintArea = () => {
                                         :
                                         (
                                             <div>
-                                            {false ?
-                                                (
-                                                    <div>
-                                                        < button className="RainbowButton" style={{ width: '25vw', height: '5vw', fontSize: '2.5vw', alignSelf: 'right', backgroundColor: 'rgb(38, 37, 37)', textShadow:'none' }} onClick={() => ToggleMintPage()} > Mint</button>
-                                                    </div>
-                                                )
-                                                :
-                                                (
-                                                    < button className="DisabledButton" style={{ width: '25vw', height: '5vw', fontSize: '2.5vw', alignSelf: 'right' }}> Locked</button>
-                                                )
-                                            }
+                                                {false ?
+                                                    (
+                                                        <div>
+                                                            < button className="RainbowButton" style={{ width: '25vw', height: '5vw', fontSize: '2.5vw', alignSelf: 'right', backgroundColor: 'rgb(38, 37, 37)', textShadow: 'none' }} onClick={() => ToggleMintPage()} > Mint</button>
+                                                        </div>
+                                                    )
+                                                    :
+                                                    (
+                                                        < button className="DisabledButton" style={{ width: '25vw', height: '5vw', fontSize: '2.5vw', alignSelf: 'right' }}> Locked</button>
+                                                    )
+                                                }
                                             </div>
                                         )
                                     }
