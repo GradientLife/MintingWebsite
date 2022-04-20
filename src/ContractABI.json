@@ -1,51 +1,136 @@
 [
     {
-        "inputs": [
-            {
-                "internalType": "string",
-                "name": "_name",
-                "type": "string"
-            },
-            {
-                "internalType": "string",
-                "name": "_symbol",
-                "type": "string"
-            },
-            {
-                "internalType": "string",
-                "name": "_initBaseURI",
-                "type": "string"
-            },
-            {
-                "internalType": "string",
-                "name": "_initNotRevealedUri",
-                "type": "string"
-            }
+    "inputs": [
+        {
+            "internalType": "string",
+            "name": "_name",
+            "type": "string"
+        },
+        {
+            "internalType": "string",
+            "name": "_symbol",
+            "type": "string"
+        },
+        {
+            "internalType": "string",
+            "name": "_initBaseURI",
+            "type": "string"
+        },
+        {
+            "internalType": "string",
+            "name": "_initNotRevealedUri",
+            "type": "string"
+        }
         ],
         "stateMutability": "nonpayable",
         "type": "constructor"
     },
     {
+        "inputs": [],
+        "name": "AllOwnershipsHaveBeenSet",
+        "type": "error"
+    },
+    {
+        "inputs": [],
+        "name": "ApprovalCallerNotOwnerNorApproved",
+        "type": "error"
+    },
+    {
+        "inputs": [],
+        "name": "ApprovalQueryForNonexistentToken",
+        "type": "error"
+    },
+    {
+        "inputs": [],
+        "name": "ApprovalToCurrentOwner",
+        "type": "error"
+    },
+    {
+        "inputs": [],
+        "name": "ApproveToCaller",
+        "type": "error"
+    },
+    {
+        "inputs": [],
+        "name": "BalanceQueryForZeroAddress",
+        "type": "error"
+    },
+    {
+        "inputs": [],
+        "name": "ContractPaused",
+        "type": "error"
+    },
+    {
+        "inputs": [],
+        "name": "InvalidQueryRange",
+        "type": "error"
+    },
+    {
+        "inputs": [],
+        "name": "MintToZeroAddress",
+        "type": "error"
+    },
+    {
+        "inputs": [],
+        "name": "MintZeroQuantity",
+        "type": "error"
+    },
+    {
+        "inputs": [],
+        "name": "NoTokensMintedYet",
+        "type": "error"
+    },
+    {
+        "inputs": [],
+        "name": "OwnerQueryForNonexistentToken",
+        "type": "error"
+    },
+    {
+        "inputs": [],
+        "name": "QuantityMustBeNonZero",
+        "type": "error"
+    },
+    {
+        "inputs": [],
+        "name": "TransferCallerNotOwnerNorApproved",
+        "type": "error"
+    },
+    {
+        "inputs": [],
+        "name": "TransferFromIncorrectOwner",
+        "type": "error"
+    },
+    {
+        "inputs": [],
+        "name": "TransferToNonERC721ReceiverImplementer",
+        "type": "error"
+    },
+    {
+        "inputs": [],
+        "name": "TransferToZeroAddress",
+        "type": "error"
+    },
+    {
         "anonymous": false,
         "inputs": [
-            {
-                "indexed": true,
-                "internalType": "address",
-                "name": "owner",
-                "type": "address"
-            },
-            {
-                "indexed": true,
-                "internalType": "address",
-                "name": "approved",
-                "type": "address"
-            },
-            {
-                "indexed": true,
-                "internalType": "uint256",
-                "name": "tokenId",
-                "type": "uint256"
-            }
+        {
+            "indexed": true,
+            "internalType": "address",
+            "name": "owner",
+            "type": "address"
+        },
+        {
+            "indexed": true,
+            "internalType": "address",
+            "name": "approved",
+            "type": "address"
+        },
+        {
+            "indexed": true,
+            "internalType": "uint256",
+            "name": "tokenId",
+            "type": "uint256"
+        }
         ],
         "name": "Approval",
         "type": "event"
@@ -53,24 +138,24 @@
     {
         "anonymous": false,
         "inputs": [
-            {
-                "indexed": true,
-                "internalType": "address",
-                "name": "owner",
-                "type": "address"
-            },
-            {
-                "indexed": true,
-                "internalType": "address",
-                "name": "operator",
-                "type": "address"
-            },
-            {
-                "indexed": false,
-                "internalType": "bool",
-                "name": "approved",
-                "type": "bool"
-            }
+        {
+            "indexed": true,
+            "internalType": "address",
+            "name": "owner",
+            "type": "address"
+        },
+        {
+            "indexed": true,
+            "internalType": "address",
+            "name": "operator",
+            "type": "address"
+        },
+        {
+            "indexed": false,
+            "internalType": "bool",
+            "name": "approved",
+            "type": "bool"
+        }
         ],
         "name": "ApprovalForAll",
         "type": "event"
@@ -78,18 +163,18 @@
     {
         "anonymous": false,
         "inputs": [
-            {
-                "indexed": true,
-                "internalType": "address",
-                "name": "previousOwner",
-                "type": "address"
-            },
-            {
-                "indexed": true,
-                "internalType": "address",
-                "name": "newOwner",
-                "type": "address"
-            }
+        {
+            "indexed": true,
+            "internalType": "address",
+            "name": "previousOwner",
+            "type": "address"
+        },
+        {
+            "indexed": true,
+            "internalType": "address",
+            "name": "newOwner",
+            "type": "address"
+        }
         ],
         "name": "OwnershipTransferred",
         "type": "event"
@@ -97,53 +182,79 @@
     {
         "anonymous": false,
         "inputs": [
-            {
-                "indexed": true,
-                "internalType": "address",
-                "name": "from",
-                "type": "address"
-            },
-            {
-                "indexed": true,
-                "internalType": "address",
-                "name": "to",
-                "type": "address"
-            },
-            {
-                "indexed": true,
-                "internalType": "uint256",
-                "name": "tokenId",
-                "type": "uint256"
-            }
+        {
+            "indexed": false,
+            "internalType": "address",
+            "name": "account",
+            "type": "address"
+        }
+        ],
+        "name": "Paused",
+        "type": "event"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+        {
+            "indexed": true,
+            "internalType": "address",
+            "name": "from",
+            "type": "address"
+        },
+        {
+            "indexed": true,
+            "internalType": "address",
+            "name": "to",
+            "type": "address"
+        },
+        {
+            "indexed": true,
+            "internalType": "uint256",
+            "name": "tokenId",
+            "type": "uint256"
+        }
         ],
         "name": "Transfer",
         "type": "event"
     },
     {
+        "anonymous": false,
         "inputs": [
-            {
-                "internalType": "uint256",
-                "name": "mint",
-                "type": "uint256"
-            }
+        {
+            "indexed": false,
+            "internalType": "address",
+            "name": "account",
+            "type": "address"
+        }
         ],
-        "name": "MintCollectible",
+        "name": "Unpaused",
+        "type": "event"
+    },
+    {
+        "inputs": [
+        {
+            "internalType": "uint256",
+            "name": "_amount",
+            "type": "uint256"
+        }
+        ],
+        "name": "GeneralMint",
         "outputs": [],
         "stateMutability": "payable",
         "type": "function"
     },
     {
         "inputs": [
-            {
-                "internalType": "uint256",
-                "name": "mint",
-                "type": "uint256"
-            },
-            {
-                "internalType": "bytes32[]",
-                "name": "_merkleProof",
-                "type": "bytes32[]"
-            }
+        {
+            "internalType": "uint256",
+            "name": "_amount",
+            "type": "uint256"
+        },
+        {
+            "internalType": "bytes32[]",
+            "name": "_merkleProof",
+            "type": "bytes32[]"
+        }
         ],
         "name": "WhitelistMint",
         "outputs": [],
@@ -152,48 +263,16 @@
     },
     {
         "inputs": [
-            {
-                "internalType": "address[]",
-                "name": "_add",
-                "type": "address[]"
-            }
-        ],
-        "name": "addWhitelist",
-        "outputs": [],
-        "stateMutability": "nonpayable",
-        "type": "function"
-    },
-    {
-        "inputs": [
-            {
-                "internalType": "address",
-                "name": "",
-                "type": "address"
-            }
-        ],
-        "name": "addressMintedBalance",
-        "outputs": [
-            {
-                "internalType": "uint256",
-                "name": "",
-                "type": "uint256"
-            }
-        ],
-        "stateMutability": "view",
-        "type": "function"
-    },
-    {
-        "inputs": [
-            {
-                "internalType": "address",
-                "name": "to",
-                "type": "address"
-            },
-            {
-                "internalType": "uint256",
-                "name": "tokenId",
-                "type": "uint256"
-            }
+        {
+            "internalType": "address",
+            "name": "to",
+            "type": "address"
+        },
+        {
+            "internalType": "uint256",
+            "name": "tokenId",
+            "type": "uint256"
+        }
         ],
         "name": "approve",
         "outputs": [],
@@ -202,19 +281,19 @@
     },
     {
         "inputs": [
-            {
-                "internalType": "address",
-                "name": "owner",
-                "type": "address"
-            }
+        {
+            "internalType": "address",
+            "name": "owner",
+            "type": "address"
+        }
         ],
         "name": "balanceOf",
         "outputs": [
-            {
-                "internalType": "uint256",
-                "name": "",
-                "type": "uint256"
-            }
+        {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+        }
         ],
         "stateMutability": "view",
         "type": "function"
@@ -223,11 +302,11 @@
         "inputs": [],
         "name": "baseExtension",
         "outputs": [
-            {
-                "internalType": "string",
-                "name": "",
-                "type": "string"
-            }
+        {
+            "internalType": "string",
+            "name": "",
+            "type": "string"
+        }
         ],
         "stateMutability": "view",
         "type": "function"
@@ -236,24 +315,109 @@
         "inputs": [],
         "name": "baseURI",
         "outputs": [
-            {
-                "internalType": "string",
-                "name": "",
-                "type": "string"
-            }
+        {
+            "internalType": "string",
+            "name": "",
+            "type": "string"
+        }
         ],
         "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+        {
+            "internalType": "uint256",
+            "name": "tokenId",
+            "type": "uint256"
+        }
+        ],
+        "name": "burn",
+        "outputs": [],
+        "stateMutability": "nonpayable",
         "type": "function"
     },
     {
         "inputs": [],
         "name": "defaultURI",
         "outputs": [
+        {
+            "internalType": "string",
+            "name": "",
+            "type": "string"
+        }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+        {
+            "internalType": "uint256",
+            "name": "tokenId",
+            "type": "uint256"
+        }
+        ],
+        "name": "explicitOwnershipOf",
+        "outputs": [
+        {
+            "components": [
             {
-                "internalType": "string",
-                "name": "",
-                "type": "string"
+                "internalType": "address",
+                "name": "addr",
+                "type": "address"
+            },
+            {
+                "internalType": "uint64",
+                "name": "startTimestamp",
+                "type": "uint64"
+            },
+            {
+                "internalType": "bool",
+                "name": "burned",
+                "type": "bool"
             }
+            ],
+            "internalType": "struct ERC721A.TokenOwnership",
+            "name": "",
+            "type": "tuple"
+        }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+        {
+            "internalType": "uint256[]",
+            "name": "tokenIds",
+            "type": "uint256[]"
+        }
+        ],
+        "name": "explicitOwnershipsOf",
+        "outputs": [
+        {
+            "components": [
+            {
+                "internalType": "address",
+                "name": "addr",
+                "type": "address"
+            },
+            {
+                "internalType": "uint64",
+                "name": "startTimestamp",
+                "type": "uint64"
+            },
+            {
+                "internalType": "bool",
+                "name": "burned",
+                "type": "bool"
+            }
+            ],
+            "internalType": "struct ERC721A.TokenOwnership[]",
+            "name": "",
+            "type": "tuple[]"
+        }
         ],
         "stateMutability": "view",
         "type": "function"
@@ -262,65 +426,82 @@
         "inputs": [],
         "name": "generalCost",
         "outputs": [
-            {
-                "internalType": "uint256",
-                "name": "",
-                "type": "uint256"
-            }
+        {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+        }
         ],
         "stateMutability": "view",
         "type": "function"
     },
     {
         "inputs": [
-            {
-                "internalType": "uint256",
-                "name": "tokenId",
-                "type": "uint256"
-            }
+        {
+            "internalType": "uint256",
+            "name": "tokenId",
+            "type": "uint256"
+        }
         ],
         "name": "getApproved",
         "outputs": [
-            {
-                "internalType": "address",
-                "name": "",
-                "type": "address"
-            }
+        {
+            "internalType": "address",
+            "name": "",
+            "type": "address"
+        }
         ],
         "stateMutability": "view",
         "type": "function"
     },
     {
         "inputs": [
-            {
-                "internalType": "address",
-                "name": "_check",
-                "type": "address"
-            }
+        {
+            "internalType": "uint256",
+            "name": "tokenId",
+            "type": "uint256"
+        }
         ],
-        "name": "getPrice",
+        "name": "getOwnershipData",
         "outputs": [
-            {
-                "internalType": "uint256",
-                "name": "",
-                "type": "uint256"
-            }
-        ],
-        "stateMutability": "view",
-        "type": "function"
-    },
-    {
-        "inputs": [
+        {
+            "components": [
             {
                 "internalType": "address",
-                "name": "_to",
+                "name": "addr",
                 "type": "address"
             },
             {
-                "internalType": "uint256",
-                "name": "_amount",
-                "type": "uint256"
+                "internalType": "uint64",
+                "name": "startTimestamp",
+                "type": "uint64"
+            },
+            {
+                "internalType": "bool",
+                "name": "burned",
+                "type": "bool"
             }
+            ],
+            "internalType": "struct ERC721A.TokenOwnership",
+            "name": "",
+            "type": "tuple"
+        }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+        {
+            "internalType": "address",
+            "name": "_to",
+            "type": "address"
+        },
+        {
+            "internalType": "uint256",
+            "name": "_amount",
+            "type": "uint256"
+        }
         ],
         "name": "giveAway",
         "outputs": [],
@@ -329,11 +510,11 @@
     },
     {
         "inputs": [
-            {
-                "internalType": "address[]",
-                "name": "_to",
-                "type": "address[]"
-            }
+        {
+            "internalType": "address[]",
+            "name": "_to",
+            "type": "address[]"
+        }
         ],
         "name": "givewayForAll",
         "outputs": [],
@@ -341,70 +522,38 @@
         "type": "function"
     },
     {
-        "inputs": [],
-        "name": "hasWhitelist",
-        "outputs": [
-            {
-                "internalType": "bool",
-                "name": "",
-                "type": "bool"
-            }
-        ],
-        "stateMutability": "view",
-        "type": "function"
-    },
-    {
         "inputs": [
-            {
-                "internalType": "address",
-                "name": "owner",
-                "type": "address"
-            },
-            {
-                "internalType": "address",
-                "name": "operator",
-                "type": "address"
-            }
+        {
+            "internalType": "address",
+            "name": "owner",
+            "type": "address"
+        },
+        {
+            "internalType": "address",
+            "name": "operator",
+            "type": "address"
+        }
         ],
         "name": "isApprovedForAll",
         "outputs": [
-            {
-                "internalType": "bool",
-                "name": "",
-                "type": "bool"
-            }
-        ],
-        "stateMutability": "view",
-        "type": "function"
-    },
-    {
-        "inputs": [
-            {
-                "internalType": "address",
-                "name": "_check",
-                "type": "address"
-            }
-        ],
-        "name": "isWhitelisted",
-        "outputs": [
-            {
-                "internalType": "bool",
-                "name": "",
-                "type": "bool"
-            }
+        {
+            "internalType": "bool",
+            "name": "",
+            "type": "bool"
+        }
         ],
         "stateMutability": "view",
         "type": "function"
     },
     {
         "inputs": [],
-        "name": "maxMintPerTransaction",
+        "name": "isWhitelist",
         "outputs": [
-            {
-                "internalType": "uint256",
-                "name": "",
-                "type": "uint256"
-            }
+        {
+            "internalType": "bool",
+            "name": "",
+            "type": "bool"
+        }
         ],
         "stateMutability": "view",
         "type": "function"
@@ -413,11 +562,11 @@
         "inputs": [],
         "name": "maxSupply",
         "outputs": [
-            {
-                "internalType": "uint256",
-                "name": "",
-                "type": "uint256"
-            }
+        {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+        }
         ],
         "stateMutability": "view",
         "type": "function"
@@ -426,11 +575,24 @@
         "inputs": [],
         "name": "mintPerAddressLimit",
         "outputs": [
-            {
-                "internalType": "uint256",
-                "name": "",
-                "type": "uint256"
-            }
+        {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+        }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "mintPerTransactionLimit",
+        "outputs": [
+        {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+        }
         ],
         "stateMutability": "view",
         "type": "function"
@@ -439,11 +601,43 @@
         "inputs": [],
         "name": "name",
         "outputs": [
-            {
-                "internalType": "string",
-                "name": "",
-                "type": "string"
-            }
+        {
+            "internalType": "string",
+            "name": "",
+            "type": "string"
+        }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "nextOwnerToExplicitlySet",
+        "outputs": [
+        {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+        }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+        {
+            "internalType": "address",
+            "name": "owner",
+            "type": "address"
+        }
+        ],
+        "name": "numberMinted",
+        "outputs": [
+        {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+        }
         ],
         "stateMutability": "view",
         "type": "function"
@@ -452,11 +646,11 @@
         "inputs": [],
         "name": "owner",
         "outputs": [
-            {
-                "internalType": "address",
-                "name": "",
-                "type": "address"
-            }
+        {
+            "internalType": "address",
+            "name": "",
+            "type": "address"
+        }
         ],
         "stateMutability": "view",
         "type": "function"
@@ -465,11 +659,11 @@
         "inputs": [],
         "name": "owner1",
         "outputs": [
-            {
-                "internalType": "address",
-                "name": "",
-                "type": "address"
-            }
+        {
+            "internalType": "address",
+            "name": "",
+            "type": "address"
+        }
         ],
         "stateMutability": "view",
         "type": "function"
@@ -478,71 +672,45 @@
         "inputs": [],
         "name": "owner2",
         "outputs": [
-            {
-                "internalType": "address",
-                "name": "",
-                "type": "address"
-            }
+        {
+            "internalType": "address",
+            "name": "",
+            "type": "address"
+        }
         ],
         "stateMutability": "view",
         "type": "function"
     },
     {
         "inputs": [
-            {
-                "internalType": "uint256",
-                "name": "tokenId",
-                "type": "uint256"
-            }
+        {
+            "internalType": "uint256",
+            "name": "tokenId",
+            "type": "uint256"
+        }
         ],
         "name": "ownerOf",
         "outputs": [
-            {
-                "internalType": "address",
-                "name": "",
-                "type": "address"
-            }
+        {
+            "internalType": "address",
+            "name": "",
+            "type": "address"
+        }
         ],
         "stateMutability": "view",
-        "type": "function"
-    },
-    {
-        "inputs": [
-            {
-                "internalType": "bool",
-                "name": "_set",
-                "type": "bool"
-            }
-        ],
-        "name": "pause",
-        "outputs": [],
-        "stateMutability": "nonpayable",
         "type": "function"
     },
     {
         "inputs": [],
         "name": "paused",
         "outputs": [
-            {
-                "internalType": "bool",
-                "name": "",
-                "type": "bool"
-            }
+        {
+            "internalType": "bool",
+            "name": "",
+            "type": "bool"
+        }
         ],
         "stateMutability": "view",
-        "type": "function"
-    },
-    {
-        "inputs": [
-            {
-                "internalType": "address[]",
-                "name": "_remove",
-                "type": "address[]"
-            }
-        ],
-        "name": "removeWhitelist",
-        "outputs": [],
-        "stateMutability": "nonpayable",
         "type": "function"
     },
     {
@@ -556,11 +724,11 @@
         "inputs": [],
         "name": "reserved",
         "outputs": [
-            {
-                "internalType": "uint256",
-                "name": "",
-                "type": "uint256"
-            }
+        {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+        }
         ],
         "stateMutability": "view",
         "type": "function"
@@ -569,32 +737,32 @@
         "inputs": [],
         "name": "revealedProgress",
         "outputs": [
-            {
-                "internalType": "uint256",
-                "name": "",
-                "type": "uint256"
-            }
+        {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+        }
         ],
         "stateMutability": "view",
         "type": "function"
     },
     {
         "inputs": [
-            {
-                "internalType": "address",
-                "name": "from",
-                "type": "address"
-            },
-            {
-                "internalType": "address",
-                "name": "to",
-                "type": "address"
-            },
-            {
-                "internalType": "uint256",
-                "name": "tokenId",
-                "type": "uint256"
-            }
+        {
+            "internalType": "address",
+            "name": "from",
+            "type": "address"
+        },
+        {
+            "internalType": "address",
+            "name": "to",
+            "type": "address"
+        },
+        {
+            "internalType": "uint256",
+            "name": "tokenId",
+            "type": "uint256"
+        }
         ],
         "name": "safeTransferFrom",
         "outputs": [],
@@ -603,26 +771,26 @@
     },
     {
         "inputs": [
-            {
-                "internalType": "address",
-                "name": "from",
-                "type": "address"
-            },
-            {
-                "internalType": "address",
-                "name": "to",
-                "type": "address"
-            },
-            {
-                "internalType": "uint256",
-                "name": "tokenId",
-                "type": "uint256"
-            },
-            {
-                "internalType": "bytes",
-                "name": "_data",
-                "type": "bytes"
-            }
+        {
+            "internalType": "address",
+            "name": "from",
+            "type": "address"
+        },
+        {
+            "internalType": "address",
+            "name": "to",
+            "type": "address"
+        },
+        {
+            "internalType": "uint256",
+            "name": "tokenId",
+            "type": "uint256"
+        },
+        {
+            "internalType": "bytes",
+            "name": "_data",
+            "type": "bytes"
+        }
         ],
         "name": "safeTransferFrom",
         "outputs": [],
@@ -631,16 +799,16 @@
     },
     {
         "inputs": [
-            {
-                "internalType": "address",
-                "name": "operator",
-                "type": "address"
-            },
-            {
-                "internalType": "bool",
-                "name": "approved",
-                "type": "bool"
-            }
+        {
+            "internalType": "address",
+            "name": "operator",
+            "type": "address"
+        },
+        {
+            "internalType": "bool",
+            "name": "approved",
+            "type": "bool"
+        }
         ],
         "name": "setApprovalForAll",
         "outputs": [],
@@ -649,11 +817,11 @@
     },
     {
         "inputs": [
-            {
-                "internalType": "string",
-                "name": "_set",
-                "type": "string"
-            }
+        {
+            "internalType": "string",
+            "name": "_set",
+            "type": "string"
+        }
         ],
         "name": "setBaseExtension",
         "outputs": [],
@@ -662,11 +830,11 @@
     },
     {
         "inputs": [
-            {
-                "internalType": "string",
-                "name": "_set",
-                "type": "string"
-            }
+        {
+            "internalType": "string",
+            "name": "_set",
+            "type": "string"
+        }
         ],
         "name": "setBaseURI",
         "outputs": [],
@@ -675,16 +843,16 @@
     },
     {
         "inputs": [
-            {
-                "internalType": "uint256",
-                "name": "_setGenral",
-                "type": "uint256"
-            },
-            {
-                "internalType": "uint256",
-                "name": "_setWhitelist",
-                "type": "uint256"
-            }
+        {
+            "internalType": "uint256",
+            "name": "_setGenral",
+            "type": "uint256"
+        },
+        {
+            "internalType": "uint256",
+            "name": "_setWhitelist",
+            "type": "uint256"
+        }
         ],
         "name": "setCost",
         "outputs": [],
@@ -693,11 +861,11 @@
     },
     {
         "inputs": [
-            {
-                "internalType": "string",
-                "name": "_set",
-                "type": "string"
-            }
+        {
+            "internalType": "string",
+            "name": "_set",
+            "type": "string"
+        }
         ],
         "name": "setDefaultURI",
         "outputs": [],
@@ -706,16 +874,16 @@
     },
     {
         "inputs": [
-            {
-                "internalType": "address",
-                "name": "_set1",
-                "type": "address"
-            },
-            {
-                "internalType": "address",
-                "name": "_set2",
-                "type": "address"
-            }
+        {
+            "internalType": "address",
+            "name": "_set1",
+            "type": "address"
+        },
+        {
+            "internalType": "address",
+            "name": "_set2",
+            "type": "address"
+        }
         ],
         "name": "setGradientLifeOwner",
         "outputs": [],
@@ -724,11 +892,11 @@
     },
     {
         "inputs": [
-            {
-                "internalType": "bytes32",
-                "name": "_set",
-                "type": "bytes32"
-            }
+        {
+            "internalType": "bytes32",
+            "name": "_set",
+            "type": "bytes32"
+        }
         ],
         "name": "setMerkleRoot",
         "outputs": [],
@@ -737,11 +905,11 @@
     },
     {
         "inputs": [
-            {
-                "internalType": "uint256",
-                "name": "_limit",
-                "type": "uint256"
-            }
+        {
+            "internalType": "uint256",
+            "name": "_limit",
+            "type": "uint256"
+        }
         ],
         "name": "setMintPerAddressLimit",
         "outputs": [],
@@ -750,11 +918,24 @@
     },
     {
         "inputs": [
-            {
-                "internalType": "bool",
-                "name": "_set",
-                "type": "bool"
-            }
+        {
+            "internalType": "uint256",
+            "name": "_limit",
+            "type": "uint256"
+        }
+        ],
+        "name": "setMintPerTransactionLimit",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+        {
+            "internalType": "bool",
+            "name": "_set",
+            "type": "bool"
+        }
         ],
         "name": "setOnlyWhitelisted",
         "outputs": [],
@@ -763,11 +944,24 @@
     },
     {
         "inputs": [
-            {
-                "internalType": "uint256",
-                "name": "_set",
-                "type": "uint256"
-            }
+        {
+            "internalType": "uint256",
+            "name": "quantity",
+            "type": "uint256"
+        }
+        ],
+        "name": "setOwnersExplicit",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+        {
+            "internalType": "uint256",
+            "name": "_set",
+            "type": "uint256"
+        }
         ],
         "name": "setRevealedProgress",
         "outputs": [],
@@ -776,32 +970,19 @@
     },
     {
         "inputs": [
-            {
-                "internalType": "uint256",
-                "name": "_set",
-                "type": "uint256"
-            }
-        ],
-        "name": "setmaxMintPerTransaction",
-        "outputs": [],
-        "stateMutability": "nonpayable",
-        "type": "function"
-    },
-    {
-        "inputs": [
-            {
-                "internalType": "bytes4",
-                "name": "interfaceId",
-                "type": "bytes4"
-            }
+        {
+            "internalType": "bytes4",
+            "name": "interfaceId",
+            "type": "bytes4"
+        }
         ],
         "name": "supportsInterface",
         "outputs": [
-            {
-                "internalType": "bool",
-                "name": "",
-                "type": "bool"
-            }
+        {
+            "internalType": "bool",
+            "name": "",
+            "type": "bool"
+        }
         ],
         "stateMutability": "view",
         "type": "function"
@@ -810,73 +991,98 @@
         "inputs": [],
         "name": "symbol",
         "outputs": [
-            {
-                "internalType": "string",
-                "name": "",
-                "type": "string"
-            }
+        {
+            "internalType": "string",
+            "name": "",
+            "type": "string"
+        }
         ],
         "stateMutability": "view",
         "type": "function"
     },
     {
-        "inputs": [
-            {
-                "internalType": "uint256",
-                "name": "index",
-                "type": "uint256"
-            }
-        ],
-        "name": "tokenByIndex",
-        "outputs": [
-            {
-                "internalType": "uint256",
-                "name": "",
-                "type": "uint256"
-            }
-        ],
-        "stateMutability": "view",
+        "inputs": [],
+        "name": "togglePause",
+        "outputs": [],
+        "stateMutability": "nonpayable",
         "type": "function"
     },
     {
         "inputs": [
-            {
-                "internalType": "address",
-                "name": "owner",
-                "type": "address"
-            },
-            {
-                "internalType": "uint256",
-                "name": "index",
-                "type": "uint256"
-            }
-        ],
-        "name": "tokenOfOwnerByIndex",
-        "outputs": [
-            {
-                "internalType": "uint256",
-                "name": "",
-                "type": "uint256"
-            }
-        ],
-        "stateMutability": "view",
-        "type": "function"
-    },
-    {
-        "inputs": [
-            {
-                "internalType": "uint256",
-                "name": "tokenId",
-                "type": "uint256"
-            }
+        {
+            "internalType": "uint256",
+            "name": "tokenId",
+            "type": "uint256"
+        }
         ],
         "name": "tokenURI",
         "outputs": [
-            {
-                "internalType": "string",
-                "name": "",
-                "type": "string"
-            }
+        {
+            "internalType": "string",
+            "name": "",
+            "type": "string"
+        }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+        {
+            "internalType": "address",
+            "name": "owner",
+            "type": "address"
+        }
+        ],
+        "name": "tokensOfOwner",
+        "outputs": [
+        {
+            "internalType": "uint256[]",
+            "name": "",
+            "type": "uint256[]"
+        }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+        {
+            "internalType": "address",
+            "name": "owner",
+            "type": "address"
+        },
+        {
+            "internalType": "uint256",
+            "name": "start",
+            "type": "uint256"
+        },
+        {
+            "internalType": "uint256",
+            "name": "stop",
+            "type": "uint256"
+        }
+        ],
+        "name": "tokensOfOwnerIn",
+        "outputs": [
+        {
+            "internalType": "uint256[]",
+            "name": "",
+            "type": "uint256[]"
+        }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "totalMinted",
+        "outputs": [
+        {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+        }
         ],
         "stateMutability": "view",
         "type": "function"
@@ -885,32 +1091,32 @@
         "inputs": [],
         "name": "totalSupply",
         "outputs": [
-            {
-                "internalType": "uint256",
-                "name": "",
-                "type": "uint256"
-            }
+        {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+        }
         ],
         "stateMutability": "view",
         "type": "function"
     },
     {
         "inputs": [
-            {
-                "internalType": "address",
-                "name": "from",
-                "type": "address"
-            },
-            {
-                "internalType": "address",
-                "name": "to",
-                "type": "address"
-            },
-            {
-                "internalType": "uint256",
-                "name": "tokenId",
-                "type": "uint256"
-            }
+        {
+            "internalType": "address",
+            "name": "from",
+            "type": "address"
+        },
+        {
+            "internalType": "address",
+            "name": "to",
+            "type": "address"
+        },
+        {
+            "internalType": "uint256",
+            "name": "tokenId",
+            "type": "uint256"
+        }
         ],
         "name": "transferFrom",
         "outputs": [],
@@ -919,11 +1125,11 @@
     },
     {
         "inputs": [
-            {
-                "internalType": "address",
-                "name": "newOwner",
-                "type": "address"
-            }
+        {
+            "internalType": "address",
+            "name": "newOwner",
+            "type": "address"
+        }
         ],
         "name": "transferOwnership",
         "outputs": [],
@@ -931,52 +1137,14 @@
         "type": "function"
     },
     {
-        "inputs": [
-            {
-                "internalType": "address",
-                "name": "_owner",
-                "type": "address"
-            }
-        ],
-        "name": "walletOfOwner",
-        "outputs": [
-            {
-                "internalType": "uint256[]",
-                "name": "",
-                "type": "uint256[]"
-            }
-        ],
-        "stateMutability": "view",
-        "type": "function"
-    },
-    {
         "inputs": [],
         "name": "whitelistCost",
         "outputs": [
-            {
-                "internalType": "uint256",
-                "name": "",
-                "type": "uint256"
-            }
-        ],
-        "stateMutability": "view",
-        "type": "function"
-    },
-    {
-        "inputs": [
-            {
-                "internalType": "address",
-                "name": "",
-                "type": "address"
-            }
-        ],
-        "name": "whitelistedAddresses",
-        "outputs": [
-            {
-                "internalType": "bool",
-                "name": "",
-                "type": "bool"
-            }
+        {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+        }
         ],
         "stateMutability": "view",
         "type": "function"
