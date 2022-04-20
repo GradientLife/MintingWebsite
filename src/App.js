@@ -655,7 +655,7 @@ function App() {
 
                     </div >
 
-                    <div style={{ padding: '.5vw', fontSize: '1.2vw' }}>Yes, we have reserved 300 Gradies for community giveaway only.</div>
+                    <div style={{ padding: '.5vw', fontSize: '1.2vw' }}>Yes, we have reserved 333 Gradies for community giveaway only.</div>
 
                   </div>
 
