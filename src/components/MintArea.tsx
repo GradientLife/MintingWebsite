@@ -92,12 +92,6 @@ export const MintArea = () => {
 
     const { state: stateWL, send: sendWL } = useContractFunction(contractContract, 'WhitelistMint', { transactionName: 'WhitelistMint' })
     function WhitelistMint(mintAmount: string) {
-        if(!verify)
-        {
-            AlertWhitelist();
-            return;
-        }
-
         if (etherBalance < parseFloat(mintAmount) * 30000000000000000) {
             AlertPrice((parseFloat(mintAmount) * 30000000000000000 / 1000000000000000000).toString())
         }
@@ -200,7 +194,7 @@ export const MintArea = () => {
                                                 )
                                                 :
                                                 (
-                                                    < button className="DisabledButton" style={{ width: '25vw', height: '5vw', fontSize: '2.5vw', alignSelf: 'right' }}> April 30th</button>
+                                                    < button className="DisabledButton" style={{ width: '25vw', height: '5vw', fontSize: '2.5vw', alignSelf: 'right' }}> Locked</button>
                                                 )
                                             }
                                             </div>

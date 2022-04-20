@@ -11,7 +11,7 @@ const merkleTree = new MerkleTree(leafNodes, keccak256, { sortPairs: true })
 
 const hexRoot = merkleTree.getHexRoot(leafNodes)
 
-const address = 0x059B0d30a7a1E38731a1e9595962Aa585dA96e80
+const address = 0x8FF90F1E3E6a49a2eae9dF037daDa50667c0A284
 const claimAddr = keccak256(address)
 const hexProof = merkleTree.getHexProof(claimAddr)
 
