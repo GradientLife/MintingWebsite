@@ -1,17 +1,20 @@
 {
   "files": {
     "main.css": "/static/css/main.db2deea2.chunk.css",
-    "main.js": "/static/js/main.0f355da0.chunk.js",
-    "main.js.map": "/static/js/main.0f355da0.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.1ea9298b.js",
-    "runtime-main.js.map": "/static/js/runtime-main.1ea9298b.js.map",
-    "static/js/2.0c3b66c5.chunk.js": "/static/js/2.0c3b66c5.chunk.js",
-    "static/js/2.0c3b66c5.chunk.js.map": "/static/js/2.0c3b66c5.chunk.js.map",
-    "static/js/3.0b8318e4.chunk.js": "/static/js/3.0b8318e4.chunk.js",
-    "static/js/3.0b8318e4.chunk.js.map": "/static/js/3.0b8318e4.chunk.js.map",
+    "main.js": "/static/js/main.a459fab4.chunk.js",
+    "main.js.map": "/static/js/main.a459fab4.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.52a1055d.js",
+    "runtime-main.js.map": "/static/js/runtime-main.52a1055d.js.map",
+    "static/js/2.0a6b4ee3.chunk.js": "/static/js/2.0a6b4ee3.chunk.js",
+    "static/js/2.0a6b4ee3.chunk.js.map": "/static/js/2.0a6b4ee3.chunk.js.map",
+    "static/js/3.8176ef30.chunk.js": "/static/js/3.8176ef30.chunk.js",
+    "static/js/3.8176ef30.chunk.js.map": "/static/js/3.8176ef30.chunk.js.map",
     "index.html": "/index.html",
     "static/css/main.db2deea2.chunk.css.map": "/static/css/main.db2deea2.chunk.css.map",
-    "static/js/2.0c3b66c5.chunk.js.LICENSE.txt": "/static/js/2.0c3b66c5.chunk.js.LICENSE.txt",
+    "static/js/2.0a6b4ee3.chunk.js.LICENSE.txt": "/static/js/2.0a6b4ee3.chunk.js.LICENSE.txt",
+    "static/media/1.bd1b44ee.png": "/static/media/1.bd1b44ee.png",
+    "static/media/11.96c73351.png": "/static/media/11.96c73351.png",
+    "static/media/2.f8bdad7c.png": "/static/media/2.f8bdad7c.png",
     "static/media/Abeee.c7cd2305.jpg": "/static/media/Abeee.c7cd2305.jpg",
     "static/media/AirDrop.af7cc6aa.png": "/static/media/AirDrop.af7cc6aa.png",
     "static/media/All-Personality-Gold-Unreveal.7145b6d0.gif": "/static/media/All-Personality-Gold-Unreveal.7145b6d0.gif",
@@ -38,9 +41,9 @@
     "static/media/泰来develop eth.38b9845f.jpg": "/static/media/泰来develop eth.38b9845f.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.1ea9298b.js",
-    "static/js/2.0c3b66c5.chunk.js",
+    "static/js/runtime-main.52a1055d.js",
+    "static/js/2.0a6b4ee3.chunk.js",
     "static/css/main.db2deea2.chunk.css",
-    "static/js/main.0f355da0.chunk.js"
+    "static/js/main.a459fab4.chunk.js"
   ]
 }
